@@ -3188,3 +3188,7 @@ ul {
     .index-list-img{background-image: url(https://ipcounter.ihcr.top/);}
     .archives-img{ background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/yurknl3c.png);}
     
+      .v {
+        display: none;
+      }
+    
