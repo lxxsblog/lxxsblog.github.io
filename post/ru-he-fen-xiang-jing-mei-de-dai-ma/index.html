@@ -1,0 +1,192 @@
+<html>
+      <head>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+        <meta charset="utf-8">
+        <meta name="referrer" content="never">
+        <title>如何分享精美的代码 | lxxs&#39;blog</title>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://mlxxs.github.io/styles/main.css">
+          <script src="https://mlxxs.github.io/media/scripts/mdui.min.js"></script>
+        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ma+Shan+Zheng&display=swap" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+        <script src="https://mlxxs.github.io/media/scripts/script.js"></script>
+        <script >hljs.initHighlightingOnLoad();</script>
+        
+
+    </head>
+    <body class="mdui-theme-primary-purple mdui-theme-accent-purple">
+        <header class="index-img mdui-m-b-3"  style="background-image: url(https://mlxxs.github.io/post-images/ru-he-fen-xiang-jing-mei-de-dai-ma.jpg);" >
+                          <button class="mdui-btn  mdui-btn-icon mdui-btn-dense mdui-color-theme-500 mdui-ripple yinying mdui-m-t-1 mdui-m-l-1" mdui-menu="{target: '#demo-attr-cascade'}"><i class="mdui-icon material-icons">&#xe5d2;</i></button>
+                <ul class="mdui-menu" id="demo-attr-cascade">
+                
+                        <li class="mdui-menu-item">
+                          <a href="https://mlxxs.github.io" class="mdui-ripple">首页</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="https://mlxxs.github.io/archives" class="mdui-ripple">归档</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="https://mlxxs.github.io/tags" class="mdui-ripple">标签</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="https://mlxxs.github.io/post/about/" class="mdui-ripple">关于</a>
+                        </li>
+                
+                      </ul>
+
+        </header>
+        <div class="mdui-container post">
+                <div class="mdui-row">
+                        <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
+                         <article class="mdui-shadow-10 mdui-p-a-2 post-list">
+                           <div class="mdui-typo-display-1 mdui-m-b-3">如何分享精美的代码</div>
+                           <a  class="index-list-biaoqian ">2019-12-02</a>
+                           <div class="mdui-typo mdui-m-t-3 post-neirong"><p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
+<!-- more -->
+<p>话不多说，先上网站<a href="https://codeimg.io/">codeimg</a>；<br>
+刚打开会提供给你很多标准的大小，会适应对应的社交网站，但是如果又别的需求可以自行定义大小，选择cancel即可。<br>
+这个网站可以把代码转化为一个大小样式以及高亮样式一定的图片，canvas是调节大小和背景颜色；windwos可以调节是Windows系统还是MacOS的样式，强烈推荐MacOS；editor就是调节高亮样式和语言类型的；<br>
+总体来看，非常好用，可以适应很多场景。<br>
+放图：<br>
+<img src="https://mlxxs.github.io/post-images/1575286070115.jpeg" alt=""></p>
+</div>
+                              <div class="mdui-divider mdui-m-t-3"></div>
+                              <div class="mdui-row-xs-2 mdui-m-t-2">
+  <div class="mdui-col"> <div class="mdui-text-left"><a href="https://mlxxs.github.io/post/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni">64KB怎么可以这么的优秀呢！！</a></div></div>
+ <div class="mdui-col"><div class="mdui-text-right "><a href="https://mlxxs.github.io/post/shu-ju-jie-gou-xue-xi">数据结构学习</a></div> </div>
+                                </div>
+                                <div class="mdui-divider mdui-m-t-2"></div>
+   
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '5a7f124662a10183c5dc',
+    clientSecret: 'daad062fd5f2253d6e16dde4c6a8fb3410b363b8',
+    repo: 'Mlxxs.github.io',
+    owner: 'mlxxs',
+    admin: ['mlxxs'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+ <script src="https://mlxxs.github.io/media/scripts/Valine.min.js"></script>
+ <div class="comment"></div>
+
+<script>
+      new Valine({
+            el: '.comment',
+
+
+
+            path: window.location.pathname,
+            pageSize: 30,
+            avatar:'mm', 
+       })
+
+    </script> 
+<script>
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+           if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+              clearInterval(checkExist);
+           }
+        }, 100);
+    }
+</script>
+                         </article>
+                 <div class="toc-container mdui-float-right">
+                
+              </div>
+
+                        </div>
+                 </div>
+          
+        </div>
+        <script data-no-instant>
+    (function ($) {
+        $.extend({
+            adamsOverload: function () {
+                $.viewImage({
+                    'target'  : '.post-neirong img',
+                    'exclude' : '.vsmile-icons img , .song-links-item img',
+                    'delay'   : 300
+                });
+            }
+        });
+    })(jQuery);
+    jQuery.adamsOverload();
+</script>
+        <footer class="footer mdui-m-t-5 mdui-text-center">
+               <nav class="social-links">
+                      <ul>
+                      
+                            	
+                        <li class="social-link"><a href="http://mlxxs.github.io/atom.xml" target="_blank"><i class="iconfont icon-rss"></i></a></li>
+                         
+                           
+                            	
+                        <li class="social-link"><a href="https://twitter.com/lxxiansheng" target="_blank"><i class="iconfont icon-twitter"></i></a></li>
+                         
+                           
+                            	
+                        <li class="social-link"><a href="https://github.com/Mlxxs" target="_blank"><i class="iconfont icon-github"></i></a></li>
+                         
+                           
+                            	
+                        <li class="social-link"><a href="https://www.zhihu.com/people/lu-xun-xian-sheng-38-75/" target="_blank"><i class="iconfont icon-zhihu"></i></a></li>
+                         
+                           
+                            
+                           
+                            
+                           
+                            	
+                        <li class="social-link"><a href="t.me/mlxxs" target="_blank"><i class="iconfont icon-telegram"></i></a></li>
+                         
+                           
+                            
+                           
+                            	
+                        <li class="social-link"><a href="https://www.instagram.com/htxmzh/" target="_blank"><i class="iconfont icon-instagram"></i></a></li>
+                         
+                           
+                            
+                           
+                            	
+                        <li class="social-link"><a href="https://weibo.com/Mlxxs/" target="_blank"><i class="iconfont icon-weibo"></i></a></li>
+                         
+                           
+                            	
+                        <li class="social-link"><a href="https://space.bilibili.com/363833274" target="_blank"><i class="iconfont icon-youtube"></i></a></li>
+                         
+                           
+                      </ul>
+                    </nav>
+                  <div class="copyright">
+                      <p>Powered by <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bAEWBFVVWlosHR1CDwMB"_purple">LXXS</a><script type="text/javascript">
+
+if (localStorage.pagecount){    localStorage.pagecount=Number(localStorage.pagecount) +1;}else{    localStorage.pagecount=1;}document.write("自上次更新累计访问数: " + localStorage.pagecount + " time(s).");</script></p>
+                  </div>
+              </footer>
+    </body>
+</html>

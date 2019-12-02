@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mlxxs.github.io</id>
     <title>lxxs&apos;blog</title>
-    <updated>2019-12-02T08:49:28.786Z</updated>
+    <updated>2019-12-02T11:30:42.720Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mlxxs.github.io"/>
     <link rel="self" href="https://mlxxs.github.io/atom.xml"/>
@@ -10,6 +10,33 @@
     <logo>https://mlxxs.github.io/images/avatar.png</logo>
     <icon>https://mlxxs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, lxxs&apos;blog</rights>
+    <entry>
+        <title type="html"><![CDATA[64KB怎么可以这么的优秀呢！！]]></title>
+        <id>https://mlxxs.github.io/post/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni</id>
+        <link href="https://mlxxs.github.io/post/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni">
+        </link>
+        <updated>2019-12-02T11:29:38.000Z</updated>
+        <content type="html"><![CDATA[<p>emm，先画一个饼饼，看番了。。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何分享精美的代码]]></title>
+        <id>https://mlxxs.github.io/post/ru-he-fen-xiang-jing-mei-de-dai-ma</id>
+        <link href="https://mlxxs.github.io/post/ru-he-fen-xiang-jing-mei-de-dai-ma">
+        </link>
+        <updated>2019-12-02T11:13:21.000Z</updated>
+        <summary type="html"><![CDATA[<p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
+<!-- more -->
+<p>话不多说，先上网站<a href="https://codeimg.io/">codeimg</a>；<br>
+刚打开会提供给你很多标准的大小，会适应对应的社交网站，但是如果又别的需求可以自行定义大小，选择cancel即可。<br>
+这个网站可以把代码转化为一个大小样式以及高亮样式一定的图片，canvas是调节大小和背景颜色；windwos可以调节是Windows系统还是MacOS的样式，强烈推荐MacOS；editor就是调节高亮样式和语言类型的；<br>
+总体来看，非常好用，可以适应很多场景。<br>
+放图：<br>
+<img src="https://mlxxs.github.io/post-images/1575286070115.jpeg" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[数据结构学习]]></title>
         <id>https://mlxxs.github.io/post/shu-ju-jie-gou-xue-xi</id>
