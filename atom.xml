@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mlxxs.github.io</id>
     <title>lxxs&apos;blog</title>
-    <updated>2020-02-24T16:09:37.490Z</updated>
+    <updated>2020-02-25T01:10:55.815Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mlxxs.github.io"/>
     <link rel="self" href="https://mlxxs.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://mlxxs.github.io/images/avatar.png</logo>
     <icon>https://mlxxs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, lxxs&apos;blog</rights>
+    <entry>
+        <title type="html"><![CDATA[OI的标准文件读入读出+cin优化模板]]></title>
+        <id>https://mlxxs.github.io/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/</id>
+        <link href="https://mlxxs.github.io/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/">
+        </link>
+        <updated>2020-02-25T01:03:13.000Z</updated>
+        <summary type="html"><![CDATA[<p>反正我觉得这个是最好的模板了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>反正我觉得这个是最好的模板了。</p>
+<!-- more -->
+<pre><code class="language-cpp">//上模板
+#include&lt;bits/stdc++.h&gt;
+#define N /num
+#define NULL 0x3f3f3f3f
+#define For(i,l,r) for(int i = l;i &lt;= r;i++)
+using namespace std;
+int main(){
+    freopen(&quot;&quot;,&quot;w&quot;,stdout);
+    freopen(&quot;&quot;,&quot;r&quot;,stdin);
+    ios::sync_with_stdio(0);
+    cin.tie(0);cout.tie(0);
+    cout&lt;&lt;fixed&lt;&lt;setprecision();
+    puts(&quot;str&quot;);
+}
+
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我们学校的OJ 上线了]]></title>
         <id>https://mlxxs.github.io/post/wo-men-xue-xiao-de-oj-shang-xian-liao/</id>
