@@ -1,964 +1,1388 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 
 <head>
-    
-        <meta charset="utf-8" />
+    <meta charset="utf-8" />
+<!--
+    * @Theme Card
+    *
+    * @author admin@itjoker.cn
+    * @link https://blog.itjoker.cn
+-->
+
 <title>
-    文章 | lxxs&#39;blog
+    lxxs&#39;blog
 </title>
 <!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-<meta name="author" content="lxxs">
-<meta name="description" content="路迅先生记录学习感受生活的博客">
-<meta name="keywords" content="lxxs,oi,NOIP,mzh">
-<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
-<link rel="stylesheet" href="https://mlxxs.github.io/styles/main.css" />
-<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script>
+<meta name="author" content="lxxs&#39;blog">
+<meta name="description" content="<font color=#6B0596>前</font><font color=#700A93>程</font><font color=#750F90>似</font><font color=#7A148D>锦</font><font color=#7F198A>，</font><font color=#841E87>未</font><font color=#892384>来</font><font color=#8E2881>可</font><font color=#932D7E>期</font><font color=#98327B>；</font>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b20897ed7fac0bc47c0c8c6a3ec184f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+">
+<meta name="keywords" content="LXXS">
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/jquery@3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/atelier-estuary-dark.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/Card/script.min.js"></script>
+<!--<script async src="https://mlxxs.github.io/media/js/script.min.js"></script>-->
+<!--<link rel="stylesheet" href="https://mlxxs.github.io/media/css/main.min.css" />-->
+<link rel="stylesheet" href="https://mlxxs.github.io/styles/main.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/css/Card/main.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/css/Card/iconfont.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/css/Card/support.css" />
+<!--link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_410989_wuhl0k5ojvf.css" /-->
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/love.min.js"></script>
 
-    <!--点击特效-->
-    <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
     
-        <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
         
-            <!--CDN样式-->
-            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
-            <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+            <script>
+                (function() {
+                    var bp = document.createElement('script');
+                    var curProtocol = window.location.protocol.split(':')[0];
+                    if (curProtocol === 'https') {
+                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                    } else {
+                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                    }
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bp, s);
+                })();
+            </script>
             
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159120767-1"></script>
                 <script>
-                    (function() {
-                        var bp = document.createElement('script');
-                        var curProtocol = window.location.protocol.split(':')[0];
-                        if (curProtocol === 'https') {
-                            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-                        } else {
-                            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                        }
-                        var s = document.getElementsByTagName("script")[0];
-                        s.parentNode.insertBefore(bp, s);
-                    })();
+                    window.dataLayer = window.dataLayer || [];
+
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag('js', new Date());
+                    gtag('config', 'UA-159120767-1');
                 </script>
                 
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159120767-1"></script>
-                    <script>
-                        window.dataLayer = window.dataLayer || [];
-
-                        function gtag() {
-                            dataLayer.push(arguments);
+                    <style>
+                        .memory-certify {
+                            color: #0091e4 !important;
                         }
-                        gtag('js', new Date());
-                        gtag('config', 'UA-159120767-1');
-                    </script>
-                    
-            
+                        
+                        #foot {
+                            color: #000;
+                        }
+                        
+                        .lite-item,
+                        #header {
+                            opacity: 1;
+                        }
+                        
+                        #span_btn:hover {
+                            color: #0091e4;
+                        }
+                    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo">
-                <a href="https://mlxxs.github.io">
-                    lxxs&#39;blog
-                </a>
-            </div>
-
-            <div class="menu navbar-right">
+    <header id="header">
+    <div id="pc-menu">
+        <a id="menu-bar" class="memory memory-menu"></a>
+        <a id="menu-title" href="https://mlxxs.github.io">
+            lxxs&#39;blog
+        </a>
+        <nav id="menu-main" class="menu-main">
+            <ul>
                 
-                    <a class="menu-item" href="https://mlxxs.github.io">
-                        首页
-                    </a>
-                    
-                    <a class="menu-item" href="/posts">
-                        文章
-                    </a>
-                    
-                    <a class="menu-item" href="https://mlxxs.github.io/archives">
-                        归档
-                    </a>
-                    
-                    <a class="menu-item" href="https://mlxxs.github.io/tags">
-                        标签
-                    </a>
-                    
-                    <a class="menu-item" href="https://mlxxs.github.io/post/mei-ri-tu-cao/">
-                        吐槽-emm(⊙﹏⊙)
-                    </a>
-                    
-                    <a class="menu-item" href="https://mlxxs.github.io/post/about/">
-                        关于
-                    </a>
-                    
-                    <a class="menu-item" href="/friends">
-                        友情链接
-                    </a>
-                    
-                        <input id="switch_default" type="checkbox" class="switch_default">
-                        <label for="switch_default" class="toggleBtn"></label>
-            </div>
-            <form id="gridea-search-form" data-update="1582688906971" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-            </form>
-        </div>
-    </nav>
-
-    
-        <nav class="navbar-mobile" id="nav-mobile">
-            <div class="container">
-                <div class="navbar-header">
-                    <div>
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
                         <a href="https://mlxxs.github.io">
-                            lxxs&#39;blog
-                        </a>
-                        <!--en-->
-                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
-                        <!--zh-->
-                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
-                    </div>
-                    <form id="gridea-search-form" data-update="1582688906971" action="/search/index.html">
-                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-                    </form>
-                    <!--en-->
-                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
-                    <!--zh-->
-                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
-
-                </div>
-                <div class="menu" id="mobile-menu">
-                    
-                        <a class="menu-item" href="https://mlxxs.github.io">
                             首页
                         </a>
-                        
-                        <a class="menu-item" href="/posts">
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="/posts">
                             文章
                         </a>
-                        
-                        <a class="menu-item" href="https://mlxxs.github.io/archives">
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io/archives">
                             归档
                         </a>
-                        
-                        <a class="menu-item" href="https://mlxxs.github.io/tags">
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io/tags">
                             标签
                         </a>
-                        
-                        <a class="menu-item" href="https://mlxxs.github.io/post/mei-ri-tu-cao/">
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io/post/mei-ri-tu-cao/">
                             吐槽-emm(⊙﹏⊙)
                         </a>
-                        
-                        <a class="menu-item" href="https://mlxxs.github.io/post/about/">
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io/post/about/">
                             关于
                         </a>
-                        
-                        <a class="menu-item" href="/friends">
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="/friends">
                             友情链接
                         </a>
-                        
-                </div>
-            </div>
+                    </li>
+                    
+            </ul>
         </nav>
+        <form id="gridea-search-form" class="searchform" data-update="1582694041570" action="/search/index.html">
+            <i class="memory memory-search"></i>
+            <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+        </form>
+    </div>
+    <div id="mobile-menu">
+        <form id="gridea-search-form" class="mobile-searchform" data-update="1582694041570" action="/search/index.html">
+            <i class="memory memory-search"></i>
+            <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+        </form>
+        <nav class="menu">
+            <ul style="list-style: none;">
+                
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io">
+                            首页
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="/posts">
+                            文章
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io/archives">
+                            归档
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io/tags">
+                            标签
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io/post/mei-ri-tu-cao/">
+                            吐槽-emm(⊙﹏⊙)
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io/post/about/">
+                            关于
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="/friends">
+                            友情链接
+                        </a>
+                    </li>
+                    
+            </ul>
+        </nav>
+    </div>
 </header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementById("menu-toggle-en");
-        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
-
-        var mobileMenu = document.getElementById("mobile-menu");
-        if (toggleMenu.display != "none") {
-            if (toggleMenu.classList.contains("active")) {
-                toggleMenu.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        } else if (toggleMenu_zh.display != "none") {
-            if (toggleMenu_zh.classList.contains("active")) {
-                toggleMenu_zh.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu_zh.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        }
-
-    }
-</script>
-            <div class="post-main">
-                <div class="post-list">
-                    
-    
-                    
-    
-        
-                
-                    
-    
-        
-            <section class="post-item">
-                <div class="content">
-                    <a href="https://mlxxs.github.io/post/wo-men-xue-xiao-de-oj-shang-xian-liao/">
-                        <h2 class="post-title">
-                            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-                            我们学校的OJ 上线了
-                        </h2>
-                    </a>
-                    <div class="post-abstract">
-                        
-                    </div>
-                    <div class="post-info">
-                        <span><i class="fa fa-calendar" aria-hidden="true"></i> 2020-02-18</span>
-                        <span><i class="fa fa-tags"
-          aria-hidden="true"></i><a
-          href="https://mlxxs.github.io/tag/oj/">OJ,</a><a
-          href="https://mlxxs.github.io/tag/ACuSA9mLe/">资源分享,</a><a
-          href="https://mlxxs.github.io/tag/LmP9RbWK0Y/">学习</a></span>
-                            
-                    </div>
-                </div>
-                
-                    <a href="https://mlxxs.github.io/post/wo-men-xue-xiao-de-oj-shang-xian-liao/">
-    <div class="feature-container" style="background-image: url('https://s2.ax1x.com/2020/02/24/3JFjAI.jpg')">
-    </div>
-  </a>
-                    
-            </section>
-            
-                
-                    
-    
-        
-            <section class="post-item">
-                <div class="content">
-                    <a href="https://mlxxs.github.io/post/hao-wen-zhang-zong-jie-ye/">
-                        <h2 class="post-title">
-                            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-                            好文章总结页
-                        </h2>
-                    </a>
-                    <div class="post-abstract">
-                        <p>在本页分享好文章幺；</p>
-
-                    </div>
-                    <div class="post-info">
-                        <span><i class="fa fa-calendar" aria-hidden="true"></i> 2020-02-11</span>
-                        <span><i class="fa fa-tags"
-          aria-hidden="true"></i><a
-          href="https://mlxxs.github.io/tag/suan-fa/">算法,</a><a
-          href="https://mlxxs.github.io/tag/zong-jie/">总结,</a><a
-          href="https://mlxxs.github.io/tag/ACuSA9mLe/">资源分享</a></span>
-                            
-                    </div>
-                </div>
-                
-                    <a href="https://mlxxs.github.io/post/hao-wen-zhang-zong-jie-ye/">
-    <div class="feature-container" style="background-image: url('https://s2.ax1x.com/2020/02/24/3JkS9f.jpg')">
-    </div>
-  </a>
-                    
-            </section>
-            
-                
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-        
-                
-                    
-    
-                    
-    
-        
-                
+        <div id="main">
+            <div id="main-part">
+                <ul class="posts-list">
                     
                         
+                        
                             
-                                            
+                        
                             
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/">
-                                                <h2 class="post-title">
-                                                    OI的标准文件读入读出+cin优化模板
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>反正我觉得这个是最好的模板了。</p>
-
+                                <li class="lite-item">
+                                    <article class="post post-type">
+                                        <header class="post-type-header">
+                                            <div class="post-relative">
+                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                <span class="post-type-author">
+                    lxxs&#39;blog
+                    <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                            aria-hidden="true"></i> 2020-02-18</span>
+                                                </span>
+                                                <h3 class="post-type-title">
+                                                    <a href="https://mlxxs.github.io/post/wo-men-xue-xiao-de-oj-shang-xian-liao/" rel="bookmark" title="我们学校的OJ 上线了">
+                                                        <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                                                        我们学校的OJ 上线了
+                                                    </a>
+                                                </h3>
                                             </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2020-02-25</span>
-                                                
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/">
-    <div class="feature-container" style="background-image: url('https://i.loli.net/2020/02/25/aGYVF1JeQDxpkOq.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
-                                        
-                                            
-                            
-                                
-                                        
-                                            
-                            
-                                
-                                        
-                                            
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/gui-bing-da-fa/">
-                                                <h2 class="post-title">
-                                                    归并大法
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>归并绝对是需要学会手写并掌握的，他不是sort可以代替的，很多题都需要他的思想。</p>
-
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2020-02-08</span>
-                                                
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/suan-fa/">
-          算法
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/">
-          noip
-          
-        </a>
-        
-      </span>
+                                        </header>
+                                        <div class="post-main post-type-main">
+                                            <div class="post-content">
+                                                <div class="post-tag"></div>
+                                                <div class="post-excerpt">
                                                     
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/gui-bing-da-fa/">
-    <div class="feature-container" style="background-image: url('https://s2.ax1x.com/2020/02/24/3JkFBj.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
-                                        
-                                            
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/">
-                                                <h2 class="post-title">
-                                                    清北学堂_2020_冬令营储备营总结+笔记
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>总体感受还是不错的，恰逢这个糟糕的新型冠状病毒。</p>
-
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2020-01-25</span>
-                                                
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/zong-jie/">
-          总结
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/">
-          noip
-          
-        </a>
-        
-      </span>
+                                                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                                                
+                                                </div>
+                                                <div class="post-category">
                                                     
+                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                        
+                                                            <a href="https://mlxxs.github.io/tag/oj/" rel="category">
+                                                                OJ
+                                                                    
+                                                                        ,
+                                                                        
+                                                            </a>
+                                                            
+                                                            <a href="https://mlxxs.github.io/tag/ACuSA9mLe/" rel="category">
+                                                                资源分享
+                                                                    
+                                                                        ,
+                                                                        
+                                                            </a>
+                                                            
+                                                            <a href="https://mlxxs.github.io/tag/LmP9RbWK0Y/" rel="category">
+                                                                学习
+                                                                    
+                                                            </a>
+                                                            
+                                                                
+                                                </div>
                                             </div>
                                         </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/">
-    <div class="feature-container" style="background-image: url('https://s2.ax1x.com/2020/02/24/3JkEEn.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
+                                        <div class="post-footer">
+                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/wo-men-xue-xiao-de-oj-shang-xian-liao/'">
+                    <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                </span>
+                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/wo-men-xue-xiao-de-oj-shang-xian-liao/')">
+                    <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                </span>
+                                        </div>
+                                    </article>
+                                </li>
+                                
+                        
+                            
+                                <li class="lite-item">
+                                    <article class="post post-type">
+                                        <header class="post-type-header">
+                                            <div class="post-relative">
+                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                <span class="post-type-author">
+                    lxxs&#39;blog
+                    <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                            aria-hidden="true"></i> 2020-02-11</span>
+                                                </span>
+                                                <h3 class="post-type-title">
+                                                    <a href="https://mlxxs.github.io/post/hao-wen-zhang-zong-jie-ye/" rel="bookmark" title="好文章总结页">
+                                                        <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                                                        好文章总结页
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                        </header>
+                                        <div class="post-main post-type-main">
+                                            <div class="post-content">
+                                                <div class="post-tag"></div>
+                                                <div class="post-excerpt">
+                                                    
+                                                        <p>在本页分享好文章幺；</p>
+
+                                                            
+                                                </div>
+                                                <div class="post-category">
+                                                    
+                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                        
+                                                            <a href="https://mlxxs.github.io/tag/suan-fa/" rel="category">
+                                                                算法
+                                                                    
+                                                                        ,
+                                                                        
+                                                            </a>
+                                                            
+                                                            <a href="https://mlxxs.github.io/tag/zong-jie/" rel="category">
+                                                                总结
+                                                                    
+                                                                        ,
+                                                                        
+                                                            </a>
+                                                            
+                                                            <a href="https://mlxxs.github.io/tag/ACuSA9mLe/" rel="category">
+                                                                资源分享
+                                                                    
+                                                            </a>
+                                                            
+                                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-footer">
+                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/hao-wen-zhang-zong-jie-ye/'">
+                    <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                </span>
+                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/hao-wen-zhang-zong-jie-ye/')">
+                    <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                </span>
+                                        </div>
+                                    </article>
+                                </li>
+                                
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                        
+                            
+
                                     
                                         
+                                        
                                             
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/xin-nian-ji-lu/">
-                                                <h2 class="post-title">
-                                                    新年记录
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>年终大总结：<br>
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2020-02-25</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/" rel="bookmark" title="OI的标准文件读入读出+cin优化模板">
+                                                                        OI的标准文件读入读出+cin优化模板
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>反正我觉得这个是最好的模板了。</p>
+
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
+                                                
+                                        
+                                            
+                                        
+                                            
+                                        
+                                            
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2020-02-08</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/gui-bing-da-fa/" rel="bookmark" title="归并大法">
+                                                                        归并大法
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>归并绝对是需要学会手写并掌握的，他不是sort可以代替的，很多题都需要他的思想。</p>
+
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/suan-fa/" rel="category">
+                                                                                算法
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/" rel="category">
+                                                                                noip
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/gui-bing-da-fa/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/gui-bing-da-fa/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
+                                                
+                                        
+                                            
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2020-01-25</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/" rel="bookmark" title="清北学堂_2020_冬令营储备营总结+笔记">
+                                                                        清北学堂_2020_冬令营储备营总结+笔记
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>总体感受还是不错的，恰逢这个糟糕的新型冠状病毒。</p>
+
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/zong-jie/" rel="category">
+                                                                                总结
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/" rel="category">
+                                                                                noip
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
+                                                
+                                        
+                                            
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2020-01-01</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/xin-nian-ji-lu/" rel="bookmark" title="新年记录">
+                                                                        新年记录
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>年终大总结：<br>
 1.经历了两次大考（中考，CSP-S），多次月考（一次更比一次蒻）</p>
 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2020-01-01</span>
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/xin-nian/" rel="category">
+                                                                                新年
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/zong-jie/" rel="category">
+                                                                                总结
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/shuo-shuo/" rel="category">
+                                                                                说说
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/" rel="category">
+                                                                                心得
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/xin-nian-ji-lu/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/xin-nian-ji-lu/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/xin-nian/">
-          新年
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/zong-jie/">
-          总结
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/shuo-shuo/">
-          说说
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/">
-          心得
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
                                         
-                                            <a href="https://mlxxs.github.io/post/xin-nian-ji-lu/">
-    <div class="feature-container" style="background-image: url('https://s2.ax1x.com/2020/02/24/3JktC6.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
                                         
                                             
-                            
-                                            
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni/">
-                                                <h2 class="post-title">
-                                                    64KB怎么可以这么的优秀呢！！
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-12-02</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni/" rel="bookmark" title="64KB怎么可以这么的优秀呢！！">
+                                                                        64KB怎么可以这么的优秀呢！！
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                                                                
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-12-02</span>
-                                                
-                                            </div>
-                                        </div>
-                                        
-                                    </section>
-                                    
                                         
                                             
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/ru-he-fen-xiang-jing-mei-de-dai-ma/">
-                                                <h2 class="post-title">
-                                                    如何分享精美的代码
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-12-02</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/ru-he-fen-xiang-jing-mei-de-dai-ma/" rel="bookmark" title="如何分享精美的代码">
+                                                                        如何分享精美的代码
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-12-02</span>
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/jEXPj-hm_/" rel="category">
+                                                                                hellow world
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/ACuSA9mLe/" rel="category">
+                                                                                资源分享
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/ru-he-fen-xiang-jing-mei-de-dai-ma/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/ru-he-fen-xiang-jing-mei-de-dai-ma/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/jEXPj-hm_/">
-          hellow world
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/ACuSA9mLe/">
-          资源分享
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/ru-he-fen-xiang-jing-mei-de-dai-ma/">
-    <div class="feature-container" style="background-image: url('https://s2.ax1x.com/2020/02/24/3JkHP0.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
                                         
                                             
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/shu-ju-jie-gou-xue-xi/">
-                                                <h2 class="post-title">
-                                                    数据结构学习
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊</p>
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-12-02</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/shu-ju-jie-gou-xue-xi/" rel="bookmark" title="数据结构学习">
+                                                                        数据结构学习
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊</p>
 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-12-02</span>
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/shu-ju-jie-gou/" rel="category">
+                                                                                数据结构
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/" rel="category">
+                                                                                noip
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/" rel="category">
+                                                                                心得
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/LmP9RbWK0Y/" rel="category">
+                                                                                学习
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/" rel="category">
+                                                                                笔记
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/shu-ju-jie-gou-xue-xi/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/shu-ju-jie-gou-xue-xi/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/shu-ju-jie-gou/">
-          数据结构
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/">
-          noip
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/">
-          心得
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/LmP9RbWK0Y/">
-          学习
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/">
-          笔记
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/shu-ju-jie-gou-xue-xi/">
-    <div class="feature-container" style="background-image: url('https://s2.ax1x.com/2020/02/24/3JkvqJ.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
                                         
                                             
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/zi-yuan-fen-xiang/">
-                                                <h2 class="post-title">
-                                                    资源分享
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <blockquote>
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-12-02</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/zi-yuan-fen-xiang/" rel="bookmark" title="资源分享">
+                                                                        资源分享
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <blockquote>
 <p>一切资源均来自网上，本人只是知识的搬运工，受互联网保护伞保护，部分内容需要发邮件私发，谢谢。<br>
 如有侵权，邮箱联系，一定删除。</p>
 </blockquote>
 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-12-02</span>
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/ACuSA9mLe/" rel="category">
+                                                                                资源分享
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/" rel="category">
+                                                                                noip
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/zi-yuan-fen-xiang/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/zi-yuan-fen-xiang/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/ACuSA9mLe/">
-          资源分享
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/">
-          noip
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/zi-yuan-fen-xiang/">
-    <div class="feature-container" style="background-image: url('https://i.loli.net/2020/02/24/wKJMQ4O9SujCWyb.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
                                         
                                             
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/ke-xue-shang-wang-de-jian-jie/">
-                                                <h2 class="post-title">
-                                                    科学上网的见解
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>开始读之前，请明确自己的立场。</p>
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-12-02</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/ke-xue-shang-wang-de-jian-jie/" rel="bookmark" title="科学上网的见解">
+                                                                        科学上网的见解
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>开始读之前，请明确自己的立场。</p>
 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-12-02</span>
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/UewNppXYY/" rel="category">
+                                                                                科学上网
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/" rel="category">
+                                                                                心得
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/" rel="category">
+                                                                                笔记
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/ke-xue-shang-wang-de-jian-jie/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/ke-xue-shang-wang-de-jian-jie/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/UewNppXYY/">
-          科学上网
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/">
-          心得
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/">
-          笔记
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/ke-xue-shang-wang-de-jian-jie/">
-    <div class="feature-container" style="background-image: url('https://i.loli.net/2020/02/24/IefvVARw29HUYJ4.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
                                         
                                             
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/rss-ji-qiao/">
-                                                <h2 class="post-title">
-                                                    RSS技巧
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>面对越来越多的收藏博客，音乐，up主，视频……是不是想要一个聚合阅读的方法呢！那么RSS一定是你的最好选择。这里记一笔关于RSS心得和分享。有阅读工具和得到链接的方法；※opera可以自动订阅偶</p>
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-12-02</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/rss-ji-qiao/" rel="bookmark" title="RSS技巧">
+                                                                        RSS技巧
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>面对越来越多的收藏博客，音乐，up主，视频……是不是想要一个聚合阅读的方法呢！那么RSS一定是你的最好选择。这里记一笔关于RSS心得和分享。有阅读工具和得到链接的方法；※opera可以自动订阅偶</p>
 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-12-02</span>
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/roSAUxjWZ/" rel="category">
+                                                                                RSS
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/" rel="category">
+                                                                                笔记
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/rss-ji-qiao/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/rss-ji-qiao/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/roSAUxjWZ/">
-          RSS
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/">
-          笔记
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/rss-ji-qiao/">
-    <div class="feature-container" style="background-image: url('https://i.loli.net/2020/02/24/R15O3Jcl6jFWa7V.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
                                         
                                             
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/markdown-xue-xi/">
-                                                <h2 class="post-title">
-                                                    markdown学习
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <p>这个真的是超级有用，无论是洛谷还是什么，超级超级好用就对了。。。。。。</p>
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-12-02</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/markdown-xue-xi/" rel="bookmark" title="markdown学习">
+                                                                        markdown学习
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <p>这个真的是超级有用，无论是洛谷还是什么，超级超级好用就对了。。。。。。</p>
 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-12-02</span>
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/dJV8Kur_7/" rel="category">
+                                                                                markdwon
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/LmP9RbWK0Y/" rel="category">
+                                                                                学习
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/" rel="category">
+                                                                                笔记
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/markdown-xue-xi/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/markdown-xue-xi/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/dJV8Kur_7/">
-          markdwon
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/LmP9RbWK0Y/">
-          学习
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/">
-          笔记
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/markdown-xue-xi/">
-    <div class="feature-container" style="background-image: url('https://i.loli.net/2020/02/25/OT8X2rzeZBMsWoA.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
                                         
                                             
-                            
-                                
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/noip-c/">
-                                                <h2 class="post-title">
-                                                    NOIP-C++
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                <blockquote>
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-12-02</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/noip-c/" rel="bookmark" title="NOIP-C++">
+                                                                        NOIP-C++
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                        <blockquote>
 <p>复赛可使用C、C++、Pascal语言，2022年后将不可使用Pascal、C语言，只能使用C++。<br>
 目前本人主要学的就是C++,毕竟C++一定不会被抹除。<br>
 对于C++，这里也只是一些作者的笔记，作者起草笔记的时候还是即将进入高一的暑假，C++的内容也都是自己学的，所以可能很垃圾，不要吐槽，毕竟只是为了记录一下。重要的事情说三遍：大神勿喷，大神勿喷，大神勿喷。如果有补充的地方，可以评论区留言，谢谢。😘</p>
 </blockquote>
 
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-12-02</span>
+                                                                            
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/2r4BXKbSg/" rel="category">
+                                                                                NOIP
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/mR8VCEyj7r/" rel="category">
+                                                                                study
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/noip-c/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/noip-c/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
                                                 
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/2r4BXKbSg/">
-          NOIP
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/mR8VCEyj7r/">
-          study
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
                                         
-                                            <a href="https://mlxxs.github.io/post/noip-c/">
-    <div class="feature-container" style="background-image: url('https://i.loli.net/2020/02/25/41ksCERmVoWrivZ.jpg')">
-    </div>
-  </a>
-                                            
-                                    </section>
-                                    
                                         
                                             
+                                                <li class="lite-item">
+                                                    <article class="post post-type">
+                                                        <header class="post-type-header">
+                                                            <div class="post-relative">
+                                                                <img alt="lxxs&#39;blog" src="https://mlxxs.github.io/images/avatar.png?v=1582694041570" srcset="https://mlxxs.github.io/images/avatar.png?v=1582694041570" class="avatar avatar-100 photo" width="100" height="100">
+                                                                <span class="post-type-author">
+                                lxxs&#39;blog
+                                <i class="memory memory-certify"></i><span class="publish-time"> - <i class="fa fa-calendar"
+                                        aria-hidden="true"></i> 2019-11-29</span>
+                                                                </span>
+                                                                <h3 class="post-type-title">
+                                                                    <a href="https://mlxxs.github.io/post/hello-world/" rel="bookmark" title="hello world;">
+                                                                        hello world;
+                                                                    </a>
+                                                                </h3>
+                                                            </div>
+                                                        </header>
+                                                        <div class="post-main post-type-main">
+                                                            <div class="post-content">
+                                                                <div class="post-tag"></div>
+                                                                <div class="post-excerpt">
+                                                                    
+                                                                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                                                                
+                                                                </div>
+                                                                <div class="post-category">
+                                                                    
+                                                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                                                        
+                                                                            <a href="https://mlxxs.github.io/tag/jEXPj-hm_/" rel="category">
+                                                                                hellow world
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/" rel="category">
+                                                                                noip
+                                                                                    
+                                                                                        ,
+                                                                                        
+                                                                            </a>
+                                                                            
+                                                                            <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/" rel="category">
+                                                                                心得
+                                                                                    
+                                                                            </a>
+                                                                            
+                                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:top.location='https://mlxxs.github.io/post/hello-world/'">
+                                <i class="memory memory-more-o"></i> &#x9605;&#x8BFB;
+                            </span>
+                                                            <span id="span_btn" style="text-align: center;" onclick="javascript:window.open('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mlxxs.github.io/post/hello-world/')">
+                                <i class=" memory memory-share "></i> &#x4E8C;&#x7EF4;&#x7801;&#x5206;&#x4EAB;
+                            </span>
+                                                        </div>
+                                                    </article>
+                                                </li>
+                                                
+                </ul>
+            </div>
+            <div id="sidebar">
+    <ul>
+        
+            <li class="lite-item">
+                <header class="lite-item-header">
+                    <h3 class="sidebar-default-icon lite-item-title"><i class="memory memory-hitokoto"></i>&nbsp;&#x4E00;&#x8A00;</h3>
+                </header>
+                <div class="textwidget">
+                    <p>
+                        <b id="hitokoto"></b>
+                    </p>
+                </div>
+            </li>
+            
+                <li class="lite-item">
+                    <header class="lite-item-header">
+                        <h3 class="sidebar-default-icon lite-item-title"><i class="memory memory-tags">&#x6807;&#x7B7E;</i></h3>
+                    </header>
+                    <div class="textwidget">
+                        
+                            <a href="https://mlxxs.github.io/tag/oj/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;OJ</i>
+                            </a>
                             
-                                            
+                            <a href="https://mlxxs.github.io/tag/ACuSA9mLe/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;资源分享</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/LmP9RbWK0Y/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;学习</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/suan-fa/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;算法</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/zong-jie/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;总结</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;noip</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/xin-nian/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;新年</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/shuo-shuo/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;说说</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;心得</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/jEXPj-hm_/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;hellow world</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/shu-ju-jie-gou/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;数据结构</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/0tN8ykDfM_/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;笔记</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/UewNppXYY/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;科学上网</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/roSAUxjWZ/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;RSS</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/dJV8Kur_7/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;markdwon</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/2r4BXKbSg/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;NOIP</i>
+                            </a>
+                            
+                            <a href="https://mlxxs.github.io/tag/mR8VCEyj7r/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;study</i>
+                            </a>
+                            
+                    </div>
+                </li>
+                
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    <div id="player"></div>
+                    
+                        <li class="lite-item">
+                            <header class="lite-item-header">
+                                <h3 class="sidebar-default-icon lite-item-title">
+                                    &#x1F3B5;&#x97F3;&#x4E50;
+                                </h3>
+                            </header>
+                            <div class="textwidget">
+                                <p>
+                                    <div id="player_box"></div>
+                                </p>
+                            </div>
+                        </li>
+                        
+                            <script>
+                                function LoadPlayer() {
+                                    var music_array = [];
+                                    
+                                    music_array.push({
+                                        name: 'Loving Strangers',
+                                        url: 'https://music.163.com/song/media/outer/url?id=2788529.mp3',
+                                        artist: 'Jacelyn Pook / Russian Red',
+                                        cover: '',
+                                    });
+                                    
+                                    music_array.push({
+                                        name: '画',
+                                        url: 'https://music.163.com/song/media/outer/url?id=412911436.mp3',
+                                        artist: 'G.E.M.邓紫棋',
+                                        cover: '',
+                                    });
+                                    
+                                    music_array.push({
+                                        name: '恋爱循环',
+                                        url: 'https://music.163.com/song/media/outer/url?id=579954.mp3',
+                                        artist: '花泽香菜',
+                                        cover: '',
+                                    });
+                                    
+                                    
+                                    const ap = new APlayer({
+                                        container: document.getElementById('player_box'),
+                                        audio: music_array
+                                    });
+                                    
+                                }
+                                LoadPlayer();
+                            </script>
                             
                                 
-                                    <section class="post-item">
-                                        <div class="content">
-                                            <a href="https://mlxxs.github.io/post/hello-world/">
-                                                <h2 class="post-title">
-                                                    hello world;
-                                                </h2>
-                                            </a>
-                                            <div class="post-abstract">
-                                                
-                                            </div>
-                                            <div class="post-info">
-                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2019-11-29</span>
-                                                
-                                                    <span>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        
-        <a href="https://mlxxs.github.io/tag/jEXPj-hm_/">
-          hellow world
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/lYeYG_sv5i/">
-          noip
-          
-          ,
-          
-        </a>
-        
-        <a href="https://mlxxs.github.io/tag/MkxQZMAyVD/">
-          心得
-          
-        </a>
-        
-      </span>
-                                                    
-                                            </div>
-                                        </div>
-                                        
-                                            <a href="https://mlxxs.github.io/post/hello-world/">
-    <div class="feature-container" style="background-image: url('https://ipcounter.ihcr.top')">
-    </div>
-  </a>
-                                            
-                                    </section>
                                     
                                         
+                                            <li class="lite-item">
+                                                <header class="lite-item-header">
+                                                    <h3 class="sidebar-default-icon lite-item-title">
+                                                        目标
+                                                    </h3>
+                                                </header>
+                                                <div class="textwidget">
+                                                    <div id="textwidget-box" style="width:100%; height:auto;">
+                                                        戒骄戒躁，戒色，好好努力。冲冲冲。
+                                                    </div>
+                                                </div>
+                                            </li>
                                             
-                </div>
-            </div>
-    </div>
-    
-    <div id="player"></div>
-    
-        <footer id="footer" class="footer">
-            <div class="copyright">
-                
-                        
-<!-- Global site tag (gtag.js) - Google Analytics -->
+                                            <li class="lite-item">
+                                                <header class="lite-item-header">
+                                                    <h3 class="sidebar-default-icon lite-item-title">
+                                                        天气
+                                                    </h3>
+                                                </header>
+                                                <div class="textwidget">
+                                                    <div id="textwidget-box" style="width:100%; height:auto;">
+                                                        <div id="tp-weather-widget"></div>   <script>     (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));     window.SeniverseWeatherWidget('show', {       flavor: "slim",       location: "WWEFQFPJZ7T8",       geolocation: true,       language: "auto",       unit: "c",       theme: "auto",       token: "61bcc333-3305-4728-9465-6785274bb0a3",       hover: "enabled",       container: "tp-weather-widget"     })   </script>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                                
+                                                    <li class="lite-item">
+                                                        <header class="lite-item-header">
+                                                            <h3 class="sidebar-default-icon lite-item-title">&#x1F468;&#x200D;&#x1F4BB;&#x53CB;&#x94FE;</h3>
+                                                        </header>
+                                                        <div class="textwidget">
+                                                            
+                                                                
+                                                                    <p><span id="span_btn" style="font-size: 14px;" onclick="javascript:top.location='http://96.45.163.34/'">
+                                        山东省桓台第一中学OJ -
+                                            学校的在线OJ
+                                </span></p>
+                                                                    
+                                                                        
+                                                        </div>
+                                                    </li>
+    </ul>
+</div>
+        </div>
+
+</body>
+<footer id="foot">
+    <a id="back-to-top" href="#"><i class="memory memory-top"></i></a>
+    <div class="copyright">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159120767-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -966,141 +1390,37 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-159120767-1');
-</script>
-                            
-                                <b id="hitokoto"></b><br>
-                                
-                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
-            <path
-                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
-                fill="#93b5cf"></path>
-        </svg>
-                                        lxxs&#39;blog &copy;Copyright
-                                            <script>
-                                                var date = new Date();
-                                                document.write("" + date.getFullYear());
-                                            </script>
-                                            | Powered by
-                                            <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=bAEWBFVVWlosHR1CDwMB" target="_blank">
-                                                LXXS
-                                            </a>
-            </div>
-            <div id="update" style="display:none;">
-                on
-            </div>
+</script><br>
             
-                <div id="version" style="display:none;">
-                    1.7.1
-                </div>
-                
-                    <script>
-                        var pat = '';
-                        
-                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
+                    &#x7248;&#x6743;&#x6240;&#x6709; &copy;
+                    <span class="my-face"><script>
+                        var date = new Date();
+                        document.write("" + date.getFullYear());
                     </script>
-        </footer>
+                   </span>
+                    <a href="https://mlxxs.github.io">
+                        lxxs&#39;blog
+                    </a>&nbsp;|&nbsp;Powered by
+                    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=bAEWBFVVWlosHR1CDwMB" target="_blank">
+                        LXXS
+                    </a>
+    </div>
+    <div id='UpdateTime' style='display:none'>
+        1582694041570
+    </div>
+    <script>
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            document.hidden ? (document.title = "\uD83D\uDE25" + OriginTitile, clearTimeout(titleTime)) : (document.title = "\uD83D\uDE1D" + OriginTitile, titleTime = setTimeout(function() {
+                document.title = OriginTitile
+            }, 2E3))
+        });
+        var OriginTitile = document.title;
         
-            <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
-            
-                <script>
-                    
-
-                    function LoadPlayer() {
-                        var music_array = [];
-                        
-                        music_array.push({
-                            name: 'Loving Strangers',
-                            url: 'https://music.163.com/song/media/outer/url?id=2788529.mp3',
-                            artist: 'Jacelyn Pook / Russian Red',
-                            cover: '',
-                        });
-                        
-                        music_array.push({
-                            name: '画',
-                            url: 'https://music.163.com/song/media/outer/url?id=412911436.mp3',
-                            artist: 'G.E.M.邓紫棋',
-                            cover: '',
-                        });
-                        
-                        music_array.push({
-                            name: '恋爱循环',
-                            url: 'https://music.163.com/song/media/outer/url?id=579954.mp3',
-                            artist: '花泽香菜',
-                            cover: '',
-                        });
-                        
-                        console.log(" MusicList: " + music_array);
-                        
-                        const ap = new APlayer({
-                            container: document.getElementById('player'),
-                            fixed: true,
-                            audio: music_array
-                        });
-                        
-                    }
-                    LoadPlayer();
-                    
-                    
-                    loadlive2d();
-                    
-                    
-                    hitokoto();
-                    
-                    getStar();
-                    hljs.initHighlighting();
-                    console.clear();
-                    
-                    CheckVersion();
-                    
-                    var newDate = new Date();
-                    newDate.setTime(1582688906971);
-                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
-                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
-                </script>
-                
-                    <div id="tp-weather-widget" style="background: #666;display: flex;"></div>
-                    <script>
-                        (function(T, h, i, n, k, P, a, g, e) {
-                            g = function() {
-                                P = h.createElement(i);
-                                a = h.getElementsByTagName(i)[0];
-                                P.src = k;
-                                P.charset = "utf-8";
-                                P.async = 1;
-                                a.parentNode.insertBefore(P, a)
-                            };
-                            T["ThinkPageWeatherWidgetObject"] = n;
-                            T[n] || (T[n] = function() {
-                                (T[n].q = T[n].q || []).push(arguments)
-                            });
-                            T[n].l = +new Date();
-                            if (T.attachEvent) {
-                                T.attachEvent("onload", g)
-                            } else {
-                                T.addEventListener("load", g, false)
-                            }
-                        }(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
-                    </script>
-                    <script>
-                        var wearther_margin = "10px 10px";
-                        
-                        wearther_margin = "70px 5px";
-                        
-                        tpwidget("init", {
-                            "flavor": "bubble",
-                            "location": "WX4FBXXFKE4F",
-                            "geolocation": "enabled",
-                            "position": "bottom-left",
-                            "margin": wearther_margin,
-                            "language": "zh-chs",
-                            "unit": "c",
-                            "theme": "chameleon",
-                            "uid": "UFC977E1C7",
-                            "hash": "213ad798bc472dc365da3a9d4a9ff115"
-                        });
-                        tpwidget("show");
-                    </script>
-                    
-</body>
+        App.hitokoto();
+        
+        App.outputlog();
+    </script>
+</footer>
 
 </html>
