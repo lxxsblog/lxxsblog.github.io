@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mlxxs.github.io</id>
     <title>lxxs&apos;blog</title>
-    <updated>2020-02-26T10:24:04.952Z</updated>
+    <updated>2020-02-26T16:02:29.751Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mlxxs.github.io"/>
     <link rel="self" href="https://mlxxs.github.io/atom.xml"/>
@@ -20,6 +20,45 @@ var _hmt = _hmt || [];
     <logo>https://mlxxs.github.io/images/avatar.png</logo>
     <icon>https://mlxxs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, lxxs&apos;blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Bellman_fold算法]]></title>
+        <id>https://mlxxs.github.io/post/bellman_fold-suan-fa/</id>
+        <link href="https://mlxxs.github.io/post/bellman_fold-suan-fa/">
+        </link>
+        <updated>2020-02-26T15:47:49.000Z</updated>
+        <content type="html"><![CDATA[<p>怎么说，这个算法是真的强大，不要过分深究理解他，走一遍过程比证明他的收获更大。<br>
+#先上例图<br>
+<img src="https://i.loli.net/2020/02/26/sT4ZJjFxBLe6ki3.png" alt="例图" loading="lazy"><br>
+根据这个图，再按照模板以及注释走一遍，你就懂了。</p>
+<pre><code class="language-cpp">int n,m;//n表示点数，m表示边数
+int disk[N];//disk[x]存储1到x的最短路距离
+struct Edge{
+    int a,b,w;
+};
+Edge edges[M];
+bool inf[N];
+int bellman_ford(int st){
+        memset(disk,0x3f,sizeof dist);
+        dist[st]=0;
+        // 如果第n次迭代仍然会松弛三角不等式，就说明存在一条长度是n+1的最短路径，由抽屉原理，路径中至少存在两个相同的点，说明图中存在负权回路。
+        for(int i = 0;i&lt;n;i++){
+            int a=edges[j].a,b=egges[j].b,w=edges[j].w;//进行松弛操作，感觉上很想迪杰斯特拉，有这个感觉就行了，他的目的就是让所有的边便利n*m遍。不需要证明。
+            if(dist[b]&gt;dist[a]+w)dist[b]=dist[a]+w;
+        }
+        if(dist[N]&gt;0x3f3f3f3f / 2)return -1;//到达不了的点也可能经过了松弛操作，可能并不是我们所谓的正无穷了。
+        return dist[n];
+}
+int bellman_ford_influnce(int st){
+        for(int i = 0;i&lt;n;i++){
+            int a=edges[j].a,b=egges[j].b,w=edges[j].w;
+            if(dist[b]&gt;dist[a]+w)dist[b]=true;//如果又变小了，证明他被负环影响了
+        }
+}
+
+
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OI的标准文件读入读出+cin优化模板]]></title>
         <id>https://mlxxs.github.io/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/</id>
@@ -4075,21 +4114,6 @@ for循环可以做的事情很多，看你怎么用了。<br>
 版权声明：本文为原创文章，版权归 <a href="https://mlxxs.github.io">路迅先生</a> 所有。<br>
 您可以自由的转载和修改，但请务必注明文章来源并且不可用于商业</p>
 </blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[hello world;]]></title>
-        <id>https://mlxxs.github.io/post/hello-world/</id>
-        <link href="https://mlxxs.github.io/post/hello-world/">
-        </link>
-        <updated>2019-11-29T04:34:28.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>#include &lt;bits/stdc++.h&gt;
-using namespace std;
-int main(){
-    cout&lt;&lt;&quot;Hellw,World!!O(∩_∩)O&quot;;
-    return 0;
-}
-</code></pre>
 ]]></content>
     </entry>
 </feed>
