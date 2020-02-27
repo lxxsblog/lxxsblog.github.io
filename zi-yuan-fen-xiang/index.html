@@ -1,442 +1,256 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://lxxs.cf</id>
-    <title>lxxs&apos;blog</title>
-    <updated>2020-02-27T10:25:33.490Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://lxxs.cf"/>
-    <link rel="self" href="https://lxxs.cf/atom.xml"/>
-    <subtitle>&lt;font color=#6B0596&gt;前&lt;/font&gt;&lt;font color=#700A93&gt;程&lt;/font&gt;&lt;font color=#750F90&gt;似&lt;/font&gt;&lt;font color=#7A148D&gt;锦&lt;/font&gt;&lt;font color=#7F198A&gt;，&lt;/font&gt;&lt;font color=#841E87&gt;未&lt;/font&gt;&lt;font color=#892384&gt;来&lt;/font&gt;&lt;font color=#8E2881&gt;可&lt;/font&gt;&lt;font color=#932D7E&gt;期&lt;/font&gt;&lt;font color=#98327B&gt;；&lt;/font&gt;
-&lt;script&gt;
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<!--
+    * @Theme Card
+    *
+    * @author admin@itjoker.cn
+    * @link https://blog.itjoker.cn
+-->
+
+<title>
+    lxxs&#39;blog
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="lxxs&#39;blog">
+<meta name="description" content="<font color=#6B0596>前</font><font color=#700A93>程</font><font color=#750F90>似</font><font color=#7A148D>锦</font><font color=#7F198A>，</font><font color=#841E87>未</font><font color=#892384>来</font><font color=#8E2881>可</font><font color=#932D7E>期</font><font color=#98327B>；</font>
+<script>
 var _hmt = _hmt || [];
 (function() {
-  var hm = document.createElement(&quot;script&quot;);
-  hm.src = &quot;https://hm.baidu.com/hm.js?8b20897ed7fac0bc47c0c8c6a3ec184f&quot;;
-  var s = document.getElementsByTagName(&quot;script&quot;)[0]; 
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b20897ed7fac0bc47c0c8c6a3ec184f";
+  var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-&lt;/script&gt;
-</subtitle>
-    <logo>https://lxxs.cf/images/avatar.png</logo>
-    <icon>https://lxxs.cf/favicon.ico</icon>
-    <rights>All rights reserved 2020, lxxs&apos;blog</rights>
-    <entry>
-        <title type="html"><![CDATA[关于更换域名的小问题。。]]></title>
-        <id>https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/</id>
-        <link href="https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/">
-        </link>
-        <updated>2020-02-27T09:49:24.000Z</updated>
-        <summary type="html"><![CDATA[<p>真的是多谢ITjoker大佬了！</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>真的是多谢ITjoker大佬了！</p>
-<!-- more -->
-<p>更换域名后可能会导致博客评论出现问题，这个时候的操作就是，前往GitHub-&gt;setting-&gt;Developer setting-&gt;OAuth Apps-&gt;你的评论应用<br>
-然后将Homepage URL改成你的域名，加入https://<br>
-Authorization callback URL改成你的域名，加入https://<br>
-就是这么简单，很舒服，第一感觉是，用了域名访问之后，速度快了不少呢。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bellman_fold算法]]></title>
-        <id>https://lxxs.cf/bellman_fold-suan-fa/</id>
-        <link href="https://lxxs.cf/bellman_fold-suan-fa/">
-        </link>
-        <updated>2020-02-26T15:47:49.000Z</updated>
-        <content type="html"><![CDATA[<p>怎么说，这个算法是真的强大，不要过分深究理解他，走一遍过程比证明他的收获更大。<br>
-#先上例图<br>
-<img src="https://i.loli.net/2020/02/26/sT4ZJjFxBLe6ki3.png" alt="例图" loading="lazy"><br>
-根据这个图，再按照模板以及注释走一遍，你就懂了。</p>
-<pre><code class="language-cpp">int n,m;//n表示点数，m表示边数
-int disk[N];//disk[x]存储1到x的最短路距离
-struct Edge{
-    int a,b,w;
-};
-Edge edges[M];
-bool inf[N];
-int bellman_ford(int st){
-        memset(disk,0x3f,sizeof dist);
-        dist[st]=0;
-        // 如果第n次迭代仍然会松弛三角不等式，就说明存在一条长度是n+1的最短路径，由抽屉原理，路径中至少存在两个相同的点，说明图中存在负权回路。
-        for(int i = 0;i&lt;n;i++){
-            int a=edges[j].a,b=egges[j].b,w=edges[j].w;//进行松弛操作，感觉上很想迪杰斯特拉，有这个感觉就行了，他的目的就是让所有的边便利n*m遍。不需要证明。
-            if(dist[b]&gt;dist[a]+w)dist[b]=dist[a]+w;
-        }
-        if(dist[N]&gt;0x3f3f3f3f / 2)return -1;//到达不了的点也可能经过了松弛操作，可能并不是我们所谓的正无穷了。
-        return dist[n];
-}
-int bellman_ford_influnce(int st){
-        for(int i = 0;i&lt;n;i++){
-            int a=edges[j].a,b=egges[j].b,w=edges[j].w;
-            if(dist[b]&gt;dist[a]+w)dist[b]=true;//如果又变小了，证明他被负环影响了
-        }
-}
+</script>
+">
+<meta name="keywords" content="LXXS">
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/jquery@3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/atelier-estuary-dark.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/Card/script.min.js"></script>
+<!--<script async src="https://lxxs.cf/media/js/script.min.js"></script>-->
+<!--<link rel="stylesheet" href="https://lxxs.cf/media/css/main.min.css" />-->
+<link rel="stylesheet" href="https://lxxs.cf/styles/main.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/css/Card/main.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/css/Card/iconfont.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/css/Card/support.css" />
+<!--link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_410989_wuhl0k5ojvf.css" /-->
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/love.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+    
+        
+            <script>
+                (function() {
+                    var bp = document.createElement('script');
+                    var curProtocol = window.location.protocol.split(':')[0];
+                    if (curProtocol === 'https') {
+                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                    } else {
+                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                    }
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bp, s);
+                })();
+            </script>
+            
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159120767-1"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
 
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[OI的标准文件读入读出+cin优化模板]]></title>
-        <id>https://lxxs.cf/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/</id>
-        <link href="https://lxxs.cf/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/">
-        </link>
-        <updated>2020-02-25T01:03:13.000Z</updated>
-        <summary type="html"><![CDATA[<p>反正我觉得这个是最好的模板了。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>反正我觉得这个是最好的模板了。</p>
-<!-- more -->
-<pre><code class="language-cpp">//上模板
-#include&lt;bits/stdc++.h&gt;
-#define N /num
-#define NULL 0x3f3f3f3f
-#define For(i,l,r) for(int i = l;i &lt;= r;i++)
-using namespace std;
-int main(){
-    freopen(&quot;&quot;,&quot;w&quot;,stdout);
-    freopen(&quot;&quot;,&quot;r&quot;,stdin);
-    ios::sync_with_stdio(0);
-    cin.tie(0);cout.tie(0);
-    cout&lt;&lt;fixed&lt;&lt;setprecision();
-    puts(&quot;str&quot;);
-}
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag('js', new Date());
+                    gtag('config', 'UA-159120767-1');
+                </script>
+                
+                    <style>
+                        .memory-certify {
+                            color: #0091e4 !important;
+                        }
+                        
+                        #foot {
+                            color: #000;
+                        }
+                        
+                        .lite-item,
+                        #header {
+                            opacity: 1;
+                        }
+                        
+                        #span_btn:hover {
+                            color: #0091e4;
+                        }
+                    </style>
+</head>
 
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我们学校的OJ 上线了]]></title>
-        <id>https://lxxs.cf/wo-men-xue-xiao-de-oj-shang-xian-liao/</id>
-        <link href="https://lxxs.cf/wo-men-xue-xiao-de-oj-shang-xian-liao/">
-        </link>
-        <updated>2020-02-18T03:43:11.000Z</updated>
-        <content type="html"><![CDATA[<p>目前导入了蓝桥所有的题库。感谢感谢感谢感谢！！！(❤ ω ❤)<br>
-然后呢！OJ后端包括前端是使用的青岛大学的OJ，感谢感谢感谢。<br>
-最后呢当然是记录一下这个神圣的时刻拉   2020.2.18<br>
-符上帅气的网址：<a href="http://96.45.163.34/">山东省桓台第一中学OJ</a><br>
-嘿嘿</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[好文章总结页]]></title>
-        <id>https://lxxs.cf/hao-wen-zhang-zong-jie-ye/</id>
-        <link href="https://lxxs.cf/hao-wen-zhang-zong-jie-ye/">
-        </link>
-        <updated>2020-02-11T11:06:25.000Z</updated>
-        <summary type="html"><![CDATA[<p>在本页分享好文章幺；</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>在本页分享好文章幺；</p>
-<!-- more -->
-<h2 id="latex"><a href="https://www.cnblogs.com/1024th/p/11623258.html">LaTex</a>：帮助你学习LaTeX<br>
-<a href="https://www.cnblogs.com/1024th/p/11622317.html">高斯消元</a>:高斯牛逼<br>
-<a href="https://www.cnblogs.com/1024th/">樱花赞大佬的博客</a><br>
-<a href="https://blog.csdn.net/wjw0130/article/details/38498481">NOTONLYSUCCESS的线段树神犇</a>：线段树最优秀的写法，没有之一；<br>
-<a href="https://jyb.icu/">大佬的分享页面</a>:分享的不错幺；<br>
-<a href="https://mp.weixin.qq.com/s/4ZuCAAaNErJqs9g40rheBg">位运算1</a><br>
-<a href="https://blog.csdn.net/holmofy/article/details/79360859#%E5%88%A4%E6%96%AD%E4%B8%A4%E6%95%B4%E6%95%B0%E7%AC%A6%E5%8F%B7%E6%98%AF%E5%90%A6%E7%9B%B8%E5%8F%8D">位运算2</a><br>
-<a href="http://graphics.stanford.edu/~seander/bithacks.html">位运算3</a><br>
-<a href="https://wenku.baidu.com/view/fb0034ef580216fc710afd52.html?from=search">高中数学公式大全</a><br>
-<a href="http://www.lyxueit.com/index.php/archives.html">Acmer_ly的博客</a><br>
-<a href="https://jingyan.baidu.com/user/npublic?uid=6a498ec3bf2920e15017c407a3125b328d0e3e90">大佬经验</a><br>
-<a href="http://c.biancheng.net/view/338.html">迭代器</a><br>
-<a href="https://www.luogu.com.cn/blog/wym483739/xue-tu-lun-ni-zhen-di-liao-xie-zui-duan-lu-ma-post">图论</a><br>
-<a href="https://blog.csdn.net/weixin_39951988/article/details/87773322">指针详解</a><br>
-<a href="https://oi-wiki.org/">OI-WiKi</a><br>
-<a href="https://www.luogu.com.cn/blog/yuanyuan66/csp-s-mu-ban-da-quan">板子</a><br>
-<a href="https://www.cxyxiaowu.com/">五分钟学算法</a><br>
-<a href="https://www.luogu.com.cn/discuss/show/47327">luogu日报</a><br>
-<a href="https://www.runoob.com/cplusplus/cpp-overloading.html">运算符重载</a></h2>
-<p>欢迎评论区补充幺；</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[归并大法]]></title>
-        <id>https://lxxs.cf/gui-bing-da-fa/</id>
-        <link href="https://lxxs.cf/gui-bing-da-fa/">
-        </link>
-        <updated>2020-02-08T11:15:13.000Z</updated>
-        <summary type="html"><![CDATA[<p>归并绝对是需要学会手写并掌握的，他不是sort可以代替的，很多题都需要他的思想。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>归并绝对是需要学会手写并掌握的，他不是sort可以代替的，很多题都需要他的思想。</p>
-<!-- more -->
-<p>首先附上一般写法，这种写法是去清北学堂老师教的，不过可移植性不好。</p>
-<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
-using namespace std;
-int q[100010],a[100010],n;
-void merge_sort(int l,int r){
-    if(l&gt;=r)return;
-    int mid=(l+r)&gt;&gt;1;
-    merge_sort(l,mid);merge_sort(mid+1,r);
-    int i,j,cnt = l;
-    for(i = l,j = mid+1;i&lt;=mid;i++){
-        for(;q[j]&lt;q[i]&amp;&amp;j&lt;=r;j++)a[cnt++]=q[j];
-        a[cnt++]=q[i];
-    }
-    for(;j&lt;=r;j++)a[cnt++]=q[j];
-    for(i=l;i&lt;=r;i++)q[i]=a[i];
-}
+<body>
+    <header id="header">
+    <div id="pc-menu">
+        <a id="menu-bar" class="memory memory-menu"></a>
+        <a id="menu-title" href="https://lxxs.cf">
+            lxxs&#39;blog
+        </a>
+        <nav id="menu-main" class="menu-main">
+            <ul>
+                
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io">
+                            首页
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="/posts">
+                            文章
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io/archives">
+                            归档
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io/tags">
+                            标签
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io/post/mei-ri-tu-cao/">
+                            吐槽-emm(⊙﹏⊙)
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="https://mlxxs.github.io/post/about/">
+                            关于
+                        </a>
+                    </li>
+                    
+                    <li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7">
+                        <a href="/friends">
+                            友情链接
+                        </a>
+                    </li>
+                    
+            </ul>
+        </nav>
+        <form id="gridea-search-form" class="searchform" data-update="1582799107985" action="/search/index.html">
+            <i class="memory memory-search"></i>
+            <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+        </form>
+    </div>
+    <div id="mobile-menu">
+        <form id="gridea-search-form" class="mobile-searchform" data-update="1582799107985" action="/search/index.html">
+            <i class="memory memory-search"></i>
+            <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+        </form>
+        <nav class="menu">
+            <ul style="list-style: none;">
+                
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io">
+                            首页
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="/posts">
+                            文章
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io/archives">
+                            归档
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io/tags">
+                            标签
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io/post/mei-ri-tu-cao/">
+                            吐槽-emm(⊙﹏⊙)
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="https://mlxxs.github.io/post/about/">
+                            关于
+                        </a>
+                    </li>
+                    
+                    <li class="page_item page-item-2">
+                        <a href="/friends">
+                            友情链接
+                        </a>
+                    </li>
+                    
+            </ul>
+        </nav>
+    </div>
+</header>
+        <div id="main">
+            <div id="main-part">
+                <div class="lite-item">
+                    <article class="post post-type real-post">
+                        <header class="post-type-header">
+                            
+                                <div class="thumbnail-link" style="background-image: url('https://i.loli.net/2020/02/27/yT2zLoXfdmeaSGk.jpg')"></div>
+                                
+                                        <div class="thumbnail-shadow">
+                                            <h1 class="post-title">
+                                                资源分享
+                                            </h1>
+                                            <div class="post-info">
+                                                <span class="post-category"><i class="memory memory-novel"></i>
+                                        
+                                            <a href="https://lxxs.cf/ACuSA9mLe/" rel="category">资源分享</a>
+                                            
+                                            <a href="https://lxxs.cf/lYeYG_sv5i/" rel="category">noip</a>
+                                            
+                                    </span>&nbsp;•&nbsp;
+                                                <span class="post-view">
+                                        
+                                            <i class="memory memory-view"></i>&nbsp;
+                                            <span data-hk-page="current"> - </span>
+                                                
+                                                    </span>&nbsp;•&nbsp;
 
-int main(){
-    cin&gt;&gt;n;
-    for(int i = 1;i&lt;=n;i++)cin&gt;&gt;q[i];
-    merge_sort(1,n);
-    for(int i = 1;i&lt;=n;i++)cout&lt;&lt;q[i]&lt;&lt;&quot; &quot;;
-}
-</code></pre>
-<p>继续介绍一种更优秀的，看起来容易往别的题目移植的写法。</p>
-<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
-using namespace std;
-int q[100010],a[100010],n;
-void merge_sort(int l,int r){
-    if(l&gt;=r)return;
-    int mid=(l+r)&gt;&gt;1;
-    merge_sort(l,mid);merge_sort(mid+1,r);
-    int i=l,j=mid+1,cnt = l;
-    while(i&lt;=mid&amp;&amp;j&lt;=r){
-        if(q[i]&lt;=q[j])a[cnt++]=q[j];
-        else a[cnt++]=q[i];
-    }
-    while(i&lt;=mid)a[cnt++]=q[i];
-    while(j&lt;=r)a[cnt++]=q[j];
-    for(i=l;i&lt;=r;i++)q[i]=a[i];
-}
-int main(){
-    cin&gt;&gt;n;
-    for(int i = 1;i&lt;=n;i++)cin&gt;&gt;q[i];
-    merge_sort(1,n);
-    for(int i = 1;i&lt;=n;i++)cout&lt;&lt;q[i]&lt;&lt;&quot; &quot;;
-}
-
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[清北学堂_2020_冬令营储备营总结+笔记]]></title>
-        <id>https://lxxs.cf/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/</id>
-        <link href="https://lxxs.cf/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/">
-        </link>
-        <updated>2020-01-25T12:26:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>总体感受还是不错的，恰逢这个糟糕的新型冠状病毒。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>总体感受还是不错的，恰逢这个糟糕的新型冠状病毒。</p>
-<!-- more -->
-<h1 id="前情">前情</h1>
-<p>本来是要报省冬令营的，也许是运气吧，全市没有去的。。我也去了清北学堂，现在省冬令营也停止了，😓，这个糟糕的病毒。。</p>
-<h1 id="总结">总结</h1>
-<ul>
-<li>地点：青岛</li>
-<li>感受：开心，困惑，嫉妒，绝望，疲惫</li>
-<li>收获：知识，友情<br>
-** 我真的是有点颓废了**</li>
-</ul>
-<h2 id="第一天">第一天：</h2>
-<p>下午去了，在鱼山校区转了一圈，累成狗。。。买了个纪念品，<strong>竟然不能用微信</strong>(乘车码也是)</p>
-<h2 id="第二天">第二天</h2>
-<p>在学术交流中心呆了一天。。。累死了。晚上睡觉也累😓。<br>
-##第三天<br>
-感受同第二天</p>
-<h2 id="第四天五天六天七天八天">第四天，五天，六天，七天，八天</h2>
-<p>同上啊。。不过考试第一次考的不行，第二次也不行。但是第二次有个杠精考得不错，好像有点膨胀。。。。。。</p>
-<h2 id="伙食">伙食</h2>
-<p>这也许是最关注的问题吧。总结一下，一定去尝试一下学生食堂。早餐吃免费的自助餐。一定别想着点外卖，有点贵哈。最好是在周边转转，由很多好吃的小食店，便宜又好吃幺。<br>
-##讲师<br>
-八说了，有钟神，懂吧。。</p>
-<h2 id="住宿">住宿</h2>
-<p>还凑活，我们是弄得家庭房，然后把床拼起来的，晚上适合搞事情，嘿嘿。。还是海景房┗|｀O′|┛ 嗷~~</p>
-<h2 id="最兴奋的时刻">最兴奋的时刻</h2>
-<p>听到<strong>NOIP</strong>复活的时候</p>
-<h2 id="夜生活">夜生活</h2>
-<p>看爱5啊，还用问么，成果她不漂亮么。。。</p>
-<h2 id="笔记团队合作的呢">笔记，团队合作的呢！</h2>
-<p><a href="https://www.yuque.com/books/share/c90a48f4-a547-4ddf-8744-1eeb6a06f04a?#">密码：sdd1</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[新年记录]]></title>
-        <id>https://lxxs.cf/xin-nian-ji-lu/</id>
-        <link href="https://lxxs.cf/xin-nian-ji-lu/">
-        </link>
-        <updated>2019-12-31T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>年终大总结：<br>
-1.经历了两次大考（中考，CSP-S），多次月考（一次更比一次蒻）</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>年终大总结：<br>
-1.经历了两次大考（中考，CSP-S），多次月考（一次更比一次蒻）</p>
-<!-- more -->
-<p>2.结交了优秀的人：专业考试前结识了好jy-@缪雪儿我老婆 ，和一鸣的扛把子老师，信奥中结交了很多优秀的人（一个个的都贼优秀），高一三班的各位同学，文传的学长学姐们，假期给我们传授知识和做演讲的学长学姐们，以及各位老师（头像中透露着强者气质的信奥教练，班主任淇哥、讲啥都能叫明白的生物老师、无时无刻说明自己是强者的物理老师、美女气质的语文老师、hanhan的化学老师、认为我们都可以的英语老师、能把社会人带好的历史老师、总是罚我写十遍的地理老师、非常漂亮的信息老师、身为强者可就是带不动我们的政治老师。）<br>
-3.参加的社团：文传，微尘，北斗创客（最棒最棒）。<br>
-4.感动时刻：淇哥讲肺腑之言时，生物老师讲肺腑之言时，教练说我们的目标是拿奖时候<br>
-5.看了很多神番：镇魂街，青春猪头系列·······<br>
-6.看了很多电影：星爷的神剧，罗小黑·······<br>
-7.买了很多专辑：《lover》《different world》······<br>
-8.做了3个视频，成了一名up主。<br>
-9.明年目标：戒掉分号，好好学习，给爷爬。。。。<br>
-祝各位老师，神犇，同学，朋友新年快乐，学业生生生，工资涨涨涨。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[64KB怎么可以这么的优秀呢！！]]></title>
-        <id>https://lxxs.cf/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni/</id>
-        <link href="https://lxxs.cf/64kb-zen-me-ke-yi-zhe-me-de-you-xiu-ni/">
-        </link>
-        <updated>2019-12-02T11:29:38.000Z</updated>
-        <content type="html"><![CDATA[<p>emm，先画一个饼饼，看番了。。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何分享精美的代码]]></title>
-        <id>https://lxxs.cf/ru-he-fen-xiang-jing-mei-de-dai-ma/</id>
-        <link href="https://lxxs.cf/ru-he-fen-xiang-jing-mei-de-dai-ma/">
-        </link>
-        <updated>2019-12-02T11:13:21.000Z</updated>
-        <summary type="html"><![CDATA[<p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
-<!-- more -->
-<p>话不多说，先上网站<a href="https://codeimg.io/">codeimg</a>；<br>
-刚打开会提供给你很多标准的大小，会适应对应的社交网站，但是如果又别的需求可以自行定义大小，选择cancel即可。<br>
-这个网站可以把代码转化为一个大小样式以及高亮样式一定的图片，canvas是调节大小和背景颜色；windwos可以调节是Windows系统还是MacOS的样式，强烈推荐MacOS；editor就是调节高亮样式和语言类型的；<br>
-总体来看，非常好用，可以适应很多场景。<br>
-放图：<br>
-<img src="https://lxxs.cf/post-images/1575286070115.jpeg" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[数据结构学习]]></title>
-        <id>https://lxxs.cf/shu-ju-jie-gou-xue-xi/</id>
-        <link href="https://lxxs.cf/shu-ju-jie-gou-xue-xi/">
-        </link>
-        <updated>2019-12-02T08:31:30.000Z</updated>
-        <summary type="html"><![CDATA[<p>数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊</p>
-<!-- more -->
-<h1 id="noip-数据结构">NOIP-数据结构</h1>
-<p><a name="6YZHI"></a></p>
-<h1 id="二叉树">二叉树</h1>
-<p><a name="zhUho"></a></p>
-<h2 id="顺序存储">顺序存储</h2>
-<p>这个地方可以举个例子；当我们要存储时要按照完全二叉树的方式存储，也就是说空节点也要考虑到。<br />如果我们要存储一颗下图所示的树事，我们不能在数组中这样存储，而是把他补全成完全二叉树,详细看第二张图。</p>
-<blockquote>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/432966/1575208143443-b76620cc-dddb-4c98-be3c-9ec39e34e3c5.png#align=left&amp;display=inline&amp;height=121&amp;name=Snipaste_2019-12-01_21-48-00.png&amp;originHeight=418&amp;originWidth=382&amp;size=54542&amp;status=done&amp;style=none&amp;width=111" alt="Snipaste_2019-12-01_21-48-00.png" loading="lazy"><img src="https://cdn.nlark.com/yuque/0/2019/png/432966/1575208144695-52589aa2-4446-4cdb-abc9-c2314703c378.png#align=left&amp;display=inline&amp;height=120&amp;name=Snipaste_2019-12-01_21-48-50.png&amp;originHeight=428&amp;originWidth=440&amp;size=66153&amp;status=done&amp;style=none&amp;width=123" alt="Snipaste_2019-12-01_21-48-50.png" loading="lazy"></p>
-</blockquote>
-<p>简单说就是当我们输入这颗树时不应该是RABCDEFGH 而是RABCDE<sup>F</sup><sup>G</sup>H,在数组就对这些数据进行编码了；<br /><strong>注意这个很重要，这个不要和二叉树的生成算法搞混了，生成算法用的链式存储。</strong><br>
-<a name="Ktgbb"></a></p>
-<h2 id="链式存储">链式存储</h2>
-<p><strong>二叉链表节点</strong><br /><strong>图片表示：</strong></p>
-<blockquote>
-<figure data-type="image" tabindex="1"><img src="https://cdn.nlark.com/yuque/0/2019/png/432966/1575209341687-611a340e-d893-46a4-ad70-ad9af2885d86.png#align=left&amp;display=inline&amp;height=80&amp;name=Snipaste_2019-12-01_22-07-00.png&amp;originHeight=197&amp;originWidth=617&amp;size=35254&amp;status=done&amp;style=none&amp;width=250" alt="Snipaste_2019-12-01_22-07-00.png" loading="lazy"></figure>
-</blockquote>
-<p>**<strong>代码表示：</strong></p>
-<pre><code class="language-cpp">struct node{
-    int date;
-    node *lchild=NULL;
-    node *rchild=NULL;
-};
-</code></pre>
-<blockquote>
-<p>三叉链表就是在二叉链表的基础上加入了父母节点<br>
-构造过程和单链表相似，这个代码构造是不需要可以赋予空指针，因为它本身已经赋值好了。<br>
-在n个节点的二叉链表中，又n+1个空指针与：必定又2n个链域，除根结点外每个节点有且仅有一个双亲，所有只会有n-1个节点的链域存放着指针，只想非空子女节点。空指针树=链域-指针数；</p>
-</blockquote>
-<p><a name="vD8iH"></a></p>
-<h2 id="遍历二叉树">遍历二叉树</h2>
-<p><strong>D-&gt;根  L-&gt;左   R-&gt;右</strong><br />先根遍历-&gt;DLR    中根遍历-&gt;LDR    后根遍历-&gt;LRD：一定是先左子树再右子树，变化的是根，也可为*序遍历；<br />重点（代码实现）<strong>:</strong></p>
-<pre><code class="language-cpp">void Traverse(bitnode &amp;head){
-    if(head=NULL) return;
-    else{
-    	printf(&quot;%d&quot;,head-&gt;date);//访问根节点
-        Traverse(head-&gt;lchild);//递归访问左子树
-        Traverse(head-&gt;rchild);//递归访问右子树
-    }//先序中序后序知识把中间调换了而已！！！
-
-}
-</code></pre>
-<blockquote>
-<p>层次遍历：有点像广度优先搜索；<br>
-就不写代码了，简单描述一下吧：首先初始化一个循环队列，将根节点指针放入队列，当队列不为空时，弹出队列中的结构指针本访问它的data域，访问他的孩子，如果又左孩子将其入队，如果又右孩子将其入队，重复循环；</p>
-</blockquote>
-<p><a name="12kqL"></a></p>
-<h2 id="建立二叉树算法">建立二叉树算法</h2>
-<p>这个挺简单的，不过输入的时候要用一些特殊的符号表示其孩子节点为空；<br />比如先序遍历：ABC##DE#G##F###他的图像：</p>
-<pre><code>    ![Snipaste_2019-12-01_22-48-09.png](https://cdn.nlark.com/yuque/0/2019/png/432966/1575211710910-65626d72-43a2-43a8-a00a-1bbd27d50326.png)
-</code></pre>
-<p><br /><strong>代码实现：</strong></p>
-<pre><code class="language-cpp">void CreatBiTree(bitnode &amp;head){//带值构造，会影响实际；
-	scanf(&amp;ch);
-    if(ch=='#') head=NULL;//如果输入的字符是特殊字符，那么这节点为空；
-    else{
-        head=new bitnode;//为这个数据申请一个新节点；
-        head-&gt;date=ch;//将节点的data域赋值为ch；
-        CreatBitree(head-&gt;lchild);//构造他的左子树；
-        creatBitree(head-&gt;rchild);//构造他的右子树；
-    }//*序遍历只需要将else重点额内容调换即可；
-    return;
-}
-</code></pre>
-<p><a name="Vne2q"></a></p>
-<h2 id="双亲表示法">双亲表示法</h2>
-<p>这个可以看一下2019CSP复赛的第二题，定义的时候只需要知道数据和双亲就可以。完全可以用结构数组来做，R的双亲为-1，其他节点的而双亲为双亲数据所在的下标。<br /><strong>找双亲容易找孩子难。</strong><br>
-<a name="nKlyj"></a></p>
-<h2 id="孩子链表表示法">孩子链表表示法</h2>
-<p>有两部分：双亲节点数组+孩子链表<br />双亲结点数组：|数据|指向第一个孩子的指针|<br />孩子链表：|孩子在双亲结点数组中的下表|指向下一个孩子的指针|<br />代码实现：</p>
-<pre><code class="language-cpp">struct childnode{
-	int child;//存储下标；
-    childnode *next;
-};
-
-struct fathernode{
-	char date;
-    childnode *first;
-};
-
-struct tree{
-	fathernode[MAX];
-    int n,r;//节点数和根结点数
-};
-</code></pre>
-<p><strong>找孩子容易，找双亲难；</strong><br>
-<a name="ca8zE"></a></p>
-<h2 id="孩子兄弟表示法">孩子兄弟表示法</h2>
-<p>这个方法找孩子容易找父母也容易，可以理解为这个是把树转化成二叉树了。右节点是下一个兄弟，左节点一定是第一个孩子；也就是向右可以找兄弟，向左可以找孩子;<br />孩子兄弟节点：|date|fierstchild|nextbrother|</p>
-<blockquote>
-<figure data-type="image" tabindex="2"><img src="https://cdn.nlark.com/yuque/0/2019/png/432966/1575213340910-eb0c6d37-44f7-4265-958b-af5937f6856a.png#align=left&amp;display=inline&amp;height=50&amp;name=Snipaste_2019-12-01_23-15-24.png&amp;originHeight=216&amp;originWidth=433&amp;size=26371&amp;status=done&amp;style=none&amp;width=101" alt="Snipaste_2019-12-01_23-15-24.png" loading="lazy"></figure>
-</blockquote>
-<p>代码实现：</p>
-<pre><code class="language-cpp">struct childbrotree{
-	int date;
-    childbortree *nextbro,*firstchild;
-};
-</code></pre>
-<p><a name="gyomn"></a></p>
-<h2 id="树森林二叉树的的转换">树，森林，二叉树的的转换</h2>
-<p>森林-&gt;树=》D(森林)//给森林的所有树加一个根节点<br />树-&gt;二叉树=》childbrotrr(树)把树转成二叉树<br />森林-&gt;二叉树=》森林-&gt;树+树-&gt;二叉树<br>
-<a name="sRgHV"></a></p>
-<h2 id="哈夫曼树">哈夫曼树</h2>
-<blockquote>
-<p>概念<br>
-路径：从一个节点到另一个节点的路径树的路径长度：从树根到每一个节点的路径长度之和TL。节点数目相同的二叉树中，完全二叉树是路径最短的二叉树。TL=每个节点的根节点的路径长度之和；weight(权重)：树中结点赋予一个特殊意义的值，叫做这个节点的劝；节点的带权路径长度：从根节点到该节点之间的路径长度和该节点的权的乘积。树的带权路径长度：书中所有叶子节点的带权路径长度之和；WPL<br>
-哈夫曼树：WPL最小的树是哈夫曼树；满二叉树不一定是哈夫曼树；具有相同带权节点的哈夫曼树不唯一；<br>
-哈夫曼是构造算法：<br /><strong>1.构造森林全是树；2.选用两小造新树3.删除两小舔新人；4.重复2，3剩单树；</strong><br /><strong>包含n棵树的森林要经过n1次合并才能形成哈夫曼树，共产生n-1个新结点</strong><br /><strong>包含n个叶子结点的哈夫曼树中共有2n-1个结点。</strong><br /><strong>哈夫曼树的结点的度数为0或2，没有度为1的结点。</strong><br /><strong>代码实现：</strong></p>
-</blockquote>
-<blockquote>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/432966/1575194236933-2c034639-8788-4107-ae11-4ab2f1a8da19.jpeg?x-oss-process=image/resize,w_924#align=left&amp;display=inline&amp;height=63&amp;originHeight=514&amp;originWidth=924&amp;status=done&amp;style=none&amp;width=113" alt="" loading="lazy"><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/432966/1575194238383-0c8e9a32-8412-4b75-b0dc-a917e2edddd3.jpeg?x-oss-process=image/resize,w_924#align=left&amp;display=inline&amp;height=68&amp;originHeight=608&amp;originWidth=924&amp;status=done&amp;style=none&amp;width=104" alt="" loading="lazy"></p>
-</blockquote>
-<p><a name="gQOHY"></a></p>
-<h1 id="emmm后面的掌握的不是很好再琢磨琢磨心思心思好好想想按照自己的话写主要是后面的都截图了关键是后面的代码还不是很熟悉理解的不是很透彻">emmm,后面的掌握的不是很好，再琢磨琢磨，心思心思，好好想想，按照自己的话写！！！主要是后面的都截图了😄关键是后面的代码还不是很熟悉，理解的不是很透彻。。</h1>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[资源分享]]></title>
-        <id>https://lxxs.cf/zi-yuan-fen-xiang/</id>
-        <link href="https://lxxs.cf/zi-yuan-fen-xiang/">
-        </link>
-        <updated>2019-12-02T03:00:09.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>一切资源均来自网上，本人只是知识的搬运工，受互联网保护伞保护，部分内容需要发邮件私发，谢谢。<br>
-如有侵权，邮箱联系，一定删除。</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
+                                                    <span class="post-readtime">阅读时间:
+                                            <a href="#">58.5分</a></span>
+                                                    <span class="post-edit"></span></div>
+                                        </div>
+                                        <div class="post-relative">
+                                            <img alt="lxxs&#39;blog" src="https://lxxs.cf/images/avatar.png?v=1582799107985" srcset="https://lxxs.cf/images/avatar.png?v=1582799107985" class="avatar avatar-100 photo" width="100" height="100">
+                                            <span class="post-type-author"><a href="https://lxxs.cf" title="由lxxs&#39;blog发布" rel="author">lxxs&#39;blog<i class="memory memory-certify"></i></a></span>
+                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2019-12-02</span>
+                                        </div>
+                        </header>
+                        <div class="post-main post-type-main">
+                            <div class="post-content">
+                                <div class="post-content-real">
+                                    <blockquote>
 <p>一切资源均来自网上，本人只是知识的搬运工，受互联网保护伞保护，部分内容需要发邮件私发，谢谢。<br>
 如有侵权，邮箱联系，一定删除。</p>
 </blockquote>
@@ -3372,252 +3186,342 @@ struct tree{
 版权声明：本文为原创文章，版权归 <a href="https://mlxxs.github.io">路迅先生</a> 所有。<br>
 您可以自由的转载和修改，但请务必注明文章来源并且不可用于商业</p>
 </blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科学上网的见解]]></title>
-        <id>https://lxxs.cf/ke-xue-shang-wang-de-jian-jie/</id>
-        <link href="https://lxxs.cf/ke-xue-shang-wang-de-jian-jie/">
-        </link>
-        <updated>2019-12-02T02:58:50.000Z</updated>
-        <summary type="html"><![CDATA[<p>开始读之前，请明确自己的立场。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>开始读之前，请明确自己的立场。</p>
-<!-- more -->
-<blockquote>
-<p>坚持党的领导，坚持爱国主义，坚持一切建立于爱国的基础上。防火墙也不是全都是坏的，因为那些说防火墙坏的人都没翻墙，我相信如果国家真的想要像那些反动人士说的一样，那么连翻墙都没得翻了，况且现在国家对翻墙行为并没有制止。单纯的学习工作而翻墙我相信是不违法的（违规，没什么事）。</p>
-</blockquote>
-<h2 id="翻墙无非3种方法">翻墙无非3种方法</h2>
-<ul>
-<li>vpn（有的非常无耻，比如轮子）</li>
-<li>ssr(ss)</li>
-<li>v2ray</li>
-</ul>
-<h1 id="个人心得">个人心得</h1>
-<p>一般我这个普通学生是承担不起vpn的费用的，vpn非常的稳是一定的了，但是就我的使用感受来说ssr普遍的便宜一点（不乏有公益机场），v2ray稳定性好，访问速度快，但是也相对贵一点。</p>
-<h2 id="ssr">ssr</h2>
-<p>ssr中文名是影梭，使用起来相对简单。具体的教程我会在附上链接，所有的教程里我觉得<strong>神代綺凜</strong>写的教程最完整最全面了。</p>
-<p>ssr使用起来的效果和你选择的机场有直接关系，2019年春节之前的价格经常有人再g+往地下走，所以一般机场的寿命都非常短，除了几个大型机场，我会在下方附上几个大型机场和小型稳定机场的链接。2019年春节之后，TG有了一个机场物价局，本着流氓思想，嘴上说着为大家好，随几家机场进行了攻击，有几家还是相当不错的（他专门挑那些很优秀的小型机场攻击，飞机杯女王梦迪的v2ray机场也被攻击了一波。）从此之后机场的价格都比较稳定了，一般是一个月10元-15元左右，如果是大型机场买季付和年付都是比较有保障的，但是小型机场还是一个月一个月买吧。</p>
-<p>现在的机场已经开始了收购战略了，飞机杯女王简直就是收购方面的王者啊！</p>
-<p>机场一般都是有同时在线ip限制的，所以不要妄想10个人一起用，如果想合租可以4个人左右，因为一般机场没有少于4个在线ip的。如果你决定一直用一个机场了，可以加入它的tg群组，因为可能不时会有优惠活动。</p>
-<p>对于ssr的总结还是，一般使用没什么影响，游戏用户最好选择大型机场（或者跳转到v2ray战线），只要不像一些不应该想的是，不做不应该做的事，都是没有问题的。</p>
-<p>随着机场的发展，也出现了很多机场测评站点，个人认为毒药大佬的最有权威性。</p>
-<p><a href="https://moe.best/tutorial/shadowsocksr.html">神代綺凜的ssr使用教程</a><br>
-<a href="https://cn2.cloud">大型机场-mengdiss</a><br>
-<a href="https://www.ssrcloud.com/">大型机场-ssrcloud</a><br>
-<a href="https://westworldss.site">可白嫖但很好用的机场-西部世界</a><br>
-<a href="http://387099.blogspot.com/2018/03/ssssr.html">这些还不够，毒药的机场测评送上</a></p>
-<h2 id="v2ray">v2ray</h2>
-<p>这个没什么好说的，和ssr基本差不多。就附送两个机场吧！</p>
-<p><a href="https://www.x-air.org/">飞机杯女王的v2站</a><br>
-<a href="https://v2ray.fswks.com/">穷逼专用的公益稳定站</a></p>
-<p>还不够，我也没办法了，我就知道着一些。</p>
-<h2 id="后话">后话</h2>
-<p>翻墙不要做违法的事情，查个资料，看个电影，玩个游戏，进行工作，github都是非常有帮助的，加油。</p>
-<blockquote>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。<br>
-版权声明：本文为原创文章，版权归 <a href="https://mlxxs.github.io">路迅先生</a> 所有。<br>
-您可以自由的转载和修改，但请务必注明文章来源并且不可用于商业</p>
-</blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RSS技巧]]></title>
-        <id>https://lxxs.cf/rss-ji-qiao/</id>
-        <link href="https://lxxs.cf/rss-ji-qiao/">
-        </link>
-        <updated>2019-12-02T02:56:32.000Z</updated>
-        <summary type="html"><![CDATA[<p>面对越来越多的收藏博客，音乐，up主，视频……是不是想要一个聚合阅读的方法呢！那么RSS一定是你的最好选择。这里记一笔关于RSS心得和分享。有阅读工具和得到链接的方法；※opera可以自动订阅偶</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>面对越来越多的收藏博客，音乐，up主，视频……是不是想要一个聚合阅读的方法呢！那么RSS一定是你的最好选择。这里记一笔关于RSS心得和分享。有阅读工具和得到链接的方法；※opera可以自动订阅偶</p>
-<!-- more -->
-<h1 id="阅读订阅工具">阅读订阅工具</h1>
-<hr>
-<p>阅读订阅工具可以说非常的重要，一个优质的订阅工具决定了你对RSS的感觉。</p>
-<p>如有补充或吐槽</p>
-<p><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bAEWBFVVWlosHR1CDwMB" style="text-decoration:none;">get路迅先生</a></p>
-<hr>
-<h2 id="通过邮箱">通过邮箱</h2>
-<p><a href="https://jingyan.baidu.com/article/456c463b4877400a58314425.html">qq邮箱</a></p>
-<p><a href="https://jingyan.baidu.com/article/f00622281df3e5fbd3f0c8b4.html">outlook</a></p>
-<p>gmail一般人基本是用不到的，所以如果你需要<a href="https://google.ca">gmail</a></p>
-<p><a href="https://baidu.com">其他邮箱</a>😄😂</p>
-<h2 id="通过通讯软件">通过通讯软件</h2>
-<p>博主只用过telegram的订阅机器人，一般订阅数都有限制，可以用好几个机器人叠加。</p>
-<p>鉴于用telegram的人都是大佬我就在这里不发链接了，哈哈哈。</p>
-<h2 id="通过软件">通过软件</h2>
-<p>博主用的是Windows10应用商店中的Newsflow，个人感觉非常好用，界面简单美观，体验感很好。</p>
-<p>可以自行商店搜索，使用起来很简单具体可以百度一下。</p>
-<h1 id="订阅源">订阅源</h1>
-<hr>
-<p>哔哔了这么多，真正的干粮是订阅源。分享几个感觉非常好的订阅源，和订阅方法；</p>
-<hr>
-<h2 id="网站上有rss的标识的">网站上有RSS的标识的</h2>
-<p>这种标识点一下会进入一个很奇葩的网站，不用管，复制网址就是RSS订阅源</p>
-<h2 id="订阅源网站">订阅源网站</h2>
-<p>我百度到的有两个，时光网和网易。</p>
-<blockquote>
-<p><a href="http://www.163.com/rss/">网易</a></p>
-<p><a href="http://www.mtime.com/rss/">时光网</a></p>
-</blockquote>
-<h2 id="网页搜索">网页搜索</h2>
-<p>这个效率比较低，主要是依托每个网站都有RSS标识的特点。</p>
-<p>方法很简单，搜索你想了解类型的关键词然后加上RSS源，一般都会直接搜索出来。</p>
-<p><a href="https://baidu.com">搜索网站</a></p>
-<p><a href="https://mijisou.com">搜索网站2</a></p>
-<h2 id="重头戏-rsshub">重头戏 RSShub</h2>
-<p>这个可以说非常的广泛了，有非常多的接口，可以RSS的内容非常广泛，由DIYgod发起，非常多的大佬都在维护它。他的使用有专门的文档。</p>
-<p><a href="https://docs.rsshub.app/">RSShub</a></p>
-<p>哈哈介绍完了😂</p>
-<h2 id="附上我的几个订阅地址">附上我的几个订阅地址</h2>
-<pre><code class="language-c++">
-</code></pre>
-<blockquote>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。<br>
-版权声明：本文为原创文章，版权归 <a href="https://mlxxs.github.io">路迅先生</a> 所有。<br>
-您可以自由的转载和修改，但请务必注明文章来源并且不可用于商业</p>
-</blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[markdown学习]]></title>
-        <id>https://lxxs.cf/markdown-xue-xi/</id>
-        <link href="https://lxxs.cf/markdown-xue-xi/">
-        </link>
-        <updated>2019-12-02T02:53:33.000Z</updated>
-        <summary type="html"><![CDATA[<p>这个真的是超级有用，无论是洛谷还是什么，超级超级好用就对了。。。。。。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>这个真的是超级有用，无论是洛谷还是什么，超级超级好用就对了。。。。。。</p>
-<!-- more -->
-<h1 id="第一部分基本输入">第一部分（基本输入）</h1>
-<p>咳咳，#代表标题级别，第一级别#第二级别##,以此类推。</p>
-<p>tag的下方先table，输入   -你想输入的标签，即可添加标签，可以添加很多个但是需要空行。</p>
-<p>categories+:+你想把文章归到的类型   可以实现文章类型的划分。</p>
-<p>ps：tag 和categories的规定要在第二个---上方。</p>
-<p>剩下的输入就和word差不多了，哈哈😊（表情也可以输入）</p>
-<p>注意：上面文章信息部分要严格遵守该中文中文该英文英文的原则</p>
-<!--more-->
-<h1 id="第二部分列表">第二部分（列表）</h1>
-<ul>
-<li>
-<p>无序列表1</p>
-</li>
-<li>
-<p>无序列表2</p>
-</li>
-</ul>
-<p>无序列表的实现就是 无序列表使用星号或+或-标识<br>
-有序列表使用数字加.标识，例如：1.</p>
-<ul>
-<li>无序列表3
-<ul>
-<li>a 子列表</li>
-<li>b 子列表<br>
-至于字表，其实是tab实现的，没有什么关系，毕竟只是显示么。</li>
-</ul>
-</li>
-</ul>
-<p>​</p>
-<ul>
-<li>
-<p>段落一</p>
-<blockquote>
-<p>区块标记一</p>
-</blockquote>
-</li>
-<li>
-<p>段落二</p>
-<blockquote>
-<p>区块标记二</p>
-</blockquote>
-</li>
-</ul>
-<pre><code>* 段落一
-    &gt; 区块标记一
-* 段落二
-    &gt; 区块标记二
 
-</code></pre>
-<h1 id="第三部分高端使用">第三部分（高端使用）</h1>
-<p>实现文字链接的方式：<a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">显示名称</a><br>
-导入一张图片： ！<a href="%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5">名称</a></p>
-<p><em>在两个星号（乘号）之间字体是斜的</em><br>
-<strong>四个星号（乘号）中间字体是粗的。</strong><br>
-<em>这里是斜体使用下滑线</em><br>
-<s>这里是下划线shift+~</s></p>
-<p><code>引用代码行用英文输入法，并且按tab上面那个键，按两下在中间写。这是单行</code></p>
-<pre><code>&quot;```&quot;
-这样可以实现多行。
-&quot;```&quot;
-</code></pre>
-<blockquote>
-<p>加入一个右单括号&gt;代表内容是引用的</p>
-</blockquote>
-<hr>
-<p>如果加上 三个杠 可以实现一条分割线效果</p>
-<p><code>&lt;!--more--&gt;</code><br>
-上面那行代码可以实现在阅读更多的效果。</p>
-<p>如果需要插入表格，自行百度吧。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">表头</th>
-<th style="text-align:center">条目一</th>
-<th style="text-align:center">条目二</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">项目</td>
-<td style="text-align:center">项目一</td>
-<td style="text-align:center">项目二</td>
-</tr>
-</tbody>
-</table>
-<pre><code>表头|条目一|条目二
-:---:|:---:|:---:
-项目|项目一|项目二
-</code></pre>
-<p>Markdown使用反斜杠\插入语法中用到的特殊符号。在Markdown中，主要有以下几种特殊符号需要处理：</p>
-<pre><code>\   反斜线
-`   反引号
-*   星号
-_   底线
-{}  花括号
-[]  方括号
-()  括弧
-#   井字号
-+   加号
--   减号
-.   英文句点
-!   惊叹号
-</code></pre>
-<p>2019/.7/.1<br>
-<code>2019/.7/.1</code></p>
-<figure data-type="image" tabindex="1"><img src="https://img-blog.csdn.net/20180802165859799?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQwNjE2MzA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="代办事项" loading="lazy"></figure>
-<p>作者专利</p>
-<pre><code>{% fold 点击显/隐内容 %}
-something you want to fold, include code block.
-{% endfold %}
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-copyright">
+                                作者:
+                                lxxs&#39;blog<br>永久链接:
+                                    <a href="https://lxxs.cf/zi-yuan-fen-xiang/" title="资源分享">
+                                        https://lxxs.cf/zi-yuan-fen-xiang/
+                                    </a><br> 协议: MIT License
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="lite-item nearby-article">
+                    
+                        <div class="nearby-article-left">
+                            <span><a class="prev" rel="prev" href="https://lxxs.cf/shu-ju-jie-gou-xue-xi/">
+                                ← 数据结构学习
+                            </a></span>
+                        </div>
+                        
+                            
+                                <div class="nearby-article-right">
+                                    <span><a class="next" rel="next" href="https://lxxs.cf/ke-xue-shang-wang-de-jian-jie/">
+                                        科学上网的见解 →
+                                    </a></span>
+                                </div>
+                                
+                </div>
+                <!--Share-->
+                <span style="margin-right:15px">
+    <i class="post-share"></i>
+    <span>&#x5206;&#x4EAB;:</span>
+                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/zi-yuan-fen-xiang/"><i class="fa fa-qrcode"></i></a>
+                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/zi-yuan-fen-xiang/&sharesource=qzone&title=资源分享&pics=https://lxxs.cf/images/avatar.png?v=1582799107985&summary=&lt;blockquote&gt;
+&lt;p&gt;一切资源均来自网上，本人只是知识的搬运工，受互联网保护伞保护，部分内容需要发邮件私发，谢谢。&lt;br&gt;
+如有侵权，邮箱联系，一定删除。&lt;/p&gt;
+&lt;/blockquote&gt;
+"><i class="fa fa-qq"></i></a>
+                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/zi-yuan-fen-xiang/&sharesource=weibo&title=资源分享 + " - " + &lt;blockquote&gt;
+&lt;p&gt;一切资源均来自网上，本人只是知识的搬运工，受互联网保护伞保护，部分内容需要发邮件私发，谢谢。&lt;br&gt;
+如有侵权，邮箱联系，一定删除。&lt;/p&gt;
+&lt;/blockquote&gt;
+&pic="https://lxxs.cf/images/avatar.png?v=1582799107985"><i class="fa fa-weibo "></i></a>
+                </span>
+                
+                    
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-https://www.cnblogs.com/woshimrf/p/hexo-fold-block.html
+<div id="gitalk-container" style="width: 100%;max-width: 780px;margin: auto;"></div>
 
-</code></pre>
-<p>mail我吧</p>
-<pre><code>&lt;a target=&quot;_blank&quot; href=&quot;http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=bAEWBFVVWlosHR1CDwMB&quot; style=&quot;text-decoration:none;&quot;&gt;get路迅先生&lt;/a&gt;
-</code></pre>
-<p>专用署名</p>
-<pre><code>
-&gt;&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by/4.0/&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by/4.0/88x31.png&quot; /&gt;&lt;/a&gt;&lt;br /&gt;本作品采用&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by/4.0/&quot;&gt;知识共享署名 4.0 国际许可协议&lt;/a&gt;进行许可。
-版权声明：本文为原创文章，版权归 [路迅先生](https://mlxxs.github.io) 所有。
-您可以自由的转载和修改，但请务必注明文章来源并且不可用于商业
+<script>
+    var gitalk = new Gitalk({
+        clientID: '5a7f124662a10183c5dc',
+        clientSecret: 'daad062fd5f2253d6e16dde4c6a8fb3410b363b8',
+        repo: 'Mlxxs.github.io',
+        owner: 'mlxxs',
+        admin: ['mlxxs'],
+        id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+        distractionFreeMode: false // Facebook-like distraction free mode
+    })
 
-</code></pre>
-<blockquote>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。<br>
-版权声明：本文为原创文章，版权归 <a href="https://mlxxs.github.io">路迅先生</a> 所有。<br>
-您可以自由的转载和修改，但请务必注明文章来源并且不可用于商业</p>
-</blockquote>
-]]></content>
-    </entry>
-</feed>
+    gitalk.render('gitalk-container')
+</script>
+                            
+                                
+                                            
+            </div>
+            <div id="sidebar">
+    <ul>
+        
+            <li class="lite-item">
+                <header class="lite-item-header">
+                    <h3 class="sidebar-default-icon lite-item-title"><i class="memory memory-hitokoto"></i>&nbsp;&#x4E00;&#x8A00;</h3>
+                </header>
+                <div class="textwidget">
+                    <p>
+                        <b id="hitokoto"></b>
+                    </p>
+                </div>
+            </li>
+            
+                <li class="lite-item">
+                    <header class="lite-item-header">
+                        <h3 class="sidebar-default-icon lite-item-title"><i class="memory memory-tags">&#x6807;&#x7B7E;</i></h3>
+                    </header>
+                    <div class="textwidget">
+                        
+                            <a href="https://lxxs.cf/jing-yan/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;经验</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/zong-jie/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;总结</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/suan-fa/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;算法</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/lYeYG_sv5i/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;noip</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/oj/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;OJ</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/ACuSA9mLe/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;资源分享</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/LmP9RbWK0Y/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;学习</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/xin-nian/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;新年</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/shuo-shuo/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;说说</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/MkxQZMAyVD/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;心得</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/jEXPj-hm_/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;hellow world</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/shu-ju-jie-gou/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;数据结构</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/0tN8ykDfM_/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;笔记</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/UewNppXYY/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;科学上网</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/roSAUxjWZ/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;RSS</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/dJV8Kur_7/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;markdwon</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/2r4BXKbSg/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;NOIP</i>
+                            </a>
+                            
+                            <a href="https://lxxs.cf/mR8VCEyj7r/" class="tag-cloud-link " style="font-size: 12px;margin: 5px; padding: 2px;color:#666;">
+                                <i class="fa fa-tags" aria-hidden="true">&nbsp;study</i>
+                            </a>
+                            
+                    </div>
+                </li>
+                
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    <div id="player"></div>
+                    
+                        <li class="lite-item">
+                            <header class="lite-item-header">
+                                <h3 class="sidebar-default-icon lite-item-title">
+                                    &#x1F3B5;&#x97F3;&#x4E50;
+                                </h3>
+                            </header>
+                            <div class="textwidget">
+                                <p>
+                                    <div id="player_box"></div>
+                                </p>
+                            </div>
+                        </li>
+                        
+                            <script>
+                                function LoadPlayer() {
+                                    var music_array = [];
+                                    
+                                    music_array.push({
+                                        name: 'Loving Strangers',
+                                        url: 'https://music.163.com/song/media/outer/url?id=2788529.mp3',
+                                        artist: 'Jacelyn Pook / Russian Red',
+                                        cover: '',
+                                    });
+                                    
+                                    music_array.push({
+                                        name: '画',
+                                        url: 'https://music.163.com/song/media/outer/url?id=412911436.mp3',
+                                        artist: 'G.E.M.邓紫棋',
+                                        cover: '',
+                                    });
+                                    
+                                    music_array.push({
+                                        name: '恋爱循环',
+                                        url: 'https://music.163.com/song/media/outer/url?id=579954.mp3',
+                                        artist: '花泽香菜',
+                                        cover: '',
+                                    });
+                                    
+                                    
+                                    const ap = new APlayer({
+                                        container: document.getElementById('player_box'),
+                                        audio: music_array
+                                    });
+                                    
+                                }
+                                LoadPlayer();
+                            </script>
+                            
+                                
+                                    
+                                        
+                                            <li class="lite-item">
+                                                <header class="lite-item-header">
+                                                    <h3 class="sidebar-default-icon lite-item-title">
+                                                        目标
+                                                    </h3>
+                                                </header>
+                                                <div class="textwidget">
+                                                    <div id="textwidget-box" style="width:100%; height:auto;">
+                                                        戒骄戒躁，戒色，好好努力。冲冲冲。
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="lite-item">
+                                                <header class="lite-item-header">
+                                                    <h3 class="sidebar-default-icon lite-item-title">
+                                                        天气
+                                                    </h3>
+                                                </header>
+                                                <div class="textwidget">
+                                                    <div id="textwidget-box" style="width:100%; height:auto;">
+                                                        <div id="tp-weather-widget"></div>   <script>     (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));     window.SeniverseWeatherWidget('show', {       flavor: "slim",       location: "WWEFQFPJZ7T8",       geolocation: true,       language: "auto",       unit: "c",       theme: "auto",       token: "61bcc333-3305-4728-9465-6785274bb0a3",       hover: "enabled",       container: "tp-weather-widget"     })   </script>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                                
+                                                    <li class="lite-item">
+                                                        <header class="lite-item-header">
+                                                            <h3 class="sidebar-default-icon lite-item-title">&#x1F468;&#x200D;&#x1F4BB;&#x53CB;&#x94FE;</h3>
+                                                        </header>
+                                                        <div class="textwidget">
+                                                            
+                                                                
+                                                                    <p><span id="span_btn" style="font-size: 14px;" onclick="javascript:top.location='http://mail.yzoj.tk'">
+                                        山东省桓台第一中学OJ -
+                                            学校的在线OJ
+                                </span></p>
+                                                                    
+                                                                    <p><span id="span_btn" style="font-size: 14px;" onclick="javascript:top.location='http://mail.yzoj.tk'">
+                                        YZOJ&#39;public mail -
+                                            学校OJ的10分钟邮箱
+                                </span></p>
+                                                                    
+                                                                    <p><span id="span_btn" style="font-size: 14px;" onclick="javascript:top.location='www.itjoker.cn'">
+                                        ITjoker -
+                                            Be brave no matter what your life is like to you.
+
+                                </span></p>
+                                                                    
+                                                                        
+                                                        </div>
+                                                    </li>
+    </ul>
+</div>
+        </div>
+
+</body>
+<footer id="foot">
+    <a id="back-to-top" href="#"><i class="memory memory-top"></i></a>
+    <div class="copyright">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159120767-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159120767-1');
+</script><br>
+            
+                    &#x7248;&#x6743;&#x6240;&#x6709; &copy;
+                    <span class="my-face"><script>
+                        var date = new Date();
+                        document.write("" + date.getFullYear());
+                    </script>
+                   </span>
+                    <a href="https://lxxs.cf">
+                        lxxs&#39;blog
+                    </a>&nbsp;|&nbsp;Powered by
+                    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=bAEWBFVVWlosHR1CDwMB" target="_blank">
+                        LXXS
+                    </a>
+    </div>
+    <div id='UpdateTime' style='display:none'>
+        1582799107985
+    </div>
+    <script>
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            document.hidden ? (document.title = "\uD83D\uDE25" + OriginTitile, clearTimeout(titleTime)) : (document.title = "\uD83D\uDE1D" + OriginTitile, titleTime = setTimeout(function() {
+                document.title = OriginTitile
+            }, 2E3))
+        });
+        var OriginTitile = document.title;
+        
+        App.hitokoto();
+        
+        App.outputlog();
+    </script>
+</footer>
+    <script>
+        hljs.initHighlightingOnLoad();
+        renderMathInElement(document.body, {
+            delimiters: [{
+                left: "$$",
+                right: "$$",
+                display: true
+            }, {
+                left: "$",
+                right: "$",
+                display: false
+            }]
+        });
+    </script>
+
+</html>
