@@ -194,6 +194,23 @@
   background: #fff;
   box-shadow: 0 1px 1px 1px #efefef;
 }
+.reward .reward-button:hover .reward-code {
+  display: block;
+}
+.reward .reward-code span {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+.reward .reward-code span.alipay-code {
+  float: left;
+}
+.reward .reward-code span.alipay-code a {
+  padding: 0;
+}
+.reward .reward-code span.wechat-code {
+  float: right;
+}
 .reward .reward-code img {
   display: inline-block;
   float: left;
@@ -201,20 +218,6 @@
   height: 150px;
   margin: 0 auto;
   border: 0;
-}
-.reward .reward-code span {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-}
-.reward .reward-code span .wechat-code {
-  float: right;
-}
-.reward .reward-code span .alipay-code {
-  float: left;
-}
-.reward .reward-code span .alipay-code a {
-  padding: 0;
 }
 .reward .reward-code b {
   font-size: 14px;
@@ -224,7 +227,7 @@
   text-align: center;
   color: #666;
 }
-.reward .reward-code b .notice {
+.reward .reward-code b.notice {
   line-height: 2rem;
   margin-top: -1rem;
   color: #999;
