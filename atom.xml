@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxxs.cf</id>
-    <title>lxxs&apos;blog</title>
-    <updated>2020-02-27T11:59:31.353Z</updated>
+    <title>👨‍🎓lxxs</title>
+    <updated>2020-02-27T12:07:53.142Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxxs.cf"/>
     <link rel="self" href="https://lxxs.cf/atom.xml"/>
@@ -19,7 +19,7 @@ var _hmt = _hmt || [];
 </subtitle>
     <logo>https://lxxs.cf/images/avatar.png</logo>
     <icon>https://lxxs.cf/favicon.ico</icon>
-    <rights>All rights reserved 2020, lxxs&apos;blog</rights>
+    <rights>All rights reserved 2020, 👨‍🎓lxxs</rights>
     <entry>
         <title type="html"><![CDATA[关于更换域名的小问题。。]]></title>
         <id>https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/</id>
