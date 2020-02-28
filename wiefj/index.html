@@ -228,18 +228,18 @@ var _hmt = _hmt || [];
                     <article class="post post-type real-post">
                         <header class="post-type-header">
                             
-                                <div class="thumbnail-link" style="background-image: url('https://s2.ax1x.com/2020/02/24/3JkvqJ.jpg')"></div>
+                                <div class="thumbnail-link" style="background-image: url('https://i.loli.net/2020/02/29/VyWTSlZuJUwnAKC.jpg')"></div>
                                 
                                         <div class="thumbnail-shadow">
                                             <h1 class="post-title">
-                                                数据结构学习
+                                                代理分享页
                                             </h1>
                                             <div class="post-info">
                                                 <span class="post-category"><i class="memory memory-novel"></i>
                                         
-                                            <a href="https://lxxs.cf/rmzkOHRD2/" rel="category">阶段性总结</a>
+                                            <a href="https://lxxs.cf/AtftjE3Eoz/" rel="category">代理</a>
                                             
-                                            <a href="https://lxxs.cf/gCKkJIha8/" rel="category">OI</a>
+                                            <a href="https://lxxs.cf/c0NGK94ZD/" rel="category">技术经验</a>
                                             
                                     </span>&nbsp;•&nbsp;
                                                 <span class="post-view">
@@ -250,133 +250,23 @@ var _hmt = _hmt || [];
                                                     </span>&nbsp;•&nbsp;
 
                                                     <span class="post-readtime">阅读时间:
-                                            <a href="#">5.5分</a></span>
+                                            <a href="#">0.1分</a></span>
                                                     <span class="post-edit"></span></div>
                                         </div>
                                         <div class="post-relative">
                                             <img alt="👨‍🎓lxxs" src="https://lxxs.cf/images/avatar.png?v=1582930858222" srcset="https://lxxs.cf/images/avatar.png?v=1582930858222" class="avatar avatar-100 photo" width="100" height="100">
                                             <span class="post-type-author"><a href="https://lxxs.cf" title="由👨‍🎓lxxs发布" rel="author">👨‍🎓lxxs<i class="memory memory-certify"></i></a></span>
-                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2019-12-02</span>
+                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-02-29</span>
                                         </div>
                         </header>
                         <div class="post-main post-type-main">
                             <div class="post-content">
                                 <div class="post-content-real">
-                                    <p>数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊</p>
-<!-- more -->
-<h1 id="noip-数据结构">NOIP-数据结构</h1>
-<p><a name="6YZHI"></a></p>
-<h1 id="二叉树">二叉树</h1>
-<p><a name="zhUho"></a></p>
-<h2 id="顺序存储">顺序存储</h2>
-<p>这个地方可以举个例子；当我们要存储时要按照完全二叉树的方式存储，也就是说空节点也要考虑到。<br />如果我们要存储一颗下图所示的树事，我们不能在数组中这样存储，而是把他补全成完全二叉树,详细看第二张图。</p>
-<blockquote>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/png/432966/1575208143443-b76620cc-dddb-4c98-be3c-9ec39e34e3c5.png#align=left&amp;display=inline&amp;height=121&amp;name=Snipaste_2019-12-01_21-48-00.png&amp;originHeight=418&amp;originWidth=382&amp;size=54542&amp;status=done&amp;style=none&amp;width=111" alt="Snipaste_2019-12-01_21-48-00.png" loading="lazy"><img src="https://cdn.nlark.com/yuque/0/2019/png/432966/1575208144695-52589aa2-4446-4cdb-abc9-c2314703c378.png#align=left&amp;display=inline&amp;height=120&amp;name=Snipaste_2019-12-01_21-48-50.png&amp;originHeight=428&amp;originWidth=440&amp;size=66153&amp;status=done&amp;style=none&amp;width=123" alt="Snipaste_2019-12-01_21-48-50.png" loading="lazy"></p>
-</blockquote>
-<p>简单说就是当我们输入这颗树时不应该是RABCDEFGH 而是RABCDE<sup>F</sup><sup>G</sup>H,在数组就对这些数据进行编码了；<br /><strong>注意这个很重要，这个不要和二叉树的生成算法搞混了，生成算法用的链式存储。</strong><br>
-<a name="Ktgbb"></a></p>
-<h2 id="链式存储">链式存储</h2>
-<p><strong>二叉链表节点</strong><br /><strong>图片表示：</strong></p>
-<blockquote>
-<figure data-type="image" tabindex="1"><img src="https://cdn.nlark.com/yuque/0/2019/png/432966/1575209341687-611a340e-d893-46a4-ad70-ad9af2885d86.png#align=left&amp;display=inline&amp;height=80&amp;name=Snipaste_2019-12-01_22-07-00.png&amp;originHeight=197&amp;originWidth=617&amp;size=35254&amp;status=done&amp;style=none&amp;width=250" alt="Snipaste_2019-12-01_22-07-00.png" loading="lazy"></figure>
-</blockquote>
-<p>**<strong>代码表示：</strong></p>
-<pre><code class="language-cpp">struct node{
-    int date;
-    node *lchild=NULL;
-    node *rchild=NULL;
-};
-</code></pre>
-<blockquote>
-<p>三叉链表就是在二叉链表的基础上加入了父母节点<br>
-构造过程和单链表相似，这个代码构造是不需要可以赋予空指针，因为它本身已经赋值好了。<br>
-在n个节点的二叉链表中，又n+1个空指针与：必定又2n个链域，除根结点外每个节点有且仅有一个双亲，所有只会有n-1个节点的链域存放着指针，只想非空子女节点。空指针树=链域-指针数；</p>
-</blockquote>
-<p><a name="vD8iH"></a></p>
-<h2 id="遍历二叉树">遍历二叉树</h2>
-<p><strong>D-&gt;根  L-&gt;左   R-&gt;右</strong><br />先根遍历-&gt;DLR    中根遍历-&gt;LDR    后根遍历-&gt;LRD：一定是先左子树再右子树，变化的是根，也可为*序遍历；<br />重点（代码实现）<strong>:</strong></p>
-<pre><code class="language-cpp">void Traverse(bitnode &amp;head){
-    if(head=NULL) return;
-    else{
-    	printf(&quot;%d&quot;,head-&gt;date);//访问根节点
-        Traverse(head-&gt;lchild);//递归访问左子树
-        Traverse(head-&gt;rchild);//递归访问右子树
-    }//先序中序后序知识把中间调换了而已！！！
-
-}
-</code></pre>
-<blockquote>
-<p>层次遍历：有点像广度优先搜索；<br>
-就不写代码了，简单描述一下吧：首先初始化一个循环队列，将根节点指针放入队列，当队列不为空时，弹出队列中的结构指针本访问它的data域，访问他的孩子，如果又左孩子将其入队，如果又右孩子将其入队，重复循环；</p>
-</blockquote>
-<p><a name="12kqL"></a></p>
-<h2 id="建立二叉树算法">建立二叉树算法</h2>
-<p>这个挺简单的，不过输入的时候要用一些特殊的符号表示其孩子节点为空；<br />比如先序遍历：ABC##DE#G##F###他的图像：</p>
-<pre><code>    ![Snipaste_2019-12-01_22-48-09.png](https://cdn.nlark.com/yuque/0/2019/png/432966/1575211710910-65626d72-43a2-43a8-a00a-1bbd27d50326.png)
-</code></pre>
-<p><br /><strong>代码实现：</strong></p>
-<pre><code class="language-cpp">void CreatBiTree(bitnode &amp;head){//带值构造，会影响实际；
-	scanf(&amp;ch);
-    if(ch=='#') head=NULL;//如果输入的字符是特殊字符，那么这节点为空；
-    else{
-        head=new bitnode;//为这个数据申请一个新节点；
-        head-&gt;date=ch;//将节点的data域赋值为ch；
-        CreatBitree(head-&gt;lchild);//构造他的左子树；
-        creatBitree(head-&gt;rchild);//构造他的右子树；
-    }//*序遍历只需要将else重点额内容调换即可；
-    return;
-}
-</code></pre>
-<p><a name="Vne2q"></a></p>
-<h2 id="双亲表示法">双亲表示法</h2>
-<p>这个可以看一下2019CSP复赛的第二题，定义的时候只需要知道数据和双亲就可以。完全可以用结构数组来做，R的双亲为-1，其他节点的而双亲为双亲数据所在的下标。<br /><strong>找双亲容易找孩子难。</strong><br>
-<a name="nKlyj"></a></p>
-<h2 id="孩子链表表示法">孩子链表表示法</h2>
-<p>有两部分：双亲节点数组+孩子链表<br />双亲结点数组：|数据|指向第一个孩子的指针|<br />孩子链表：|孩子在双亲结点数组中的下表|指向下一个孩子的指针|<br />代码实现：</p>
-<pre><code class="language-cpp">struct childnode{
-	int child;//存储下标；
-    childnode *next;
-};
-
-struct fathernode{
-	char date;
-    childnode *first;
-};
-
-struct tree{
-	fathernode[MAX];
-    int n,r;//节点数和根结点数
-};
-</code></pre>
-<p><strong>找孩子容易，找双亲难；</strong><br>
-<a name="ca8zE"></a></p>
-<h2 id="孩子兄弟表示法">孩子兄弟表示法</h2>
-<p>这个方法找孩子容易找父母也容易，可以理解为这个是把树转化成二叉树了。右节点是下一个兄弟，左节点一定是第一个孩子；也就是向右可以找兄弟，向左可以找孩子;<br />孩子兄弟节点：|date|fierstchild|nextbrother|</p>
-<blockquote>
-<figure data-type="image" tabindex="2"><img src="https://cdn.nlark.com/yuque/0/2019/png/432966/1575213340910-eb0c6d37-44f7-4265-958b-af5937f6856a.png#align=left&amp;display=inline&amp;height=50&amp;name=Snipaste_2019-12-01_23-15-24.png&amp;originHeight=216&amp;originWidth=433&amp;size=26371&amp;status=done&amp;style=none&amp;width=101" alt="Snipaste_2019-12-01_23-15-24.png" loading="lazy"></figure>
-</blockquote>
-<p>代码实现：</p>
-<pre><code class="language-cpp">struct childbrotree{
-	int date;
-    childbortree *nextbro,*firstchild;
-};
-</code></pre>
-<p><a name="gyomn"></a></p>
-<h2 id="树森林二叉树的的转换">树，森林，二叉树的的转换</h2>
-<p>森林-&gt;树=》D(森林)//给森林的所有树加一个根节点<br />树-&gt;二叉树=》childbrotrr(树)把树转成二叉树<br />森林-&gt;二叉树=》森林-&gt;树+树-&gt;二叉树<br>
-<a name="sRgHV"></a></p>
-<h2 id="哈夫曼树">哈夫曼树</h2>
-<blockquote>
-<p>概念<br>
-路径：从一个节点到另一个节点的路径树的路径长度：从树根到每一个节点的路径长度之和TL。节点数目相同的二叉树中，完全二叉树是路径最短的二叉树。TL=每个节点的根节点的路径长度之和；weight(权重)：树中结点赋予一个特殊意义的值，叫做这个节点的劝；节点的带权路径长度：从根节点到该节点之间的路径长度和该节点的权的乘积。树的带权路径长度：书中所有叶子节点的带权路径长度之和；WPL<br>
-哈夫曼树：WPL最小的树是哈夫曼树；满二叉树不一定是哈夫曼树；具有相同带权节点的哈夫曼树不唯一；<br>
-哈夫曼是构造算法：<br /><strong>1.构造森林全是树；2.选用两小造新树3.删除两小舔新人；4.重复2，3剩单树；</strong><br /><strong>包含n棵树的森林要经过n1次合并才能形成哈夫曼树，共产生n-1个新结点</strong><br /><strong>包含n个叶子结点的哈夫曼树中共有2n-1个结点。</strong><br /><strong>哈夫曼树的结点的度数为0或2，没有度为1的结点。</strong><br /><strong>代码实现：</strong></p>
-</blockquote>
-<blockquote>
-<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/432966/1575194236933-2c034639-8788-4107-ae11-4ab2f1a8da19.jpeg?x-oss-process=image/resize,w_924#align=left&amp;display=inline&amp;height=63&amp;originHeight=514&amp;originWidth=924&amp;status=done&amp;style=none&amp;width=113" alt="" loading="lazy"><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/432966/1575194238383-0c8e9a32-8412-4b75-b0dc-a917e2edddd3.jpeg?x-oss-process=image/resize,w_924#align=left&amp;display=inline&amp;height=68&amp;originHeight=608&amp;originWidth=924&amp;status=done&amp;style=none&amp;width=104" alt="" loading="lazy"></p>
-</blockquote>
-<p><a name="gQOHY"></a></p>
-<h1 id="emmm后面的掌握的不是很好再琢磨琢磨心思心思好好想想按照自己的话写主要是后面的都截图了关键是后面的代码还不是很熟悉理解的不是很透彻">emmm,后面的掌握的不是很好，再琢磨琢磨，心思心思，好好想想，按照自己的话写！！！主要是后面的都截图了😄关键是后面的代码还不是很熟悉，理解的不是很透彻。。</h1>
+                                    <h1 id="tg代理">TG代理</h1>
+<p><a href="https://t.me/proxy?server=13.76.210.79&amp;port=443&amp;secret=ee000000000000000000000000000000017777772e62696e672e636f6d">2020.2.29</a><br>
+<a href="https://t.me/proxy?server=54.255.152.218&amp;port=443&amp;secret=ee000000000000000000000000000000017777772e62696e672e636f6d">2020.2.29</a></p>
+<h1 id="小飞机">小飞机</h1>
+<h1 id="v2火箭">v2火箭</h1>
 
                                 </div>
                             </div>
@@ -394,8 +284,8 @@ struct tree{
                             <div class="post-copyright">
                                 作者:
                                 👨‍🎓lxxs<br>永久链接:
-                                    <a href="https://lxxs.cf/shu-ju-jie-gou-xue-xi/" title="数据结构学习">
-                                        https://lxxs.cf/shu-ju-jie-gou-xue-xi/
+                                    <a href="https://lxxs.cf/wiefj/" title="代理分享页">
+                                        https://lxxs.cf/wiefj/
                                     </a><br> 协议: MIT License
                             </div>
                         </div>
@@ -403,16 +293,10 @@ struct tree{
                 </div>
                 <div class="lite-item nearby-article">
                     
-                        <div class="nearby-article-left">
-                            <span><a class="prev" rel="prev" href="https://lxxs.cf/ru-he-fen-xiang-jing-mei-de-dai-ma/">
-                                ← 如何分享精美的代码
-                            </a></span>
-                        </div>
-                        
                             
                                 <div class="nearby-article-right">
-                                    <span><a class="next" rel="next" href="https://lxxs.cf/zi-yuan-fen-xiang/">
-                                        资源分享 →
+                                    <span><a class="next" rel="next" href="https://lxxs.cf/ymkhCboSX/">
+                                        关于建设blog →
                                     </a></span>
                                 </div>
                                 
@@ -421,11 +305,9 @@ struct tree{
                 <span style="margin-right:15px">
     <i class="post-share"></i>
     <span>&#x5206;&#x4EAB;:</span>
-                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/shu-ju-jie-gou-xue-xi/"><i class="fa fa-qrcode"></i></a>
-                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/shu-ju-jie-gou-xue-xi/&sharesource=qzone&title=数据结构学习&pics=https://lxxs.cf/images/avatar.png?v=1582930858222&summary=&lt;p&gt;数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊&lt;/p&gt;
-"><i class="fa fa-qq"></i></a>
-                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/shu-ju-jie-gou-xue-xi/&sharesource=weibo&title=数据结构学习 + " - " + &lt;p&gt;数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊&lt;/p&gt;
-&pic="https://lxxs.cf/images/avatar.png?v=1582930858222"><i class="fa fa-weibo "></i></a>
+                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/wiefj/"><i class="fa fa-qrcode"></i></a>
+                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/wiefj/&sharesource=qzone&title=代理分享页&pics=https://lxxs.cf/images/avatar.png?v=1582930858222&summary="><i class="fa fa-qq"></i></a>
+                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/wiefj/&sharesource=weibo&title=代理分享页 + " - " + &pic="https://lxxs.cf/images/avatar.png?v=1582930858222"><i class="fa fa-weibo "></i></a>
                 </span>
                 
                     
