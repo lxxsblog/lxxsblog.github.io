@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxxs.cf</id>
     <title>👨‍🎓lxxs</title>
-    <updated>2020-02-28T23:02:46.113Z</updated>
+    <updated>2020-02-29T03:26:58.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxxs.cf"/>
     <link rel="self" href="https://lxxs.cf/atom.xml"/>
@@ -20,6 +20,13 @@ var _hmt = _hmt || [];
     <logo>https://lxxs.cf/images/avatar.png</logo>
     <icon>https://lxxs.cf/favicon.ico</icon>
     <rights>All rights reserved 2020, 👨‍🎓lxxs</rights>
+    <entry>
+        <title type="html"><![CDATA[test]]></title>
+        <id>https://lxxs.cf/s0sXEKD-w/</id>
+        <link href="https://lxxs.cf/s0sXEKD-w/">
+        </link>
+        <updated>2020-02-29T03:25:56.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[代理分享页]]></title>
         <id>https://lxxs.cf/wiefj/</id>
@@ -168,17 +175,6 @@ var _hmt = _hmt || [];
         <summary type="html"><![CDATA[<p>开始读之前，请明确自己的立场。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>开始读之前，请明确自己的立场。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RSS技巧]]></title>
-        <id>https://lxxs.cf/rss-ji-qiao/</id>
-        <link href="https://lxxs.cf/rss-ji-qiao/">
-        </link>
-        <updated>2019-12-02T02:56:32.000Z</updated>
-        <summary type="html"><![CDATA[<p>面对越来越多的收藏博客，音乐，up主，视频……是不是想要一个聚合阅读的方法呢！那么RSS一定是你的最好选择。这里记一笔关于RSS心得和分享。有阅读工具和得到链接的方法；※opera可以自动订阅偶</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>面对越来越多的收藏博客，音乐，up主，视频……是不是想要一个聚合阅读的方法呢！那么RSS一定是你的最好选择。这里记一笔关于RSS心得和分享。有阅读工具和得到链接的方法；※opera可以自动订阅偶</p>
 ]]></content>
     </entry>
 </feed>
