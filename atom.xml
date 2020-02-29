@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://lxxs.cf</id>
+    <id>http://localhost:4000</id>
     <title>👨‍🎓lxxs</title>
-    <updated>2020-02-29T03:30:24.402Z</updated>
+    <updated>2020-02-29T04:33:24.413Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://lxxs.cf"/>
-    <link rel="self" href="https://lxxs.cf/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>I pray to myself.
 &lt;script&gt;
 var _hmt = _hmt || [];
@@ -17,20 +17,27 @@ var _hmt = _hmt || [];
 })();
 &lt;/script&gt;
 </subtitle>
-    <logo>https://lxxs.cf/images/avatar.png</logo>
-    <icon>https://lxxs.cf/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2020, 👨‍🎓lxxs</rights>
     <entry>
+        <title type="html"><![CDATA[safhiu]]></title>
+        <id>http://localhost:4000/bqdAocuCn/</id>
+        <link href="http://localhost:4000/bqdAocuCn/">
+        </link>
+        <updated>2020-02-29T04:32:35.000Z</updated>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[代理分享页]]></title>
-        <id>https://lxxs.cf/wiefj/</id>
-        <link href="https://lxxs.cf/wiefj/">
+        <id>http://localhost:4000/wiefj/</id>
+        <link href="http://localhost:4000/wiefj/">
         </link>
         <updated>2020-02-28T22:23:24.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于建设blog]]></title>
-        <id>https://lxxs.cf/ymkhCboSX/</id>
-        <link href="https://lxxs.cf/ymkhCboSX/">
+        <id>http://localhost:4000/ymkhCboSX/</id>
+        <link href="http://localhost:4000/ymkhCboSX/">
         </link>
         <updated>2020-02-28T13:53:19.000Z</updated>
         <summary type="html"><![CDATA[<p>分享我的blog build history</p>
@@ -40,8 +47,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[关于更换域名的小问题。。]]></title>
-        <id>https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/</id>
-        <link href="https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/">
+        <id>http://localhost:4000/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/</id>
+        <link href="http://localhost:4000/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/">
         </link>
         <updated>2020-02-27T09:49:24.000Z</updated>
         <summary type="html"><![CDATA[<p>真的是多谢ITjoker大佬了！</p>
@@ -51,15 +58,15 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[Bellman_fold算法]]></title>
-        <id>https://lxxs.cf/bellman_fold-suan-fa/</id>
-        <link href="https://lxxs.cf/bellman_fold-suan-fa/">
+        <id>http://localhost:4000/bellman_fold-suan-fa/</id>
+        <link href="http://localhost:4000/bellman_fold-suan-fa/">
         </link>
         <updated>2020-02-26T15:47:49.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[OI的标准文件读入读出+cin优化模板]]></title>
-        <id>https://lxxs.cf/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/</id>
-        <link href="https://lxxs.cf/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/">
+        <id>http://localhost:4000/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/</id>
+        <link href="http://localhost:4000/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/">
         </link>
         <updated>2020-02-25T01:03:13.000Z</updated>
         <summary type="html"><![CDATA[<p>反正我觉得这个是最好的模板了。</p>
@@ -69,15 +76,15 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[我们学校的OJ 上线了]]></title>
-        <id>https://lxxs.cf/wo-men-xue-xiao-de-oj-shang-xian-liao/</id>
-        <link href="https://lxxs.cf/wo-men-xue-xiao-de-oj-shang-xian-liao/">
+        <id>http://localhost:4000/wo-men-xue-xiao-de-oj-shang-xian-liao/</id>
+        <link href="http://localhost:4000/wo-men-xue-xiao-de-oj-shang-xian-liao/">
         </link>
         <updated>2020-02-18T03:43:11.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[好文章总结页]]></title>
-        <id>https://lxxs.cf/hao-wen-zhang-zong-jie-ye/</id>
-        <link href="https://lxxs.cf/hao-wen-zhang-zong-jie-ye/">
+        <id>http://localhost:4000/hao-wen-zhang-zong-jie-ye/</id>
+        <link href="http://localhost:4000/hao-wen-zhang-zong-jie-ye/">
         </link>
         <updated>2020-02-11T11:06:25.000Z</updated>
         <summary type="html"><![CDATA[<p>在本页分享好文章幺；</p>
@@ -87,8 +94,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[归并大法]]></title>
-        <id>https://lxxs.cf/gui-bing-da-fa/</id>
-        <link href="https://lxxs.cf/gui-bing-da-fa/">
+        <id>http://localhost:4000/gui-bing-da-fa/</id>
+        <link href="http://localhost:4000/gui-bing-da-fa/">
         </link>
         <updated>2020-02-08T11:15:13.000Z</updated>
         <summary type="html"><![CDATA[<p>归并绝对是需要学会手写并掌握的，他不是sort可以代替的，很多题都需要他的思想。</p>
@@ -98,8 +105,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[清北学堂_2020_冬令营储备营总结+笔记]]></title>
-        <id>https://lxxs.cf/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/</id>
-        <link href="https://lxxs.cf/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/">
+        <id>http://localhost:4000/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/</id>
+        <link href="http://localhost:4000/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/">
         </link>
         <updated>2020-01-25T12:26:36.000Z</updated>
         <summary type="html"><![CDATA[<p>总体感受还是不错的，恰逢这个糟糕的新型冠状病毒。</p>
@@ -109,8 +116,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[新年记录]]></title>
-        <id>https://lxxs.cf/xin-nian-ji-lu/</id>
-        <link href="https://lxxs.cf/xin-nian-ji-lu/">
+        <id>http://localhost:4000/xin-nian-ji-lu/</id>
+        <link href="http://localhost:4000/xin-nian-ji-lu/">
         </link>
         <updated>2019-12-31T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>年终大总结：<br>
@@ -122,8 +129,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[如何分享精美的代码]]></title>
-        <id>https://lxxs.cf/ru-he-fen-xiang-jing-mei-de-dai-ma/</id>
-        <link href="https://lxxs.cf/ru-he-fen-xiang-jing-mei-de-dai-ma/">
+        <id>http://localhost:4000/ru-he-fen-xiang-jing-mei-de-dai-ma/</id>
+        <link href="http://localhost:4000/ru-he-fen-xiang-jing-mei-de-dai-ma/">
         </link>
         <updated>2019-12-02T11:13:21.000Z</updated>
         <summary type="html"><![CDATA[<p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
@@ -133,8 +140,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[数据结构学习]]></title>
-        <id>https://lxxs.cf/shu-ju-jie-gou-xue-xi/</id>
-        <link href="https://lxxs.cf/shu-ju-jie-gou-xue-xi/">
+        <id>http://localhost:4000/shu-ju-jie-gou-xue-xi/</id>
+        <link href="http://localhost:4000/shu-ju-jie-gou-xue-xi/">
         </link>
         <updated>2019-12-02T08:31:30.000Z</updated>
         <summary type="html"><![CDATA[<p>数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊</p>
@@ -144,8 +151,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[资源分享]]></title>
-        <id>https://lxxs.cf/zi-yuan-fen-xiang/</id>
-        <link href="https://lxxs.cf/zi-yuan-fen-xiang/">
+        <id>http://localhost:4000/zi-yuan-fen-xiang/</id>
+        <link href="http://localhost:4000/zi-yuan-fen-xiang/">
         </link>
         <updated>2019-12-02T03:00:09.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -161,24 +168,13 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[科学上网的见解]]></title>
-        <id>https://lxxs.cf/ke-xue-shang-wang-de-jian-jie/</id>
-        <link href="https://lxxs.cf/ke-xue-shang-wang-de-jian-jie/">
+        <id>http://localhost:4000/ke-xue-shang-wang-de-jian-jie/</id>
+        <link href="http://localhost:4000/ke-xue-shang-wang-de-jian-jie/">
         </link>
         <updated>2019-12-02T02:58:50.000Z</updated>
         <summary type="html"><![CDATA[<p>开始读之前，请明确自己的立场。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>开始读之前，请明确自己的立场。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RSS技巧]]></title>
-        <id>https://lxxs.cf/rss-ji-qiao/</id>
-        <link href="https://lxxs.cf/rss-ji-qiao/">
-        </link>
-        <updated>2019-12-02T02:56:32.000Z</updated>
-        <summary type="html"><![CDATA[<p>面对越来越多的收藏博客，音乐，up主，视频……是不是想要一个聚合阅读的方法呢！那么RSS一定是你的最好选择。这里记一笔关于RSS心得和分享。有阅读工具和得到链接的方法；※opera可以自动订阅偶</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>面对越来越多的收藏博客，音乐，up主，视频……是不是想要一个聚合阅读的方法呢！那么RSS一定是你的最好选择。这里记一笔关于RSS心得和分享。有阅读工具和得到链接的方法；※opera可以自动订阅偶</p>
 ]]></content>
     </entry>
 </feed>
