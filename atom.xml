@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxxs.cf</id>
     <title>👨‍🎓lxxs</title>
-    <updated>2020-03-01T01:32:27.910Z</updated>
+    <updated>2020-03-01T01:38:25.305Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxxs.cf"/>
     <link rel="self" href="https://lxxs.cf/atom.xml"/>
@@ -21,11 +21,15 @@ var _hmt = _hmt || [];
     <icon>https://lxxs.cf/favicon.ico</icon>
     <rights>All rights reserved 2020, 👨‍🎓lxxs</rights>
     <entry>
-        <title type="html"><![CDATA[say]]></title>
-        <id>https://lxxs.cf/jzrK_d6/</id>
-        <link href="https://lxxs.cf/jzrK_d6/">
+        <title type="html"><![CDATA[老版每日吐槽]]></title>
+        <id>https://lxxs.cf/mei-ri-tu-cao/</id>
+        <link href="https://lxxs.cf/mei-ri-tu-cao/">
         </link>
-        <updated>2020-03-01T01:29:24.000Z</updated>
+        <updated>2050-05-20T05:14:11.000Z</updated>
+        <summary type="html"><![CDATA[<p>评论区，欢迎吐槽。。。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>评论区，欢迎吐槽。。。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[代理分享页]]></title>
