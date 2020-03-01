@@ -258,4 +258,8 @@
         background-attachment: scroll;
         background-size: cover;
     }
-    
+     
+        #bg{
+        background-color:#eee;
+      }
+      
