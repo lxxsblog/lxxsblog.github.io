@@ -235,16 +235,20 @@ var _hmt = _hmt || [];
                     <article class="post post-type real-post">
                         <header class="post-type-header">
                             
-                                <div class="thumbnail-link" style="background-image: url('https://i.loli.net/2020/02/27/C6Q2ua8ISwlcyUB.jpg')"></div>
+                                <div class="thumbnail-link" style="background-image: url('https://i.loli.net/2020/03/02/biDuWqvpIRlUgBJ.jpg')"></div>
                                 
                                         <div class="thumbnail-shadow">
                                             <h1 class="post-title">
-                                                关于更换域名的小问题。。
+                                                无负权最短路
                                             </h1>
                                             <div class="post-info">
                                                 <span class="post-category"><i class="memory memory-novel"></i>
                                         
-                                            <a href="https://lxxs.cf/c0NGK94ZD/" rel="category">技术经验</a>
+                                            <a href="https://lxxs.cf/yScrPIF5B/" rel="category">模板</a>
+                                            
+                                            <a href="https://lxxs.cf/gCKkJIha8/" rel="category">OI</a>
+                                            
+                                            <a href="https://lxxs.cf/suan-fa/" rel="category">算法</a>
                                             
                                     </span>&nbsp;•&nbsp;
                                                 <span class="post-view">
@@ -255,24 +259,88 @@ var _hmt = _hmt || [];
                                                     </span>&nbsp;•&nbsp;
 
                                                     <span class="post-readtime">阅读时间:
-                                            <a href="#">0.4分</a></span>
+                                            <a href="#">2.8分</a></span>
                                                     <span class="post-edit"></span></div>
                                         </div>
                                         <div class="post-relative">
                                             <img alt="👨‍🎓lxxs" src="https://lxxs.cf/images/avatar.png?v=1583121570518" srcset="https://lxxs.cf/images/avatar.png?v=1583121570518" class="avatar avatar-100 photo" width="100" height="100">
                                             <span class="post-type-author"><a href="https://lxxs.cf" title="由👨‍🎓lxxs发布" rel="author">👨‍🎓lxxs<i class="memory memory-certify"></i></a></span>
-                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-02-27</span>
+                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-03-02</span>
                                         </div>
                         </header>
                         <div class="post-main post-type-main">
                             <div class="post-content">
                                 <div class="post-content-real">
-                                    <p>真的是多谢ITjoker大佬了！</p>
-<!-- more -->
-<p>更换域名后可能会导致博客评论出现问题，这个时候的操作就是，前往GitHub-&gt;setting-&gt;Developer setting-&gt;OAuth Apps-&gt;你的评论应用<br>
-然后将Homepage URL改成你的域名，加入https://<br>
-Authorization callback URL改成你的域名，加入https://<br>
-就是这么简单，很舒服，第一感觉是，用了域名访问之后，速度快了不少呢。</p>
+                                    <p>最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。</p>
+<h2 id="-more-"><!-- more --></h2>
+<h1 id="单源最短路">单源最短路</h1>
+<hr>
+<h1 id="dijkstra">Dijkstra</h1>
+<p>Dijkstra算法呢，快是真的快，毕竟实Dijkstra花5分钟在理发店想出的。<br>
+然后呢，他有一个问题，不能处理非实际问题，就是说不能处理<strong>负权</strong>。</p>
+<h2 id="算法思路">算法思路🎉</h2>
+<p>首先我们要明确只是一个<strong>贪心算法</strong>。简单说就是懒😄。<br>
+算法的核心是一个<strong>dist数组</strong>，他存储着<strong>根节点u</strong>到各个点的最短路径。<br>
+我们还需要明确在最短路中<strong>重边和自环</strong>的处理:<br>
+1.邻接表中我们必须要对他进行处理，因为最短路的性质决定了他会帮我们处理。<br>
+2.邻接矩阵中我们要对<strong>G[i][j]<strong>取一个最小值。因为我们将初始化</strong>G[i][j]<strong>为0所以我们不需要额外处理自环。<br>
+那么开始算法过程：<br>
+1.初始化：因为根节点u到自己的距离为0，所以初始化dist[]除了</strong>u以为的元素</strong>为INF(+∞)，<strong>u</strong>定义为0.还需要存储一个<strong>st[]<strong>表示我们是否一定确定这个点的了。并且</strong>st[u]</strong>=true；<br>
+2.遍历u可以<strong>到达的</strong>所有的边，更新dist数组。<br>
+3.查找dist数组中<strong>没有在st[]中确定的点</strong>中路径最短的点。更新**st[]**中这个点为true；<br>
+4.重复以上步骤；</p>
+<h2 id="dijkstra_simple_code">Dijkstra_simple_code🎈</h2>
+<pre><code class="language-cpp">//适合稠密图幺，这里用邻接矩阵。
+const int N 100010;
+const int INF 0x3f;
+bool st[N];
+int dist[N];
+int G[N][N];
+int dijkstra(int u){
+    memset(dist, 0x3f, sizeof dist);
+    dist[u]=0;
+    For(i,1,n-1){
+        int t = -1;
+        For(j,1,n){if(!st[j]&amp;&amp;(t==-1||dist[t]&gt;dist[j]))t=j;}
+        st[j]=true;
+        For(j,1,n){dist[j]=min(dist[j],dist[t]+G[t][j]);}
+    }
+    return dist[m]==INF?-1:dist[N];
+}
+</code></pre>
+<h2 id="dijkstra_heapgood_code">Dijkstra_heapgood_code🎈</h2>
+<pre><code class="language-cpp">//适合稀疏图幺，这里用邻接表
+#define PII pair&lt;int,int&gt;
+const int N 100010;
+const int INF 0x3f3f3f3f;
+int h[N],ne[N],e[N],w[N],idx;
+bool st[N];int dist[N];
+priority_queue&lt;PII,vector&lt;PII&gt;,greater&lt;PII&gt;&gt; q;
+int dijkstra(int u){
+    dist[u]=0;q.push({dist[u],u});
+    while(!q.empty()){
+        PII t = q.top();q.pop();
+        int ver = t.second, dis=t.first;
+        if(st[ver])continue;
+        st[ver]=true;
+        for(int i = h[ver];i!=-1;i=ne[i]){
+            int j = e[i];
+            if(dist[j]&gt;dis+w[i]){
+                dist[j]=dis+w[i];
+                q.push({dist[j],j});
+            }
+        }
+    }
+    return dist[n]==INF?-1:dist[n];
+}
+</code></pre>
+<blockquote>
+<p>emm，个人推荐第二种堆优化的，好思考，而且快，没错**“快”**是王道。</p>
+</blockquote>
+<h1 id="bellman_ford">bellman_ford</h1>
+<hr>
+<h1 id="多源最短路">多源最短路</h1>
+<hr>
 
                                 </div>
                             </div>
@@ -290,8 +358,8 @@ Authorization callback URL改成你的域名，加入https://<br>
                             <div class="post-copyright">
                                 作者:
                                 👨‍🎓lxxs<br>永久链接:
-                                    <a href="https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/" title="关于更换域名的小问题。。">
-                                        https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/
+                                    <a href="https://lxxs.cf/MOpTV3vdy/" title="无负权最短路">
+                                        https://lxxs.cf/MOpTV3vdy/
                                     </a><br> 协议: MIT License
                             </div>
                         </div>
@@ -299,16 +367,10 @@ Authorization callback URL改成你的域名，加入https://<br>
                 </div>
                 <div class="lite-item nearby-article">
                     
-                        <div class="nearby-article-left">
-                            <span><a class="prev" rel="prev" href="https://lxxs.cf/ymkhCboSX/">
-                                ← 关于建设blog
-                            </a></span>
-                        </div>
-                        
                             
                                 <div class="nearby-article-right">
-                                    <span><a class="next" rel="next" href="https://lxxs.cf/bellman_fold-suan-fa/">
-                                        Bellman_fold算法 →
+                                    <span><a class="next" rel="next" href="https://lxxs.cf/wiefj/">
+                                        代理分享页 →
                                     </a></span>
                                 </div>
                                 
@@ -317,10 +379,10 @@ Authorization callback URL改成你的域名，加入https://<br>
                 <span style="margin-right:15px">
     <i class="post-share"></i>
     <span>&#x5206;&#x4EAB;:</span>
-                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/"><i class="fa fa-qrcode"></i></a>
-                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/&sharesource=qzone&title=关于更换域名的小问题。。&pics=https://lxxs.cf/images/avatar.png?v=1583121570518&summary=&lt;p&gt;真的是多谢ITjoker大佬了！&lt;/p&gt;
+                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/MOpTV3vdy/"><i class="fa fa-qrcode"></i></a>
+                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/MOpTV3vdy/&sharesource=qzone&title=无负权最短路&pics=https://lxxs.cf/images/avatar.png?v=1583121570518&summary=&lt;p&gt;最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。&lt;/p&gt;
 "><i class="fa fa-qq"></i></a>
-                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/&sharesource=weibo&title=关于更换域名的小问题。。 + " - " + &lt;p&gt;真的是多谢ITjoker大佬了！&lt;/p&gt;
+                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/MOpTV3vdy/&sharesource=weibo&title=无负权最短路 + " - " + &lt;p&gt;最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。&lt;/p&gt;
 &pic="https://lxxs.cf/images/avatar.png?v=1583121570518"><i class="fa fa-weibo "></i></a>
                 </span>
                 
