@@ -164,13 +164,13 @@ var _hmt = _hmt || [];
                     
             </ul>
         </nav>
-        <form id="gridea-search-form" class="searchform" data-update="1583121570518" action="/search/index.html">
+        <form id="gridea-search-form" class="searchform" data-update="1583135198707" action="/search/index.html">
             <i class="memory memory-search"></i>
             <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
         </form>
     </div>
     <div id="mobile-menu">
-        <form id="gridea-search-form" class="mobile-searchform" data-update="1583121570518" action="/search/index.html">
+        <form id="gridea-search-form" class="mobile-searchform" data-update="1583135198707" action="/search/index.html">
             <i class="memory memory-search"></i>
             <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
         </form>
@@ -239,7 +239,7 @@ var _hmt = _hmt || [];
                                 
                                         <div class="thumbnail-shadow">
                                             <h1 class="post-title">
-                                                无负权最短路
+                                                最短路问题
                                             </h1>
                                             <div class="post-info">
                                                 <span class="post-category"><i class="memory memory-novel"></i>
@@ -259,11 +259,11 @@ var _hmt = _hmt || [];
                                                     </span>&nbsp;•&nbsp;
 
                                                     <span class="post-readtime">阅读时间:
-                                            <a href="#">2.8分</a></span>
+                                            <a href="#">4.7分</a></span>
                                                     <span class="post-edit"></span></div>
                                         </div>
                                         <div class="post-relative">
-                                            <img alt="👨‍🎓lxxs" src="https://lxxs.cf/images/avatar.png?v=1583121570518" srcset="https://lxxs.cf/images/avatar.png?v=1583121570518" class="avatar avatar-100 photo" width="100" height="100">
+                                            <img alt="👨‍🎓lxxs" src="https://lxxs.cf/images/avatar.png?v=1583135198707" srcset="https://lxxs.cf/images/avatar.png?v=1583135198707" class="avatar avatar-100 photo" width="100" height="100">
                                             <span class="post-type-author"><a href="https://lxxs.cf" title="由👨‍🎓lxxs发布" rel="author">👨‍🎓lxxs<i class="memory memory-certify"></i></a></span>
                                             <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-03-02</span>
                                         </div>
@@ -271,7 +271,13 @@ var _hmt = _hmt || [];
                         <div class="post-main post-type-main">
                             <div class="post-content">
                                 <div class="post-content-real">
-                                    <p>最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。</p>
+                                    <p>最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。<br>
+简述：<br>
+1.如果是稀疏图用邻接表，稠密图用邻接矩阵.<br>
+2.单源无负权优先用堆优化Dijkstra.<br>
+3.单源有负权优先用SPFA.<br>
+4.多源，真的很多的话，用Floyd.<br>
+5.规定走的步数的只能用原版Bellman_ford算法.</p>
 <h2 id="-more-"><!-- more --></h2>
 <h1 id="单源最短路">单源最短路</h1>
 <hr>
@@ -317,6 +323,8 @@ int h[N],ne[N],e[N],w[N],idx;
 bool st[N];int dist[N];
 priority_queue&lt;PII,vector&lt;PII&gt;,greater&lt;PII&gt;&gt; q;
 int dijkstra(int u){
+    memset(dist,0x3f,sizeof dist);
+    memset(h,-1,sizeof h);
     dist[u]=0;q.push({dist[u],u});
     while(!q.empty()){
         PII t = q.top();q.pop();
@@ -335,9 +343,54 @@ int dijkstra(int u){
 }
 </code></pre>
 <blockquote>
-<p>emm，个人推荐第二种堆优化的，好思考，而且快，没错**“快”**是王道。</p>
+<p>emm，个人推荐第二种堆优化的，好思考，而且快，没错<strong>快</strong>是王道。</p>
 </blockquote>
 <h1 id="bellman_ford">bellman_ford</h1>
+<p>bellman_ford真的很man，他是需要n次遍历m条边，当然这是朴素版。<br>
+然后堆优化版就好多了，堆优化的你也可以叫他<strong>SPFA</strong>,没错他死了。<br>
+话虽这么说，但是，他有Dijkstra无法替代的地方，就是它可以<strong>判断负环</strong>。可以处理<strong>负权路径</strong>。还行吧🤭</p>
+<h2 id="算法思路-2">算法思路🎉</h2>
+<p>初始化：<strong>dist[]<strong>数组初始化为</strong>+∞</strong>，定义最傻的起点、边、中点、权值的结构体数组。**dist[u]<strong>初始化为0。<br>
+1.遍历所有的边，更新以中点为下标的</strong>dist[]**的值<br>
+2.1重复n次。<br>
+ps:因为这里会处理负权，所以呢，**dist[i]**的值只要大于INF/2就可以。</p>
+<h2 id="bellman_ford_simple">bellman_ford_simple</h2>
+<pre><code class="language-cpp">struct Edge{
+    int a,b,w;
+};
+Edge e[N];int dist[N];
+int bellman_ford(int u){
+    memset(dist,0x3f,sizeof dist);
+    dist[u]=0;
+    For(i,1,n){
+        For(j,1,n){
+            int a = e[j].a,b = e[j].b,w=e[j].w;
+            dist[b]=min(dist[b],dist[a]+w);
+        }
+    }
+    return dist[m]&gt;INF/2?-1:dist[m];
+}
+</code></pre>
+<h2 id="bellman_ford_simple_limit">bellman_ford_simple_limit</h2>
+<p>ps:这个算法是bellman_ford的<strong>衍生版</strong>，用来求<strong>走k步</strong>可以的最短路径问题，当k&gt;=n&amp;&amp;不存在负权是他和bellman_ford_simple是一样的。</p>
+<pre><code class="language-cpp">struct Edge{
+    int a,b,w;
+};
+Edge e[N];
+int dist[N];int backup[N];
+int bellman_ford_simple_limit(int u){
+    memcpy(backup,dist,sizeof dist);
+    dist[u]=0;
+    For(i,1,k){
+        For(j,1,n){
+                int a = e[j].a,b=e[j].b,w=e[j].w;
+                dist[b]=min(dist[b]+backup[a]+w);
+        }
+    }
+    return dist[m]&gt;INF/2?-1:dist[m];
+}
+</code></pre>
+<h2 id="spfa">SPFA</h2>
 <hr>
 <h1 id="多源最短路">多源最短路</h1>
 <hr>
@@ -358,7 +411,7 @@ int dijkstra(int u){
                             <div class="post-copyright">
                                 作者:
                                 👨‍🎓lxxs<br>永久链接:
-                                    <a href="https://lxxs.cf/MOpTV3vdy/" title="无负权最短路">
+                                    <a href="https://lxxs.cf/MOpTV3vdy/" title="最短路问题">
                                         https://lxxs.cf/MOpTV3vdy/
                                     </a><br> 协议: MIT License
                             </div>
@@ -380,10 +433,22 @@ int dijkstra(int u){
     <i class="post-share"></i>
     <span>&#x5206;&#x4EAB;:</span>
                 <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/MOpTV3vdy/"><i class="fa fa-qrcode"></i></a>
-                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/MOpTV3vdy/&sharesource=qzone&title=无负权最短路&pics=https://lxxs.cf/images/avatar.png?v=1583121570518&summary=&lt;p&gt;最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。&lt;/p&gt;
+                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/MOpTV3vdy/&sharesource=qzone&title=最短路问题&pics=https://lxxs.cf/images/avatar.png?v=1583135198707&summary=&lt;p&gt;最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。&lt;br&gt;
+简述：&lt;br&gt;
+1.如果是稀疏图用邻接表，稠密图用邻接矩阵.&lt;br&gt;
+2.单源无负权优先用堆优化Dijkstra.&lt;br&gt;
+3.单源有负权优先用SPFA.&lt;br&gt;
+4.多源，真的很多的话，用Floyd.&lt;br&gt;
+5.规定走的步数的只能用原版Bellman_ford算法.&lt;/p&gt;
 "><i class="fa fa-qq"></i></a>
-                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/MOpTV3vdy/&sharesource=weibo&title=无负权最短路 + " - " + &lt;p&gt;最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。&lt;/p&gt;
-&pic="https://lxxs.cf/images/avatar.png?v=1583121570518"><i class="fa fa-weibo "></i></a>
+                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/MOpTV3vdy/&sharesource=weibo&title=最短路问题 + " - " + &lt;p&gt;最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。&lt;br&gt;
+简述：&lt;br&gt;
+1.如果是稀疏图用邻接表，稠密图用邻接矩阵.&lt;br&gt;
+2.单源无负权优先用堆优化Dijkstra.&lt;br&gt;
+3.单源有负权优先用SPFA.&lt;br&gt;
+4.多源，真的很多的话，用Floyd.&lt;br&gt;
+5.规定走的步数的只能用原版Bellman_ford算法.&lt;/p&gt;
+&pic="https://lxxs.cf/images/avatar.png?v=1583135198707"><i class="fa fa-weibo "></i></a>
                 </span>
                 
                     
@@ -684,7 +749,7 @@ int dijkstra(int u){
                     </a>
     </div>
     <div id='UpdateTime' style='display:none'>
-        1583121570518
+        1583135198707
     </div>
     <script>
         var titleTime;
