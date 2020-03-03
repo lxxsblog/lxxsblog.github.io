@@ -164,13 +164,13 @@ var _hmt = _hmt || [];
                     
             </ul>
         </nav>
-        <form id="gridea-search-form" class="searchform" data-update="1583225622302" action="/search/index.html">
+        <form id="gridea-search-form" class="searchform" data-update="1583227678930" action="/search/index.html">
             <i class="memory memory-search"></i>
             <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
         </form>
     </div>
     <div id="mobile-menu">
-        <form id="gridea-search-form" class="mobile-searchform" data-update="1583225622302" action="/search/index.html">
+        <form id="gridea-search-form" class="mobile-searchform" data-update="1583227678930" action="/search/index.html">
             <i class="memory memory-search"></i>
             <input id="s" class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
         </form>
@@ -259,11 +259,11 @@ var _hmt = _hmt || [];
                                                     </span>&nbsp;•&nbsp;
 
                                                     <span class="post-readtime">阅读时间:
-                                            <a href="#">1.2分</a></span>
+                                            <a href="#">2.7分</a></span>
                                                     <span class="post-edit"></span></div>
                                         </div>
                                         <div class="post-relative">
-                                            <img alt="👨‍🎓lxxs" src="https://lxxs.cf/images/avatar.png?v=1583225622302" srcset="https://lxxs.cf/images/avatar.png?v=1583225622302" class="avatar avatar-100 photo" width="100" height="100">
+                                            <img alt="👨‍🎓lxxs" src="https://lxxs.cf/images/avatar.png?v=1583227678930" srcset="https://lxxs.cf/images/avatar.png?v=1583227678930" class="avatar avatar-100 photo" width="100" height="100">
                                             <span class="post-type-author"><a href="https://lxxs.cf" title="由👨‍🎓lxxs发布" rel="author">👨‍🎓lxxs<i class="memory memory-certify"></i></a></span>
                                             <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-03-03</span>
                                         </div>
@@ -279,12 +279,13 @@ var _hmt = _hmt || [];
 ps：<strong>个人觉得</strong>Kruskal比较优越一点😁</p>
 <h1 id="prim">Prim</h1>
 <p>怎么说，<strong>Prim</strong>的代码简介，思路好理解，而且操作起来容易一点。<br>
-但是他对于稀疏图的处理速度比Kruskal慢的多。</p>
+但是他对于稀疏图的处理速度比Kruskal慢的多。<br>
+当然Prim算法是有堆优化版的，不过速度快不了多少，代码反而麻烦太多，所以不推荐也不写。</p>
 <h2 id="算法思路">算法思路🎉</h2>
 <p>初始化：将**disk[rand()]**初始化为0，这样代码会好理解很多，好写很多。<br>
 1.查找集合可以到达的点中，花费最小的点，连接。<br>
 2.重复1步骤。就是这么简单O(∩_∩)O</p>
-<h2 id="prim_code">Prim_code</h2>
+<h2 id="prim_code">Prim_code🎈</h2>
 <pre><code class="language-cpp">int h[N],ne[N],w[N],e[N],idx;
 int dist[N];bool st[N];
 int prim(int u){
@@ -306,6 +307,41 @@ int prim(int u){
     return res;
 }
 </code></pre>
+<h1 id="kruskal">Kruskal</h1>
+<p><strong>Kruskal</strong>是按照边的原则进行的，所以我们只需要遍历所有的边就OK，其中对并查集进行优化速度是非常可观的，当然这决定了它适合<strong>稀疏图</strong>的特性。当然稠密图可以碰碰运气😁。</p>
+<h2 id="算法思路-2">算法思路🎉</h2>
+<p>初始化：cnt统计<strong>最小生成树集合</strong>中的点，所以一开始必须是1.需要对边权进行排序。<br>
+1.查找最小的边，看看是否属于同一集合<br>
+2.如果属于继续下一条边，如果不属于合并集合，继续操作<br>
+3.重复1，2；</p>
+<h2 id="kruskal_code">Kruskal_code🎈</h2>
+<pre><code class="language-cpp">int p[N];
+struct Edge{
+    int a,b,w;
+    bool operator&lt;(const Edge &amp;w)const{
+        return w&lt;W.w
+    }
+};
+Edge e[N];
+int find(int x){
+    return p[x]==x?p[x]:p[x]=find(p[x]);
+}
+int kruskal(int m){
+    sort(e,e+m);
+    int res  = 0,cnt = 1;
+    For(i,1,m){
+        int a=e[i].a,b=e[i].b,w=e[i].w;
+        a=find(a),b=find(b);
+        if(a!=b){
+                p[a]=b;//可以随机化处理
+                res+=w;
+                cnt++;//不用担心两个连通块，因为cnt就直接判出了
+        }
+    }
+    return cnt&lt;n?INF:res;//最小生成树生成的时候会进行环的处理，所以最小生成树中点的个数可以用来判断是否有最小生成树。
+}
+</code></pre>
+<p>喜欢的话就打个赏吧，不打赏转发总可以吧💰。</p>
 
                                 </div>
                             </div>
@@ -345,10 +381,10 @@ int prim(int u){
     <i class="post-share"></i>
     <span>&#x5206;&#x4EAB;:</span>
                 <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/v26uISOLa/"><i class="fa fa-qrcode"></i></a>
-                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/v26uISOLa/&sharesource=qzone&title=最小生成树算法&pics=https://lxxs.cf/images/avatar.png?v=1583225622302&summary=&lt;p&gt;最小生成树可以选择的是很少的，一共就两个。&lt;/p&gt;
+                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/v26uISOLa/&sharesource=qzone&title=最小生成树算法&pics=https://lxxs.cf/images/avatar.png?v=1583227678930&summary=&lt;p&gt;最小生成树可以选择的是很少的，一共就两个。&lt;/p&gt;
 "><i class="fa fa-qq"></i></a>
                 <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/v26uISOLa/&sharesource=weibo&title=最小生成树算法 + " - " + &lt;p&gt;最小生成树可以选择的是很少的，一共就两个。&lt;/p&gt;
-&pic="https://lxxs.cf/images/avatar.png?v=1583225622302"><i class="fa fa-weibo "></i></a>
+&pic="https://lxxs.cf/images/avatar.png?v=1583227678930"><i class="fa fa-weibo "></i></a>
                 </span>
                 
                     
@@ -654,7 +690,7 @@ int prim(int u){
                     </a>
     </div>
     <div id='UpdateTime' style='display:none'>
-        1583225622302
+        1583227678930
     </div>
     <script>
         var titleTime;
