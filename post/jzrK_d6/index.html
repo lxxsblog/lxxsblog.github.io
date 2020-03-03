@@ -235,18 +235,16 @@ var _hmt = _hmt || [];
                     <article class="post post-type real-post">
                         <header class="post-type-header">
                             
-                                <div class="thumbnail-link" style="background-image: url('https://i.loli.net/2020/02/25/41ksCERmVoWrivZ.jpg')"></div>
+                                <div class="thumbnail-link" style="background-image: url('https://i.loli.net/2020/03/01/l2raG87ZWnPHqvp.jpg')"></div>
                                 
                                         <div class="thumbnail-shadow">
                                             <h1 class="post-title">
-                                                NOIP-C++
+                                                🎉吐槽
                                             </h1>
                                             <div class="post-info">
                                                 <span class="post-category"><i class="memory memory-novel"></i>
                                         
-                                            <a href="https://lxxs.cf/tag/rmzkOHRD2/" rel="category">阶段性总结</a>
-                                            
-                                            <a href="https://lxxs.cf/tag/gCKkJIha8/" rel="category">OI</a>
+                                            <a href="https://lxxs.cf/tag/tu-cao/" rel="category">吐槽</a>
                                             
                                     </span>&nbsp;•&nbsp;
                                                 <span class="post-view">
@@ -257,516 +255,203 @@ var _hmt = _hmt || [];
                                                     </span>&nbsp;•&nbsp;
 
                                                     <span class="post-readtime">阅读时间:
-                                            <a href="#">16.6分</a></span>
+                                            <a href="#">3.2分</a></span>
                                                     <span class="post-edit"></span></div>
                                         </div>
                                         <div class="post-relative">
                                             <img alt="👨‍🎓lxxs" src="https://lxxs.cf/images/avatar.png?v=1583274910557" srcset="https://lxxs.cf/images/avatar.png?v=1583274910557" class="avatar avatar-100 photo" width="100" height="100">
                                             <span class="post-type-author"><a href="https://lxxs.cf" title="由👨‍🎓lxxs发布" rel="author">👨‍🎓lxxs<i class="memory memory-certify"></i></a></span>
-                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2019-12-02</span>
+                                            <span class="post-publish"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2020-03-01</span>
                                         </div>
                         </header>
                         <div class="post-main post-type-main">
                             <div class="post-content">
                                 <div class="post-content-real">
-                                    <blockquote>
-<p>复赛可使用C、C++、Pascal语言，2022年后将不可使用Pascal、C语言，只能使用C++。<br>
-目前本人主要学的就是C++,毕竟C++一定不会被抹除。<br>
-对于C++，这里也只是一些作者的笔记，作者起草笔记的时候还是即将进入高一的暑假，C++的内容也都是自己学的，所以可能很垃圾，不要吐槽，毕竟只是为了记录一下。重要的事情说三遍：大神勿喷，大神勿喷，大神勿喷。如果有补充的地方，可以评论区留言，谢谢。😘</p>
-</blockquote>
-<h2 id="-more-"><!-- more --></h2>
-<h1 id="前言">前言</h1>
-<p>作者用的是IDE（code::block），个人觉得还是相当好用的。当然别的也不错，比如atom之类的，如果是别的，自己百度吧。如果你觉得自己很棒，可以尝试记事本+命令行😂。再就是学习编程语言最好的方法就是多练习进行实战。</p>
-<blockquote>
-<p>光听不练，假把式。😄<br>
-放上我觉得最好用的code::block：<a href="https://share.weiyun.com/5GMhyu5">下载地址</a><br>
-一般使用的标准都是11版的，具体如何操作：<a href="https://baidu.com">操作方法</a><br>
-代码高亮我是用的官方的，官方的是替换APPdate的codeblock日志，将官方提供的日志文件替换，然后就可以再code的编辑器设置里修改了。<br>
-然后跟人觉得练习C++最好的网站就是一本通和大雪菜的网站了，洛谷也不错，附上链接。<br>
-<a href="http://ybt.ssoier.cn:8088/">一本通</a><br>
-<a href="https://www.acwing.com/problem/">大雪菜</a><br>
-<a href="https://www.luogu.org/training/mainpage">洛谷</a></p>
-</blockquote>
-<p>如果靠C++基础，记住两句话</p>
-<blockquote>
-<p>C++是C的继承；C++是面向对象的程序设计语言。</p>
-</blockquote>
-<p>应该就这一些吧，没有别的了。😊</p>
-<hr>
-<h1 id="c最基础">C++最基础</h1>
-<h2 id="最基础的一段程序">最基础的一段程序</h2>
-<pre><code>#include &lt;iostream&gt;                          //这是头文件
-
-using namespace std;						 //这是命名空间
-
-int main()									 //这是程序的主体部分	
-{
-    cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; endl;
-    return 0;								 //一定不能少了这个
-}
-</code></pre>
-<h3 id="头文件">头文件</h3>
-<p>记得这个笔记不是我的，我复制的别人的，但是毕竟写的是个人笔记么，就不管了。。😖</p>
-<p>{% fold 点击显/隐内容 %}</p>
-<pre><code>C/C++头文件一览
-
-C
-
-#include &lt;assert.h&gt;　　　　//设定插入点
-#include &lt;ctype.h&gt;　　　　 //字符处理
-#include &lt;errno.h&gt;　　　　 //定义错误码
-#include &lt;float.h&gt;　　　　 //浮点数处理
-#include &lt;iso646.h&gt;        //对应各种运算符的宏
-#include &lt;limits.h&gt;　　　　//定义各种数据类型最值的常量
-#include &lt;locale.h&gt;　　　　//定义本地化C函数
-#include &lt;math.h&gt;　　　　　//定义数学函数
-#include &lt;setjmp.h&gt;        //异常处理支持
-#include &lt;signal.h&gt;        //信号机制支持
-#include &lt;stdarg.h&gt;        //不定参数列表支持
-#include &lt;stddef.h&gt;        //常用常量
-#include &lt;stdio.h&gt;　　　　 //定义输入／输出函数
-#include &lt;stdlib.h&gt;　　　　//定义杂项函数及内存分配函数
-#include &lt;string.h&gt;　　　　//字符串处理
-#include &lt;time.h&gt;　　　　　//定义关于时间的函数
-#include &lt;wchar.h&gt;　　　　 //宽字符处理及输入／输出
-#include &lt;wctype.h&gt;　　　　//宽字符分类
-
-传统C++
-
-#include &lt;fstream.h&gt;　　　 //改用&lt;fstream&gt;
-#include &lt;iomanip.h&gt;　　　 //改用&lt;iomainip&gt;
-#include &lt;iostream.h&gt;　　　//改用&lt;iostream&gt;
-#include &lt;strstrea.h&gt;　　　//该类不再支持，改用&lt;sstream&gt;中的stringstream
-
-————————————————————————————————
-
-标准C++　
-
-#include &lt;algorithm&gt;　　　 //STL 通用算法
-#include &lt;bitset&gt;　　　　　//STL 位集容器
-#include &lt;cctype&gt;         //字符处理
-#include &lt;cerrno&gt; 　　　　 //定义错误码
-#include &lt;cfloat&gt;　　　　 //浮点数处理
-#include &lt;ciso646&gt;         //对应各种运算符的宏
-#include &lt;climits&gt; 　　　　//定义各种数据类型最值的常量
-#include &lt;clocale&gt; 　　　　//定义本地化函数
-#include &lt;cmath&gt; 　　　　　//定义数学函数
-#include &lt;complex&gt;　　　　 //复数类
-#include &lt;csignal&gt;         //信号机制支持
-#include &lt;csetjmp&gt;         //异常处理支持
-#include &lt;cstdarg&gt;         //不定参数列表支持
-#include &lt;cstddef&gt;         //常用常量
-#include &lt;cstdio&gt; 　　　　 //定义输入／输出函数
-#include &lt;cstdlib&gt; 　　　　//定义杂项函数及内存分配函数
-#include &lt;cstring&gt; 　　　　//字符串处理
-#include &lt;ctime&gt; 　　　　　//定义关于时间的函数
-#include &lt;cwchar&gt; 　　　　 //宽字符处理及输入／输出
-#include &lt;cwctype&gt; 　　　　//宽字符分类
-#include &lt;deque&gt;　　　　　 //STL 双端队列容器
-#include &lt;exception&gt;　　　 //异常处理类
-#include &lt;fstream&gt; 　　　 //文件输入／输出
-#include &lt;functional&gt;　　　//STL 定义运算函数（代替运算符）
-#include &lt;limits&gt; 　　　　 //定义各种数据类型最值常量
-#include &lt;list&gt;　　　　　　//STL 线性列表容器
-#include &lt;locale&gt;         //本地化特定信息
-#include &lt;map&gt;　　　　　　 //STL 映射容器
-#include &lt;memory&gt;         //STL通过分配器进行的内存分配
-#include&lt;new&gt;            //动态内存分配
-#include &lt;numeric&gt;         //STL常用的数字操作
-#include &lt;iomanip&gt; 　　　 //参数化输入／输出
-#include &lt;ios&gt;　　　　　　 //基本输入／输出支持
-#include &lt;iosfwd&gt;　　　　　//输入／输出系统使用的前置声明
-#include &lt;iostream&gt; 　　　//数据流输入／输出
-#include &lt;istream&gt;　　　　 //基本输入流
-#include &lt;iterator&gt;        //STL迭代器
-#include &lt;ostream&gt;　　　　 //基本输出流
-#include &lt;queue&gt;　　　　　 //STL 队列容器
-#include &lt;set&gt;　　　　　　 //STL 集合容器
-#include &lt;sstream&gt;　　　　 //基于字符串的流
-#include &lt;stack&gt;　　　　　 //STL 堆栈容器
-#include &lt;stdexcept&gt;　　　 //标准异常类
-#include &lt;streambuf&gt;　　　 //底层输入／输出支持
-#include &lt;string&gt;　　　　　//字符串类
-#include &lt;typeinfo&gt;        //运行期间类型信息
-#include &lt;utility&gt;　　　　 //STL 通用模板类
-#include &lt;valarray&gt;        //对包含值的数组的操作
-#include &lt;vector&gt;　　　　　//STL 动态数组容器
-
-————————————————————————————————
-
-C99增加的部分
-
-#include &lt;complex.h&gt;　　 //复数处理
-#include &lt;fenv.h&gt;　　　　//浮点环境
-#include &lt;inttypes.h&gt;　　//整数格式转换
-#include &lt;stdbool.h&gt;　　 //布尔环境
-#include &lt;stdint.h&gt;　　　//整型环境
-#include &lt;tgmath.h&gt;　　　//通用类型数学宏
-
-头文件 ctype.h
-字符处理函数: 本类别函数用于对单个字符进行处理，包括字符的类别测试和字符的大小写转换
-----------------------------------------
-字符测试是否字母和数字 isalnum
-是否字母 isalpha
-是否控制字符 iscntrl
-是否数字 isdigit
-是否可显示字符(除空格外) isgraph
-是否可显示字符(包括空格) isprint
-是否既不是空格，又不是字母和数字的可显示字符 ispunct
-是否空格 isspace
-是否大写字母 isupper
-是否16进制数字(0－9，A-F)字符 isxdigit
-字符大小写转换函数 转换为大写字母 toupper
-转换为小写字母 tolower
-
-头文件 local.h
-地区化: 本类别的函数用于处理不同国家的语言差异。
-----------------------------------------
-地区控制 地区设置 setlocale
-数字格式约定查询 国家的货币、日期、时间等的格式转换 localeconv
-
-
-头文件 math.h
-数学函数: 本分类给出了各种数学计算函数，必须提醒的是ANSIC标准中的数据格式并不符合IEEE754标准，一些C语言编译器却遵循IEEE754(例如frinklin C51)
-----------------------------------------
-
-反余弦 acos
-反正弦 asin
-反正切 atan
-反正切2 atan2
-余弦 cos
-正弦 sin
-正切 tan
-
-双曲余弦 cosh
-双曲正弦 sinh
-双曲正切 tanh
-
-指数函数 exp
-指数分解函数 frexp
-乘积指数函数 fdexp
-自然对数 log
-以10为底的对数 log10
-浮点数分解函数 modf
-
-幂函数 pow
-平方根函数 sqrt
-
-求下限接近整数 ceil
-绝对值 fabs
-求上限接近整数 floor
-求余数 fmod
-
-
-
-头文件 setjmp.h io.h
-本分类函数用于实现在不同底函数之间直接跳转代码。
-----------------------------------------
-保存调用环境 setjmp
-恢复调用环境 longjmp
-
-头文件 signal.h
-信号处理: 该分类函数用于处理那些在程序执行过程中发生例外的情况。
-----------------------------------------
-指定信号处理函数 signal
-发送信号 raise
-
-
-头文件 stdarg.h
-可变参数处理: 本类函数用于实现诸如printf,scanf等参数数量可变底函数。
-----------------------------------------
-可变参数访问宏
-可变参数开始宏 va_start
-可变参数结束宏 va_end
-可变参数访问宏 访问下一个可变参数宏 va_arg
-
-
-头文件 stdio.h
-输入输出函数:该分类用于处理包括文件、控制台等各种输入输出设备，各种函数以“流”的方式实现
-----------------------------------------
-删除文件 remove
-修改文件名称 rename
-生成临时文件名称 tmpfile
-得到临时文件路径 tmpnam
-文件访问 关闭文件 fclose
-刷新缓冲区 fflush
-打开文件 fopen
-将已存在的流指针和新文件连接 freopen
-设置磁盘缓冲区 setbuf
-设置磁盘缓冲区 setvbuf
-
-格式化输入与输出函数
-格式输出 fprintf
-格式输入 fscanf
-格式输出(控制台) printf
-格式输入(控制台) scanf
-格式输出到缓冲区 sprintf
-从缓冲区中按格式输入 sscanf
-格式化输出 vfprintf
-格式化输出 vprintf
-格式化输出 vsprintf
-
-字符输入输出函数
-输入一个字符 fgetc
-字符串输入 fgets
-字符输出 fputc
-字符串输出 fputs
-字符输入(控制台) getc
-字符输入(控制台) getchar
-字符串输入(控制台) gets
-字符输出(控制台) putc
-字符输出(控制台) putchar
-字符串输出(控制台) puts
-字符输出到流的头部 ungetc
-
-直接输入输出
-直接流读操作 fread
-直接流写操作 fwrite
-
-文件定位函数
-得到文件位置 fgetpos
-文件位置移动 fseek
-文件位置设置 fsetpos
-得到文件位置 ftell
-文件位置复零位 remind
-
-错误处理函数
-错误清除 clearerr
-文件结尾判断 feof
-文件错误检测 ferror
-得到错误提示字符串 perror
-
-头文件 stdlib.h
-实用工具函数: 本分类给出了一些函数无法按以上分类，但又是编程所必须要的。
-----------------------------------------
-字符串转换函数
-字符串转换为整数 atoi
-字符串转换为长整数 atol
-字符串转换为浮点数 strtod
-字符串转换为长整数 strtol
-字符串转换为无符号长整型 strtoul
-
-伪随机序列产生函数
-产生随机数 rand
-设置随机函数的起动数值 srand
-
-存储管理函数
-分配存储器 calloc
-释放存储器 free
-存储器分配 malloc
-重新分配存储器 realloc
-
-环境通信
-中止程序 abort
-退出程序执行，并清除环境变量 atexit
-退出程序执行 exit
-读取环境参数 getenv
-程序挂起，临时执行一个其他程序 system
-搜索和排序工具 二分查找(数据必须已排序) bsearch
-快速排序 qsort
-整数运算函数 求绝对值 abs
-得到除法运算底商和余数 div
-求长整形底绝对值 labs
-求长整形除法的商和余数 ldiv
-多字节字符函数 得到多字节字符的字节数 mblen
-得到多字节字符的字节数 mbtowc
-多字节字符转换 wctomb
-多字节字符的字符串操作 将多字节串转换为整数数组 mbstowcs
-将多字节串转换为字符数组 mcstowbs
-
-头文件 string.h
-字符串处理: 本分类的函数用于对字符串进行合并、比较等操作
-----------------------------------------
-字符串拷贝 块拷贝(目的和源存储区不可重叠) memcpy
-块拷贝(目的和源存储区可重叠) memmove
-串拷贝 strcpy
-按长度的串拷贝 strncpy
-字符串连接函数 串连接 strcat
-按长度连接字符串 strncat
-串比较函数 块比较 memcmp
-字符串比较 strcmp
-字符串比较(用于非英文字符) strcoll
-按长度对字符串比较 strncmp
-字符串转换 strxfrm
-字符与字符串查找 字符查找 memchr
-字符查找 strchr
-字符串查找 strcspn
-字符串查找 strpbrk
-字符串查找 strspn
-字符串查找 strstr
-字符串分解 strtok
-杂类函数 字符串设置 memset
-错误字符串映射 strerror
-求字符串长度 strlen
-
-头文件 time.h
-日期和时间函数: 本类别给出时间和日期处理函数
-----------------------------------------
-时间操作函数得到处理器时间 clock
-得到时间差 difftime
-设置时间 mktime
-得到时间 time
-时间转换函数 得到以ASCII码表示的时间 asctime
-得到字符串表示的时间 ctime
-得到指定格式的时间 strftime
-
-序号 库类别 头文件
-----------------------------------------
-1   错误处理      errno.h
-2   字符处理      ctyphe.
-3   地区化        local.h
-4   数学函数      math.h
-5   信号处理      signal.h
-6   输入输出      stdio.h
-7   实用工具程序   stdlib.h
-8   字符串处理     string.h
-</code></pre>
-<p>{% endfold %}</p>
-<p>额，看了这么多头疼了吧，附上我练习时经常用的几个头文件。</p>
-<pre><code>#include&lt;bits/stdc++.h&gt; 万能头文件（NOIP可用，对运行时间应该没怎么有影响吧，毕竟只是负责预处理） 
-#include&lt;vector&gt;        数组的替代品
-#include&lt;algorithm&gt;     算法
-#include &lt;iostream&gt;		必备头文件
-#include &lt;iomanip&gt;		一些功能需要他来实现，最好每次都写上
-#include &lt;cmath&gt;		数学专用
-</code></pre>
-<h3 id="命名空间">命名空间</h3>
-<p>这个没什么好说的，除非你是大佬需要自定义命名空间，正常按规矩写上就好了。😶</p>
-<h3 id="程序的主体部分">程序的主体部分</h3>
-<p>标准的就是</p>
-<pre><code>int main
-{
-
-
-}
-</code></pre>
-<p>使用自定义函数的情况另外讨论，下方会提到。</p>
-<h3 id="return-0">return 0；</h3>
-<p>怎么说这个可以说是主体部分的刚需，如果你写的是return 1;虽然不会报错但是他会无限的运行，如果是自定义函数那另外讨论，总之我学的时候，课程告诉我默认写上就行。</p>
-<h3 id="关于日常出错的错误">关于日常出错的🤢错误</h3>
-<p>如果使用的不熟练，可能根本看不懂报错信息的含义，那我就列举几个非常常见有非常恶心的错误；</p>
-<ul>
-<li>中文符号乱用（单引号，双引号，特别是分号）</li>
-<li>可能写的某句话忘记加上英文分号了</li>
-<li>使用的标准太旧</li>
-<li>拼写错误</li>
-<li>没有引入头文件<br>
-这些可能现在不懂什么意思，不要紧，这是给报错的时候用的。</li>
-</ul>
-<h2 id="循环结构和判断语句">循环结构和判断语句</h2>
-<p>循环结构可以说是所有编程语言语法中最最最基础的部分了，所以还算简单。<br>
-使用循环的模式只是一种外表，你想要用循环表达的内容才是精华，所以写循环之前最好写一个流程图明确一下。<br>
-<a href="https://baidu.com/">流程图学习</a></p>
-<p>实战必须</p>
-<blockquote>
-<p><a href="http://ybt.ssoier.cn:8088/">一本通</a><br>
-<a href="https://www.acwing.com/problem/">大雪菜</a><br>
-<a href="https://www.luogu.org/training/mainpage">洛谷</a></p>
-</blockquote>
-<h3 id="判断结构">判断结构</h3>
-<p>判断结构分为if/switch case 机构<br>
-if分为标准if/if else/if  else if<br>
-具体我会分开讲</p>
-<h4 id="标准的if结构">标准的if结构</h4>
-<p>代码😅</p>
-<pre><code>if (判断条件)
-运行内容;
-这样只能运行if下方的一句内容
-</code></pre>
-<pre><code>if (判断条件)
-    {
-        执行语句;
+                                    <!-- 晴天说说_v1.12 2019-09-20 星球彦 http://storeweb.cn -->
+<p><br>lxxs超级可爱的吐槽！！😇</p>
+<!-- ----------------------------------- 配置 --------------------------------------- -->
+<!-- HTTPS 加载此jquery：-->
+<script src='https://libs.baidu.com/jquery/1.11.1/jquery.min.js'></script>
+<!-- ----------------------------------- 配置 --------------------------------------- -->
+<style type="text/css">
+    .hide {
+        display: none !important;
     }
-
-花括号内的内容都运行
-</code></pre>
-<p>可以说标准的if非常简单，符合if的判断条件就执行语句，就是这个意思。<br>
-附上可有可无的流程图😂。<br>
-<img src="https://s2.ax1x.com/2019/07/03/ZY0bCD.png" alt="ZY0bCD.png" loading="lazy"></p>
-<h4 id="if-else结构">if-else结构。</h4>
-<p>这个和if的区别在于，如果if判断条件生效会运行一段程序，不生效再运行另一段程序</p>
-<pre><code>if (判断条件)
-    {
-        执行程序;
+    .clear {
+        clear: both;
     }
-    else
-    {
-        执行程序;
+    .storeweb-say>div.say-container {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        padding: 10px 20px;
+        background-color: #fafafa;    /*#bed742*/
+        border-radius: 6px;
+        font-size: 15px;
+        color: #d93a49 !important;    /*#2e3a1f*/
+        line-height: 200%;
+        border: 1px #ccc solid;
     }
-</code></pre>
-<p>基本结构很简单，和if的差不多。<br>
-附上比较有用的流程图😂。。。<br>
-<img src="https://s2.ax1x.com/2019/07/03/ZY0huR.jpg" alt="ZY0huR.jpg" loading="lazy"></p>
-<h4 id="if-else-if结构">if - else if结构</h4>
-<pre><code>if (运行条件)
-    {
-        运行语句;
+    .storeweb-say-month {
+        font-size: 30px;
     }
-    else if (运行条件1)
-    {
-        执行语句;
+    .storeweb-say-day {
+        font-size: 18px;
     }
-    else if (运行条件2)
-    {
-        执行语句;
+    .storeweb-say-name {
+        font-size: 18px;
+        margin-left: 20px;
+        color: #333 !important;
     }
-    else
-    {
-        执行语句;
+    .say-container>img {
+        margin-top: 16px;
     }
-</code></pre>
-<p>哈哈，经典代码。<br>
-else if可以无限写的，所以这相当于很多if语句的嵌套，当这些条件都不符合时，执行else，非常好理解吧。</p>
-<figure data-type="image" tabindex="1"><img src="https://s2.ax1x.com/2019/07/03/ZY05Hx.png" alt="ZY05Hx.png" loading="lazy"></figure>
-<h4 id="switch-case">switch case</h4>
-<h3 id="循环结构">循环结构</h3>
-<p>循环结构分为for/while/do while三种，我学的是三种。当然还有递归和递推，这个另算，主要是我还没大很熟练，所以先不谈这个，哈哈😄。</p>
-<h4 id="for循环语句">for循环语句</h4>
-<pre><code>for ( int i = 0; 停止条件; i++ )
-{
-   你要运行的语句;
-}
-</code></pre>
-<p>我是这么理解的，首先定义一个i的初值，然后定义一个i结束的值，循环条件成立并执行玩循环语句后i值的变化情况。<br>
-当然着些条件都可以不写，但是看你的需求了，如果你想无限循环那就不写。比如你就是想让他循环，再执行语句的部分添加break跳出也可以，当然最后我会补充break和continue。<br>
-正常for的判断次数比运行语句多一次，i的值和循环次数一样。<br>
-对于for循环附上两张流程图<br>
-<img src="https://s2.ax1x.com/2019/07/03/ZY0oE6.png" alt="ZY0oE6.png" loading="lazy"><br>
-<img src="https://s2.ax1x.com/2019/07/03/ZY074O.png" alt="ZY074O.png" loading="lazy"><br>
-for循环可以做的事情很多，看你怎么用了。<br>
-对于for循环的实战最多的就是高斯算法和打印图形了，具体可以去刷一下一本通，网址前面有。</p>
-<h4 id="while循环语句">while循环语句</h4>
-<p>基本格式：</p>
-<pre><code>while（运行条件）
-
-{
-
- 	执行语句；
-
-}
-</code></pre>
-<p>值得注意的是while的判断比循环是多一次的。懂么，因为是先判断再执行语句。</p>
-<p>便于理解附上流程图<br>
-<img src="https://s2.ax1x.com/2019/07/03/ZY04D1.png" alt="ZY04D1.png" loading="lazy"><br>
-别忘了去一本通实战。</p>
-<h4 id="do-while循环">do-while循环</h4>
-<p>基本格式：</p>
-<pre><code>do
-{
-
-	执行语句；
-
-}while（条件判断）
-</code></pre>
-<p>do-while是先运行然后判断，当判断生效时不进行执行，具体次数关系，自己分析😄。<br>
-附上流程图<br>
-<img src="https://s2.ax1x.com/2019/07/03/ZY0TUK.png" alt="ZY0TUK.png" loading="lazy"><br>
-别忘了去一本通实战。</p>
-<blockquote>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。<br>
-版权声明：本文为原创文章，版权归 <a href="https://mlxxs.github.io">路迅先生</a> 所有。<br>
-您可以自由的转载和修改，但请务必注明文章来源并且不可用于商业</p>
-</blockquote>
+    .storeweb-say-name:hover {
+        color: #0074d9 !important;
+        text-decoration: underline;
+    }
+    .is_member_others{
+        color: #d71345 !important;
+    }
+    .primary {
+        border: none;
+        background-color: #467B96 !important;
+        cursor: pointer;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        color: #FFF !important;
+    }
+    .btn {
+        border: none;
+        background-color: #E9E9E6 !important;
+        cursor: pointer;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        display: inline-block;
+        padding: 4px 12px;
+        height: 34px;
+        color: #666 !important;
+        vertical-align: middle;
+        zoom: 1;
+    }
+    .btn:hover {
+        background-color: #666 !important;
+        color: #E9E9E6 !important;
+    }
+</style>
+<script data-no-instant>
+    // ----------------------------------- 配置 ---------------------------------------
+    var url = "https://storeweb.cn/api/say";  // 如果你的网站是HTTPS，则用这一行代码
+    //var url = "http://storeweb.cn/api/say";     // 如果你的网站是HTTP
+    // ----------------------------------- 配置 ---------------------------------------
+    function get_say_api(timeout) {
+        $.ajax({
+            type: 'get',
+            url: url,
+            async: true,
+            dataType: 'jsonp',
+            data: {},
+            timeout: 3000,
+            success: function (result) {
+                if (result.success == 1) {
+                    //console.log(success['data']);
+                    template_make(result.data, result.information);
+                    set_storeweb_info(result.information);
+                    set_pagiation_button(result.pagination);
+                } else {
+                    $('.site-friend-link').html(result.info);
+                }
+            },
+            complete: function (XMLHttpRequest, status) { //请求完成后最终执行参数
+                if (status == 'timeout') {//超时,status还有success,error等值的情况
+                    if (timeout == 1) {
+                        $('.storeweb-say').html('获取数据超时……请联系个站商店小彦');
+                    } else {
+                        url = "http://storeweb.cn/api/say";
+                        $('.storeweb-say').html('https 获取数据超时……尝试http获取……');
+                        get_say_api(1);
+                    }
+                }
+            }
+        });
+    }
+    $(function () {
+        $('.storeweb-say').html('正在向『个站商店』请求友链数据……');
+        get_say_api(0);
+    })
+    function template_make(data, information) {
+        //console.log(data)
+        $('.storeweb-say').html('');
+        $.each(data, function (key, value) {
+            //console.log(value.name);
+            var template = $('#say-template').text();
+            template = template.replace('%%content%%', value.content);
+            template = template.replace('%%name%%', value.member.name);
+            template = template.replace('%%month%%', value.create_at_month);
+            template = template.replace('%%day%%', value.create_at_day);
+            template = template.replace('%%is_member_others%%', value.is_member_others);
+            template = template.replace('%%image_cn%%', value.image_cn);
+            if(value.url == ""){
+                template = template.replace('%%url%%', '');
+                template = template.replace('%%say-url%%', 'hide');
+            }else{
+                template = template.replace('%%url%%', value.url);
+                template = template.replace('%%url%%', value.url);
+                template = template.replace('%%say-url%%', '');
+            }
+            var template_id = $(template);
+            $('.storeweb-say').append(template_id);
+        })
+    }
+    function set_storeweb_info(information) {
+        $('.site-friend-link-homepage').attr('href', information['homepage']);
+        $('.site-friend-link-project').attr('href', information['project']);
+        //$('.site-friend-link-storeweb').attr('href',information['storeweb']);
+    }
+    function submit_pagination(url_button) {
+        $('.storeweb-say').html('正在向『个站商店』请求友链数据……');
+        url = url_button;
+        get_say_api(0);
+    }
+    function set_pagiation_button(pagination){
+        var template = $('#say-pagination-template').text();
+        if(pagination.prev_page_url){
+            template = template.replace('%%prev_page_url%%', pagination.prev_page_url);
+            template = template.replace('%%say-button-prev%%', '');
+        }else{
+            template = template.replace('%%prev_page_url%%', '');
+            template = template.replace('%%say-button-prev%%', 'hide');
+        }
+        if(pagination.next_page_url){
+            template = template.replace('%%next_page_url%%', pagination.next_page_url);   
+            template = template.replace('%%say-button-next%%', '');
+        }else{
+            template = template.replace('%%next_page_url%%', '');
+            template = template.replace('%%say-button-next%%', 'hide');
+        }
+        var template_id = $(template);
+        $('.storeweb-say').append(template_id);
+    }
+</script>
+<div class="clear"></div>
+<div class="storeweb-say">
+</div>
+<script type="text/html" id="say-template" data-no-instant>
+    <span class="storeweb-say-month">%%month%%</span> <span class="storeweb-say-day">%%day%%</span> <span class="storeweb-say-name %%is_member_others%%">%%name%%</span>
+    <div class="say-container">
+        <div class="say-contant">%%content%%</div>
+        <a href="%%url%%" target="_blank" class="%%say-url%%">%%url%%</a>
+        <img src="%%image_cn%%">
+    </div>
+</script>
+<script type="text/html" id="say-pagination-template" data-no-instant>
+    <div class="say-pagination">
+        <a href="Javascript:submit_pagination('%%prev_page_url%%')" class="btn primary left %%say-button-prev%%"><< 较新的一页</a>
+        <a href="Javascript:submit_pagination('%%next_page_url%%')" class="btn primary right %%say-button-next%%">之前的一页 >></a>
+    </div>
+</script>
+<div class="clear"></div>
 
                                 </div>
                             </div>
@@ -784,8 +469,8 @@ for循环可以做的事情很多，看你怎么用了。<br>
                             <div class="post-copyright">
                                 作者:
                                 👨‍🎓lxxs<br>永久链接:
-                                    <a href="https://lxxs.cf/post/noip-c/" title="NOIP-C++">
-                                        https://lxxs.cf/post/noip-c/
+                                    <a href="https://lxxs.cf/post/jzrK_d6/" title="🎉吐槽">
+                                        https://lxxs.cf/post/jzrK_d6/
                                     </a><br> 协议: MIT License
                             </div>
                         </div>
@@ -793,37 +478,15 @@ for循环可以做的事情很多，看你怎么用了。<br>
                 </div>
                 <div class="lite-item nearby-article">
                     
-                        <div class="nearby-article-left">
-                            <span><a class="prev" rel="prev" href="https://lxxs.cf/post/markdown-xue-xi/">
-                                ← markdown学习
-                            </a></span>
-                        </div>
-                        
                             
-                                <div class="nearby-article-right">
-                                    <span><a class="next" rel="next" href="https://lxxs.cf/post/mei-ri-tu-cao/">
-                                        老版每日吐槽 →
-                                    </a></span>
-                                </div>
-                                
                 </div>
                 <!--Share-->
                 <span style="margin-right:15px">
     <i class="post-share"></i>
     <span>&#x5206;&#x4EAB;:</span>
-                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/post/noip-c/"><i class="fa fa-qrcode"></i></a>
-                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/post/noip-c/&sharesource=qzone&title=NOIP-C++&pics=https://lxxs.cf/images/avatar.png?v=1583274910557&summary=&lt;blockquote&gt;
-&lt;p&gt;复赛可使用C、C++、Pascal语言，2022年后将不可使用Pascal、C语言，只能使用C++。&lt;br&gt;
-目前本人主要学的就是C++,毕竟C++一定不会被抹除。&lt;br&gt;
-对于C++，这里也只是一些作者的笔记，作者起草笔记的时候还是即将进入高一的暑假，C++的内容也都是自己学的，所以可能很垃圾，不要吐槽，毕竟只是为了记录一下。重要的事情说三遍：大神勿喷，大神勿喷，大神勿喷。如果有补充的地方，可以评论区留言，谢谢。😘&lt;/p&gt;
-&lt;/blockquote&gt;
-"><i class="fa fa-qq"></i></a>
-                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/post/noip-c/&sharesource=weibo&title=NOIP-C++ + " - " + &lt;blockquote&gt;
-&lt;p&gt;复赛可使用C、C++、Pascal语言，2022年后将不可使用Pascal、C语言，只能使用C++。&lt;br&gt;
-目前本人主要学的就是C++,毕竟C++一定不会被抹除。&lt;br&gt;
-对于C++，这里也只是一些作者的笔记，作者起草笔记的时候还是即将进入高一的暑假，C++的内容也都是自己学的，所以可能很垃圾，不要吐槽，毕竟只是为了记录一下。重要的事情说三遍：大神勿喷，大神勿喷，大神勿喷。如果有补充的地方，可以评论区留言，谢谢。😘&lt;/p&gt;
-&lt;/blockquote&gt;
-&pic="https://lxxs.cf/images/avatar.png?v=1583274910557"><i class="fa fa-weibo "></i></a>
+                <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxxs.cf/post/jzrK_d6/"><i class="fa fa-qrcode"></i></a>
+                <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lxxs.cf/post/jzrK_d6/&sharesource=qzone&title=🎉吐槽&pics=https://lxxs.cf/images/avatar.png?v=1583274910557&summary="><i class="fa fa-qq"></i></a>
+                <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://lxxs.cf/post/jzrK_d6/&sharesource=weibo&title=🎉吐槽 + " - " + &pic="https://lxxs.cf/images/avatar.png?v=1583274910557"><i class="fa fa-weibo "></i></a>
                 </span>
                 
                     
