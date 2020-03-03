@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxxs.cf</id>
     <title>👨‍🎓lxxs</title>
-    <updated>2020-03-03T06:51:53.860Z</updated>
+    <updated>2020-03-03T08:53:54.244Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxxs.cf"/>
     <link rel="self" href="https://lxxs.cf/atom.xml"/>
@@ -26,6 +26,10 @@ var _hmt = _hmt || [];
         <link href="https://lxxs.cf/v26uISOLa/">
         </link>
         <updated>2020-03-03T06:43:19.000Z</updated>
+        <summary type="html"><![CDATA[<p>最小生成树可以选择的是很少的，一共就两个。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最小生成树可以选择的是很少的，一共就两个。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[最短路问题]]></title>
