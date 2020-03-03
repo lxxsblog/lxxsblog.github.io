@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxxs.cf</id>
     <title>👨‍🎓lxxs</title>
-    <updated>2020-03-03T09:52:54.048Z</updated>
+    <updated>2020-03-03T14:51:54.997Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxxs.cf"/>
     <link rel="self" href="https://lxxs.cf/atom.xml"/>
@@ -20,6 +20,19 @@ var _hmt = _hmt || [];
     <logo>https://lxxs.cf/images/avatar.png</logo>
     <icon>https://lxxs.cf/favicon.ico</icon>
     <rights>All rights reserved 2020, 👨‍🎓lxxs</rights>
+    <entry>
+        <title type="html"><![CDATA[模运算运算律]]></title>
+        <id>https://lxxs.cf/oHC0XdT8Q/</id>
+        <link href="https://lxxs.cf/oHC0XdT8Q/">
+        </link>
+        <updated>2020-03-03T14:13:01.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="取模运算法则">取模运算法则</h1>
+<p>好难好难好难</p>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="取模运算法则">取模运算法则</h1>
+<p>好难好难好难</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[最小生成树算法]]></title>
         <id>https://lxxs.cf/v26uISOLa/</id>
@@ -174,23 +187,6 @@ var _hmt = _hmt || [];
         <summary type="html"><![CDATA[<p>数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>数据结构是非常的重要的，以前没学的时候做题总是没有头绪，有了数据结构就会好很多。😊</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[资源分享]]></title>
-        <id>https://lxxs.cf/zi-yuan-fen-xiang/</id>
-        <link href="https://lxxs.cf/zi-yuan-fen-xiang/">
-        </link>
-        <updated>2019-12-02T03:00:09.000Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p>一切资源均来自网上，本人只是知识的搬运工，受互联网保护伞保护，部分内容需要发邮件私发，谢谢。<br>
-如有侵权，邮箱联系，一定删除。</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<blockquote>
-<p>一切资源均来自网上，本人只是知识的搬运工，受互联网保护伞保护，部分内容需要发邮件私发，谢谢。<br>
-如有侵权，邮箱联系，一定删除。</p>
-</blockquote>
 ]]></content>
     </entry>
 </feed>
