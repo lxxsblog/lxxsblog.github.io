@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxxs.cf</id>
     <title>👨‍🎓lxxs</title>
-    <updated>2020-03-03T00:42:12.559Z</updated>
+    <updated>2020-03-03T06:51:53.860Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxxs.cf"/>
     <link rel="self" href="https://lxxs.cf/atom.xml"/>
@@ -21,26 +21,21 @@ var _hmt = _hmt || [];
     <icon>https://lxxs.cf/favicon.ico</icon>
     <rights>All rights reserved 2020, 👨‍🎓lxxs</rights>
     <entry>
+        <title type="html"><![CDATA[最小生成树算法]]></title>
+        <id>https://lxxs.cf/v26uISOLa/</id>
+        <link href="https://lxxs.cf/v26uISOLa/">
+        </link>
+        <updated>2020-03-03T06:43:19.000Z</updated>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[最短路问题]]></title>
         <id>https://lxxs.cf/MOpTV3vdy/</id>
         <link href="https://lxxs.cf/MOpTV3vdy/">
         </link>
         <updated>2020-03-02T00:56:07.000Z</updated>
-        <summary type="html"><![CDATA[<p>最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。<br>
-简述：<br>
-1.如果是稀疏图用邻接表，稠密图用邻接矩阵.<br>
-2.单源无负权优先用堆优化Dijkstra.<br>
-3.单源有负权优先用SPFA.<br>
-4.多源，真的很多的话，用Floyd.<br>
-5.规定走的步数的只能用原版Bellman_ford算法.</p>
+        <summary type="html"><![CDATA[<p>最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。<br>
-简述：<br>
-1.如果是稀疏图用邻接表，稠密图用邻接矩阵.<br>
-2.单源无负权优先用堆优化Dijkstra.<br>
-3.单源有负权优先用SPFA.<br>
-4.多源，真的很多的话，用Floyd.<br>
-5.规定走的步数的只能用原版Bellman_ford算法.</p>
+        <content type="html"><![CDATA[<p>最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。</p>
 ]]></content>
     </entry>
     <entry>
@@ -180,17 +175,6 @@ var _hmt = _hmt || [];
 <p>一切资源均来自网上，本人只是知识的搬运工，受互联网保护伞保护，部分内容需要发邮件私发，谢谢。<br>
 如有侵权，邮箱联系，一定删除。</p>
 </blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科学上网的见解]]></title>
-        <id>https://lxxs.cf/ke-xue-shang-wang-de-jian-jie/</id>
-        <link href="https://lxxs.cf/ke-xue-shang-wang-de-jian-jie/">
-        </link>
-        <updated>2019-12-02T02:58:50.000Z</updated>
-        <summary type="html"><![CDATA[<p>开始读之前，请明确自己的立场。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>开始读之前，请明确自己的立场。</p>
 ]]></content>
     </entry>
 </feed>
