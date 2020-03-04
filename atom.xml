@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxxs.cf</id>
     <title>👨‍🎓lxxs</title>
-    <updated>2020-03-04T02:33:37.648Z</updated>
+    <updated>2020-03-04T02:34:36.814Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxxs.cf"/>
     <link rel="self" href="https://lxxs.cf/atom.xml"/>
@@ -22,8 +22,8 @@ var _hmt = _hmt || [];
     <rights>All rights reserved 2020, 👨‍🎓lxxs</rights>
     <entry>
         <title type="html"><![CDATA[位运算常用操作]]></title>
-        <id>https://lxxs.cf/b08aGOqx0/</id>
-        <link href="https://lxxs.cf/b08aGOqx0/">
+        <id>https://lxxs.cf/post/b08aGOqx0/</id>
+        <link href="https://lxxs.cf/post/b08aGOqx0/">
         </link>
         <updated>2020-03-03T15:46:47.000Z</updated>
         <summary type="html"><![CDATA[<p>整理了一网上，累死了，多谢教练的帮助。</p>
@@ -33,8 +33,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[模运算运算律]]></title>
-        <id>https://lxxs.cf/oHC0XdT8Q/</id>
-        <link href="https://lxxs.cf/oHC0XdT8Q/">
+        <id>https://lxxs.cf/post/oHC0XdT8Q/</id>
+        <link href="https://lxxs.cf/post/oHC0XdT8Q/">
         </link>
         <updated>2020-03-03T14:13:01.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="取模运算法则">取模运算法则</h1>
@@ -46,8 +46,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[最小生成树算法]]></title>
-        <id>https://lxxs.cf/v26uISOLa/</id>
-        <link href="https://lxxs.cf/v26uISOLa/">
+        <id>https://lxxs.cf/post/v26uISOLa/</id>
+        <link href="https://lxxs.cf/post/v26uISOLa/">
         </link>
         <updated>2020-03-03T06:43:19.000Z</updated>
         <summary type="html"><![CDATA[<p>最小生成树可以选择的是很少的，一共就两个。</p>
@@ -57,8 +57,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[最短路问题]]></title>
-        <id>https://lxxs.cf/MOpTV3vdy/</id>
-        <link href="https://lxxs.cf/MOpTV3vdy/">
+        <id>https://lxxs.cf/post/MOpTV3vdy/</id>
+        <link href="https://lxxs.cf/post/MOpTV3vdy/">
         </link>
         <updated>2020-03-02T00:56:07.000Z</updated>
         <summary type="html"><![CDATA[<p>最短路问题讲真的是真的不难，只要熟悉了算法思想，加上代码能力提高就完全可以的。</p>
@@ -68,8 +68,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[代理分享页]]></title>
-        <id>https://lxxs.cf/wiefj/</id>
-        <link href="https://lxxs.cf/wiefj/">
+        <id>https://lxxs.cf/post/wiefj/</id>
+        <link href="https://lxxs.cf/post/wiefj/">
         </link>
         <updated>2020-02-28T22:23:24.000Z</updated>
         <summary type="html"><![CDATA[<p>自己琢磨琢磨，这代理是让你好好学习的，不是捣乱的，懂了么？👀</p>
@@ -79,8 +79,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[关于建设blog]]></title>
-        <id>https://lxxs.cf/ymkhCboSX/</id>
-        <link href="https://lxxs.cf/ymkhCboSX/">
+        <id>https://lxxs.cf/post/ymkhCboSX/</id>
+        <link href="https://lxxs.cf/post/ymkhCboSX/">
         </link>
         <updated>2020-02-28T13:53:19.000Z</updated>
         <summary type="html"><![CDATA[<p>分享我的blog build history</p>
@@ -90,8 +90,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[关于更换域名的小问题。。]]></title>
-        <id>https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/</id>
-        <link href="https://lxxs.cf/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/">
+        <id>https://lxxs.cf/post/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/</id>
+        <link href="https://lxxs.cf/post/guan-yu-geng-huan-yu-ming-de-xiao-wen-ti/">
         </link>
         <updated>2020-02-27T09:49:24.000Z</updated>
         <summary type="html"><![CDATA[<p>真的是多谢ITjoker大佬了！</p>
@@ -101,8 +101,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[Bellman_fold算法]]></title>
-        <id>https://lxxs.cf/bellman_fold-suan-fa/</id>
-        <link href="https://lxxs.cf/bellman_fold-suan-fa/">
+        <id>https://lxxs.cf/post/bellman_fold-suan-fa/</id>
+        <link href="https://lxxs.cf/post/bellman_fold-suan-fa/">
         </link>
         <updated>2020-02-26T15:47:49.000Z</updated>
         <summary type="html"><![CDATA[<p>怎么说，这个算法是真的强大，不要过分深究理解他，走一遍过程比证明他的收获更大。</p>
@@ -112,8 +112,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[OI的标准文件读入读出+cin优化模板]]></title>
-        <id>https://lxxs.cf/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/</id>
-        <link href="https://lxxs.cf/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/">
+        <id>https://lxxs.cf/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/</id>
+        <link href="https://lxxs.cf/post/oi-de-biao-zhun-wen-jian-du-ru-du-chu-cin-you-hua-mo-ban/">
         </link>
         <updated>2020-02-25T01:03:13.000Z</updated>
         <summary type="html"><![CDATA[<p>反正我觉得这个是最好的模板了。</p>
@@ -123,8 +123,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[我们学校的OJ 上线了]]></title>
-        <id>https://lxxs.cf/wo-men-xue-xiao-de-oj-shang-xian-liao/</id>
-        <link href="https://lxxs.cf/wo-men-xue-xiao-de-oj-shang-xian-liao/">
+        <id>https://lxxs.cf/post/wo-men-xue-xiao-de-oj-shang-xian-liao/</id>
+        <link href="https://lxxs.cf/post/wo-men-xue-xiao-de-oj-shang-xian-liao/">
         </link>
         <updated>2020-02-18T03:43:11.000Z</updated>
         <summary type="html"><![CDATA[<p>值得纪念啊，花了我半天时间才搞好呢。。。。</p>
@@ -134,8 +134,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[好文章总结页]]></title>
-        <id>https://lxxs.cf/hao-wen-zhang-zong-jie-ye/</id>
-        <link href="https://lxxs.cf/hao-wen-zhang-zong-jie-ye/">
+        <id>https://lxxs.cf/post/hao-wen-zhang-zong-jie-ye/</id>
+        <link href="https://lxxs.cf/post/hao-wen-zhang-zong-jie-ye/">
         </link>
         <updated>2020-02-11T11:06:25.000Z</updated>
         <summary type="html"><![CDATA[<p>在本页分享好文章幺；</p>
@@ -145,8 +145,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[归并大法]]></title>
-        <id>https://lxxs.cf/gui-bing-da-fa/</id>
-        <link href="https://lxxs.cf/gui-bing-da-fa/">
+        <id>https://lxxs.cf/post/gui-bing-da-fa/</id>
+        <link href="https://lxxs.cf/post/gui-bing-da-fa/">
         </link>
         <updated>2020-02-08T11:15:13.000Z</updated>
         <summary type="html"><![CDATA[<p>归并绝对是需要学会手写并掌握的，他不是sort可以代替的，很多题都需要他的思想。</p>
@@ -156,8 +156,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[清北学堂_2020_冬令营储备营总结+笔记]]></title>
-        <id>https://lxxs.cf/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/</id>
-        <link href="https://lxxs.cf/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/">
+        <id>https://lxxs.cf/post/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/</id>
+        <link href="https://lxxs.cf/post/qing-bei-xue-tang-_2020_-dong-ling-ying-chu-bei-ying-zong-jie-bi-ji-hh/">
         </link>
         <updated>2020-01-25T12:26:36.000Z</updated>
         <summary type="html"><![CDATA[<p>总体感受还是不错的，恰逢这个糟糕的新型冠状病毒。</p>
@@ -167,8 +167,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[新年记录]]></title>
-        <id>https://lxxs.cf/xin-nian-ji-lu/</id>
-        <link href="https://lxxs.cf/xin-nian-ji-lu/">
+        <id>https://lxxs.cf/post/xin-nian-ji-lu/</id>
+        <link href="https://lxxs.cf/post/xin-nian-ji-lu/">
         </link>
         <updated>2019-12-31T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>年终大总结：<br>
@@ -180,8 +180,8 @@ var _hmt = _hmt || [];
     </entry>
     <entry>
         <title type="html"><![CDATA[如何分享精美的代码]]></title>
-        <id>https://lxxs.cf/ru-he-fen-xiang-jing-mei-de-dai-ma/</id>
-        <link href="https://lxxs.cf/ru-he-fen-xiang-jing-mei-de-dai-ma/">
+        <id>https://lxxs.cf/post/ru-he-fen-xiang-jing-mei-de-dai-ma/</id>
+        <link href="https://lxxs.cf/post/ru-he-fen-xiang-jing-mei-de-dai-ma/">
         </link>
         <updated>2019-12-02T11:13:21.000Z</updated>
         <summary type="html"><![CDATA[<p>有时候向同学分享代码时，可能不够美观，看起来很难看，但是，如果有一款生成美观代码图片的工具该多好呢。还真有，之前不知道从哪里扒拉出来了，哈哈；</p>
